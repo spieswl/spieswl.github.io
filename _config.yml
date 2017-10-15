@@ -8,7 +8,7 @@ show_social_icons:  true # edit file in /_includes/social_links.html
 og_locale:          "en_US"
 
 # Site URL settings
-url:                https://www.spieswl.com # main url
+url:                null # https://www.spieswl.com # main url
 ghurl:              https://spieswl.github.io/
 baseurl:            null # for master branch
 enforce_ssl:        spieswl.com
