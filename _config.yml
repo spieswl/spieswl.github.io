@@ -1,6 +1,6 @@
 # Basic site info
 title:              "William Spies"
-tagline:            "Explorer // Engineer"
+tagline:            "Engineer // Explorer"
 description:        "Technical Stash and Personal Blog of William Spies"
 keywords:           "William Spies, blog, electronics, engineering, robotics"
 logo_text:          "William Spies"
@@ -18,10 +18,16 @@ author:
   email:            spieswl@gmail.com
   github_username:  spieswl
 
+# Collections info
+collections:
+  projects:
+    output:         true
+    permalink:      /projects/:year/:title
+
 # Build settings
 source:             ./
 destination:        ./_site
-permalink:          /:year/:title
+permalink:          /insights/:year/:title
 markdown:           kramdown
 highlighter:        rouge
 timezone:           America/Chicago

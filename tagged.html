@@ -3,26 +3,9 @@ layout: main
 title: Tagged
 ---
 
-{% assign rawtags = "" %}
-{% for post in site.posts %}
-    {% assign ttags = post.tags | join:'|' | append:'|' %}
-    {% assign rawtags = rawtags | append:ttags %}
-{% endfor %}
-{% assign rawtags = rawtags | split:'|' | sort %}
+{% include tag_parser.html %}
 
-{% assign tags = "" %}
-{% for tag in rawtags %}
-    {% if tag != "" %}
-        {% if tags == "" %}
-            {% assign tags = tag | split:'|' %}
-        {% endif %}
-        {% unless tags contains tag %}
-            {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
-        {% endunless %}
-    {% endif %}
-{% endfor %}
-
-<h2>Search Content by Tags:</h2>
+<h2>Search Posts by Tags:</h2>
 
 {% if tags %}
 <div class="tag-cloud tag-cloud-small" id="Tags">

@@ -1,0 +1,20 @@
+---
+layout: page
+title: Projects
+---
+
+<div class="projects">
+
+    {% for project in site.projects %}
+        <div class="project-list">
+            <a href="{{ project.url }}">
+                <div class="project-thumb" style="background-image: url({{ site.url }}/assets/images/projects/{{ project.folders.images }}/thumb.jpg)">
+                    <div class="project-thumb-overlay">
+                        {{ project.title }}
+                    </div>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+
+</div>
