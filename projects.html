@@ -4,17 +4,17 @@ title: Projects
 ---
 
 <div class="projects">
+    <div class="project-list">
 
-    {% for project in site.projects %}
-        <div class="project-list">
-            <a href="{{ project.url }}">
-                <div class="project-thumb" style="background-image: url({{ site.url }}/assets/images/projects/{{ project.folders.images }}/thumb.jpg)">
+        {% for project in site.projects %}
+            <div class="project-thumb" style="background-image: url({{ site.url }}/assets/images/projects/{{ project.folders.images }}/thumb.jpg)">
+                <a href="{{ project.url }}">
                     <div class="project-thumb-overlay">
-                        {{ project.title }}
+                        <strong>{{ project.title }}</strong>
                     </div>
-                </div>
-            </a>
-        </div>
-    {% endfor %}
+                </a>
+            </div>
+        {% endfor %}
 
+    </div>
 </div>

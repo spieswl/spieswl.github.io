@@ -3,7 +3,6 @@ title:              "William Spies"
 tagline:            "Engineer // Explorer"
 description:        "Technical Stash and Personal Blog of William Spies"
 keywords:           "William Spies, blog, electronics, engineering, robotics"
-logo_text:          "William Spies"
 show_social_icons:  true # edit file in /_includes/social_links.html
 og_locale:          "en_US"
 
@@ -45,7 +44,7 @@ compress_html:
   startings:        [html, head, body]
 
 sass:
-  sass_dir:         assets/scss
+  sass_dir:         assets/css/base
   style:            compressed # expanded
 
 
