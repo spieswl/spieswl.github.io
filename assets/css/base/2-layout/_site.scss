@@ -7,15 +7,18 @@
 }
 
 html {
-    margin: 0;
-    padding: 0;
     height: 100%;
+
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     height: 100%;
+
+    padding: 0;
+    margin: 0;
+
     color: #515151;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
@@ -47,6 +50,7 @@ h5,
 h6 {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+
     line-height: 1.25;
     color: #313131;
 }
@@ -92,16 +96,18 @@ dd {
 
 hr {
     position: relative;
+
+    margin: 1.25rem 0;
+
     border: 0;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #fff;
-    margin: 1.25rem 0;
 }
 
 abbr {
+    color: #555;
     font-size: 85%;
     font-weight: 700;
-    color: #555;
     text-transform: uppercase;
 
     &[title] {
@@ -117,37 +123,44 @@ code {
 }
 
 pre {
-    display: block;
+    max-height: 800px;
+
+    padding: .5rem 2rem .5rem .5rem;
     margin-top: 0;
     margin-bottom: 1rem;
+
+    border: 1px solid #ddd;
+
+    display: block;
+    background-color: #f9f9f9;
+    overflow: auto;
     font-family: "Fira Mono", monospace;
     font-size: 0.7rem;
     line-height: 1.4;
     white-space: pre;
-    overflow: auto;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: .5rem 2rem .5rem .5rem;
-    max-height: 800px;
 
     code {
-        font-size: 0.7rem;
+        padding: 0;
+
+        display: block;
         color: inherit;
         background-color: transparent;
-        display: block;
-        padding: 0;
+        font-size: 0.7rem;
     }
 
     .line-number {
+        margin:0 1em 0 -1em;
+
+        border-right:1px solid #ddd;
+
         display: block;
         float:left;
-        margin:0 1em 0 -1em;
-        border-right:1px solid #ddd;
         text-align:right;
 
         span {
-            display:block;
             padding:0 .5em 0 1em;
+
+            display:block;
             color: #ccc;
         }
     }
@@ -159,10 +172,12 @@ pre {
 }
 
 blockquote {
-    color: #7a7a7a;
-    border-left: 0.25rem solid #ddd;
-    margin: 0.8rem 0;
     padding: 0.5rem 1rem;
+    margin: 0.8rem 0;
+
+    border-left: 0.25rem solid #ddd;
+
+    color: #7a7a7a;
     background: #f0f0f0;
 }
 
@@ -171,25 +186,31 @@ blockquote p:last-child {
 }
 
 img {
-    display: block;
-    border-radius: 3px;
-    margin: 1rem auto;
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
+
+    margin: 1rem auto;
+
+    border-radius: 3px;
+
+    display: block;
     box-shadow: 0 1px 3px rgba(0,0,0,0.15);
 }
 
 table {
-    margin-bottom: 1rem;
     width: 100%;
+
+    margin-bottom: 1rem;
+
     border: 1px solid #e5e5e5;
     border-collapse: collapse;
 }
 
 td,
 th {
-    border: 1px solid #e5e5e5;
     padding: 0.25rem 0.5rem;
+
+    border: 1px solid #e5e5e5;
 }
 
 tbody tr:nth-child(odd) {
@@ -207,46 +228,54 @@ tbody tr:nth-child(odd) {
 }
 
 .container {
+    max-width: 60rem;
+
     padding-left: 1rem;
     padding-right: 1rem;
     margin-left: auto;
     margin-right: auto;
-    max-width: 60rem;
 }
 
 .copyright {
-    font-size: 80%;
-    color: #888;
     margin-top: 8px;
     margin-bottom: 8px;
+
+    color: #888;
+    font-size: 80%;
 }
 
 .empty-space {
-  display: block;
-  margin: 0 auto;
-  height: 3rem;
+    height: 3rem;
+
+    margin: 0 auto;
+
+    display: block;
 }
 
 .footer {
-    margin: 0 auto 1rem;
-    padding: 0 1rem 1rem;
     max-width: 60rem;
+
+    padding: 0 1rem 1rem;
+    margin: 0 auto 1rem;
 }
 
 .footer-social-links {
-    font-size: 14px;
     margin-top: 16px;
     margin-bottom: 16px;
 
+    font-size: 14px;
+
     a {
-        padding: 5px 5px;
-        width: 25px;
-        height: auto;
         position: relative;
-        text-align: center;
+        height: auto;
+        width: 25px;
+
+        padding: 5px 5px;
+
         display: inline-block;
         background: #f0f0f0;
         color: #777;
+        text-align: center;
         -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
         -moz-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
         -o-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
@@ -261,12 +290,14 @@ tbody tr:nth-child(odd) {
 }
 
 .hrline {
+    height: 1px;
+
+    margin: 2.5em 0;
+
     background: #ddd;
     background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(#ccc), to(rgba(255, 255, 255, 0)));
     background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #ccc, rgba(255, 255, 255, 0));
     background: linear-gradient(to right, rgba(255, 255, 255, 0), #ccc, rgba(255, 255, 255, 0));
-    height: 1px;
-    margin: 2.5em 0;
 }
 
 .lead {
@@ -275,31 +306,36 @@ tbody tr:nth-child(odd) {
 }
 
 .license {
-    font-size: 80%;
+    margin-bottom: 1rem;
+
     color: #888;
     text-align: justify;
-    margin-bottom: 1rem;
+    font-size: 80%;
 }
 
 .master-nav {
-    background: #444;
     padding: 5px;
+
+    background: #444;
 }
 
 .masthead {
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+
     border-bottom: 1px solid #ddd;
+
     background-color: #f3f3f3;
     box-shadow: 0 1px 1px rgba(0,0,0,0.05);
 }
 
 .masthead-title {
-    /*text-align: center;*/
     margin-top: 2rem;
     margin-bottom: 0;
+
     color: #505050;
+    /*text-align: center;*/
 
     a {
         color: #505050;
@@ -312,21 +348,23 @@ tbody tr:nth-child(odd) {
     }
 
     small {
+        display: block;
+        color: #aaa;
         font-size: 75%;
         font-weight: normal;
-        color: #aaa;
         letter-spacing: 0;
-        display: block;
         clear: both;
     }
 }
 
 .message {
+    padding: 1rem;
     margin-bottom: 1rem;
+
+    border: 1px solid #ddd;
+
     color: #717171;
     background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 1rem;
 }
 
 .muted {
@@ -338,15 +376,17 @@ tbody tr:nth-child(odd) {
 }
 
 .nav {
-    margin: 0;
-    *zoom: 1;
-    font-weight: 400;
     max-width: 60rem;
 
+    margin: 0;
+
+    *zoom: 1;
+    font-weight: 400;
+
     &:after {
+        display: table;
         clear: both;
         content: "";
-        display: table;
     }
 }
 
@@ -355,32 +395,36 @@ tbody tr:nth-child(odd) {
 }
 
 .top-menu {
-    list-style-type: none;
     margin: 20px 0 0 -42px;
-    line-height: 2.4;
+
     font-size: 14px;
+    list-style-type: none;
+    line-height: 2.4;
     overflow: hidden;
 
     li {
         float: left;
 
         a {
-            color: #666;
-            border-bottom: 0;
-            background: #fff;
             padding: 5px 10px;
-            border: 1px solid #ccc;
-            white-space: nowrap;
-            letter-spacing: 1px;
             margin-left: 2px;
             margin-right: 2px;
+
+            border: 1px solid #ccc;
+            border-bottom: 0;
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
             border-radius: 3px;
+
+            color: #666;
+            background: #fff;
+            white-space: nowrap;
+            letter-spacing: 1px;
             box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 
             &:hover {
                 border: 1px solid #777;
+
                 background: #000;
                 color: #fff;
                 box-shadow: 0 1px 2px rgba(0,0,0,0.35);
@@ -393,14 +437,17 @@ tbody tr:nth-child(odd) {
     position: absolute;
     top: -1000px;
     left: -1000px;
+
     height: 1px;
     width: 1px;
-    text-align: left;
-    overflow: hidden;
-    background-color: #f00;
-    color: #fff;
+
     padding-left: 5px;
     padding-right: 5px;
+
+    background-color: #f00;
+    color: #fff;
+    text-align: left;
+    overflow: hidden;
 }
 
 a.skip:active,
@@ -408,35 +455,38 @@ a.skip:focus,
 a.skip:hover {
     left: 0;
     top: 0;
-    width: auto;
     height: auto;
-    overflow: visible;
+    width: auto;
+
     z-index: 1000;
+    overflow: visible;
 }
 
 .tag-cloud {
     margin-bottom: 16px;
 
     a.tag-anchor {
+        padding-left: 5px;
+        padding-right: 5px;
         margin-top: 4px;
         margin-right: 4px;
         margin-bottom: 4px;
+
         border: 1px solid transparent;
-        white-space: nowrap;
-        padding-left: 5px;
-        padding-right: 5px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+
         display: inline-block;
         background: #f0f0f0;
         color: #444;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px
+        white-space: nowrap;
     }
     a.tag-anchor:active,
     a.tag-anchor:focus,
     a.tag-anchor:hover {
-        background: #069;
         color: #fff;
+        background: #069;
     }
 }
 
@@ -449,6 +499,7 @@ a.skip:hover {
 .wrap {
     position: relative;
     width: 100%;
-    margin-top: -20px;
+
     padding: 0;
+    margin-top: -20px;
 }

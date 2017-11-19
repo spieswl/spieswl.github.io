@@ -6,19 +6,45 @@
     }
 
     .container, .footer, .nav {
-        max-width: 32rem;
+        max-width: 48rem;
+    }
+
+    .project-thumb {
+        height: 240px;
+        width: 320px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container, .footer, .nav {
+        max-width: 60rem;
+    }
+
+    .project-thumb {
+        height: 280px;
+        width: 420px;
     }
 }
 
 @media only screen and (min-width: 1280px) {
     .container, .footer, .nav {
-        max-width: 48rem;
+        max-width: 60rem;
+    }
+
+    .project-thumb {
+        height: 280px;
+        width: 420px;
     }
 }
 
 @media only screen and (min-width: 1920px) {
     .container, .footer, .nav {
         max-width: 72rem;
+    }
+
+    .project-thumb {
+        height: 280px;
+        width: 420px;
     }
 }
 
@@ -33,8 +59,8 @@
     }
 
     .post-list-date {
-        float: none;
         margin-left: 0;
+        float: none;
     }
 
     .post-list-desc {
@@ -47,8 +73,8 @@
     }
 
     .project-thumb {
-        width: 80vw;
         height: 40vw;
+        width: 80vw;
     }
 
     a {
@@ -77,9 +103,9 @@
 
     .container img {
         max-width: 100vw;
-        transform: none;
         margin-left: -16px;
         margin-right: -16px;
         border-radius: 0px;
+        transform: none;
     }
 }
