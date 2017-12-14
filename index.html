@@ -6,7 +6,7 @@ title: Home
 <div class="projects">
     <div class="project-list">
 
-        {% for project in site.projects limit:6 %}
+        {% for project in site.projects reversed limit:6 %}
             <div class="project-thumb" style="background-image: url({{ site.url }}/assets/images/projects/{{ project.folders.images }}/thumb.png)">
                 <a href="{{ project.url }}">
                     <div class="project-thumb-overlay">
