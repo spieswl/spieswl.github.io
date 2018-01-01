@@ -1,0 +1,33 @@
+---
+published: true
+---
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" class="no-js" itemscope itemtype="http://schema.org/WebPage">
+
+    {% include head.html %}
+
+    <body>
+
+        <div class="wrap">
+            <div class="masthead">
+                <div class="container">
+                    <h2 class="masthead-title">
+                        <a href="{{ site.url }}" title="{{ site.title }}" class="title">{{ site.title | upcase }}</a>
+                        <small>{{ site.tagline }}</small>
+                    </h2>
+
+                    {% include nav.html %}
+
+                </div>
+            </div>
+
+            <div id="content" class="container content">
+                {{ content }}
+            </div>
+        </div>
+
+        {% include foot.html %}
+
+    </body>
+
+</html>

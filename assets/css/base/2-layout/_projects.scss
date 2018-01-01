@@ -1,0 +1,85 @@
+/*! Project Layout Styles */
+
+.project {
+    margin-bottom: 4rem;
+
+    overflow: hidden;
+
+    a {
+        border-bottom: 1px solid #069;
+    }
+
+    a:hover {
+        border: 0;
+    }
+}
+
+.project-title {
+    margin-top: 0;
+}
+
+.project-date {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.project-list {
+    max-width: 1400px;
+
+    margin: 0px auto 0px;
+    padding: 10px;
+
+    text-align: center;
+}
+
+.project-thumb {
+    position: relative;
+
+    margin: 7px;
+
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.5), 0 3px 6px rgba(0,0,0,0.5);
+}
+
+.project-thumb-overlay {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0,0,0,0.9);
+    opacity: 0;
+    -o-transition: opacity .2s ease-in-out;
+    -ms-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+
+    strong{
+        padding: 20px;
+
+        display: block;
+        color: white;
+        line-height: 1.5;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.project-top-meta {
+    margin-bottom: 1rem;
+}

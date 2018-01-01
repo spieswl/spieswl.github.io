@@ -1,0 +1,119 @@
+/*! Post Layout Styles */
+
+.post {
+    margin-bottom: 4rem;
+
+    .tagged {
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .tagged a {
+        padding: 2px 5px;
+
+        border: 1px solid #ddd;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+
+        display: inline-block;
+        background: transparent;
+        color: #999;
+        outline: 0;
+
+        text-decoration: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-size: 70%;
+    }
+
+    .tagged a:hover {
+        border: 1px solid #555;
+
+        cursor: pointer;
+        background: #444;
+        color: #fff;
+    }
+
+    a {
+        border-bottom: 1px solid #069;
+    }
+
+    a:hover {
+        border: 0;
+    }
+}
+
+.post-title {
+    margin-top: 0;
+}
+
+.post-date {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.post-list {
+    margin: 0 0 0.75em;
+
+    font-size: 1.1em;
+}
+
+.post-list-date {
+    margin: 0 0 0 20px;
+
+    float: right;
+
+    small {
+        display: inline-block;
+        color: #757575;
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+}
+
+.post-list-desc {
+    padding-right: 110px;
+    margin-bottom: 4px;
+
+    color: #888;
+    font-size: 80%;
+}
+
+.post-list-tags {
+    margin-bottom: 16px;
+
+    a.tag-anchor {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 4px;
+        margin-right: 4px;
+        margin-bottom: 4px;
+
+        border: 1px solid transparent;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+
+        font-size: 70%;
+        white-space: nowrap;
+
+        display: inline-block;
+        background: #f0f0f0;
+        color: #444;
+    }
+
+    a.tag-anchor:active,
+    a.tag-anchor:focus,
+    a.tag-anchor:hover {
+        background: #069;
+        color: #fff;
+    }
+}
+
+.post-top-meta {
+    margin-bottom: 1rem;
+}

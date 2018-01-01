@@ -1,0 +1,53 @@
+# Basic site info
+title:                  "William Spies"
+tagline:                "Engineer // Explorer"
+description:            "Technical Stash and Personal Blog of William Spies"
+keywords:               "William Spies, blog, electronics, engineering, mechatronics, robotics"
+show_social_icons:      true # edit file in /_includes/social_links.html
+og_locale:              "en_US"
+
+# Site settings & folders
+url:                    null # https://www.spieswl.com for main url // # null for spieswl.github.io // # http://localhost:4000 for local testing
+baseurl:                null # for master branch
+enforce_ssl:            spieswl.com
+project_assets:         assets/images/projects
+
+# Site author info
+author:
+    name:               "William Spies"
+    email:              spieswl@gmail.com
+    github_username:    spieswl
+
+# Collections info
+collections:
+    projects:
+        output:         true
+        permalink:      /projects/:year/:title
+
+# Build settings
+source:                 ./
+destination:            ./_site
+permalink:              /insights/:year/:title
+markdown:               kramdown
+highlighter:            rouge
+timezone:               America/Chicago
+exclude:                ["README.md", "LICENSE.md"]
+
+# Site configurations
+compress_html:
+    clippings:          all
+    comments:           ["<!-- ", " -->"]
+    endings:            all
+    ignore:
+        envs:           [local]
+    blanklines:         false
+    profile:            false
+    startings:          [html, head, body]
+
+sass:
+    sass_dir:           assets/css/base
+    style:              compressed # expanded
+
+
+plugins_dir:
+    - jekyll-sitemap

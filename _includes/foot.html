@@ -1,0 +1,24 @@
+<div class="footer">
+    <hr/>
+    
+    {% if site.show_social_icons %}
+        {% include social_links.html %}
+    {% endif %}
+
+    <div class="copyright">Based on the ••• theme by <a href="https://heiswayi.nrird.com">Heiswayi Nrird</a> &middot; Compiled using <a href="http://jekyllrb.com">Jekyll</a> &middot; <i class="fa fa-code" title="Source Code"></i> is available on <a href="https://github.com/spieswl/spieswl.github.io">GitHub</a> <i class="fa fa-github-alt"></i><br><i class="fa fa-copyright"></i> {{ site.time | date: "%Y" }} {{ site.title }} &middot; Covered under MIT License</div>
+</div>
+
+<script>
+(function() {
+    var pre = document.getElementsByTagName('pre'),
+        pl = pre.length;
+    for (var i = 0; i < pl; i++) {
+        pre[i].innerHTML = '<span class="line-number"></span>' + pre[i].innerHTML + '<span class="cl"></span>';
+        var num = pre[i].innerHTML.split(/\n/).length;
+        for (var j = 0; j < (num - 1); j++) {
+            var line_num = pre[i].getElementsByTagName('span')[0];
+            line_num.innerHTML += '<span>' + (j + 1) + '</span>';
+        }
+    }
+})();
+</script>
