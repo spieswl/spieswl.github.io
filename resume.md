@@ -2,11 +2,11 @@
 layout:             page
 title:              Resumes
 
-pdf_resume_text:    "assets/docs/Resume_spieswl_20170926.pdf"
-pdf_resume:         "assets/docs/Resume_spieswl_20170926_noaddr.pdf"
+pdf_resume_text:    "assets/docs/Resume_spieswl_20180205.pdf"
+pdf_resume:         "assets/docs/Resume_spieswl_20180205.pdf"
 pdf_image:          "assets/images/pdf_icon.png"
-html_resume_text:   "assets/docs/Resume_spieswl_20170926.html"
-html_resume:        "assets/docs/Resume_spieswl_20170926_noaddr.html"
+html_resume_text:   "assets/docs/Resume_spieswl_20180205.html"
+html_resume:        "assets/docs/Resume_spieswl_20180205.html"
 html_image:         "assets/images/html_icon.png"
 ---
 
