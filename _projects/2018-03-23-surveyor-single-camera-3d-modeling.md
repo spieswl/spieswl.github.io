@@ -17,9 +17,7 @@ Before I get much further, check out the **Surveyor** repository [over at GitHub
 
 ## Surveyor
 
-<video width="1280" height="720" controls="controls">
-  <source src="https://drive.google.com/open?id=1PNMfx6Irwad7ekdQdnSYdrvyljGEk8MV" type="video/mp4">
-</video>
+<iframe src="https://drive.google.com/file/d/1PNMfx6Irwad7ekdQdnSYdrvyljGEk8MV/preview" width="640" height="480"></iframe>
 
 When we were originally asked to submit project proposals to the MSR administrators at Northwestern, I knew I wanted a project that accomplished three specific things: **(1)** involved work in the field of computer vision, **(2)** gave me an opportunity to study code and perform a significant amount of coding myself, and **(3)** build something useful. The field of computer vision has an incredible amount of interesting work taking place, so novel project ideas are in high supply. Given how much recent work has been put into visual odometrical and photogrammetrical methods, I settled on the idea of making a mapping system with a single camera and no depth sensing. In practice, systems like the one I built already exist commercially, but often rely on tightly controlled lighting or the presence of fiducial markers in the field for reference. I also wanted a lot of coding practice; any chances to improve my Python and C++, get familiar with best practices and latest standards, and put a critical eye to other code were all highly valuable to me. Finally, I wanted to build something for the program that could be (hopefully, would be) used by myself, my cohort-mates, or future grads coming through the program. Having contributed in only a limited fashion to the open source community, I wanted to build and release something that would be of value.
 
@@ -37,29 +35,23 @@ Below are a select few videos of importance, minus the one I made in a professio
 
 - This video is pretty close to **Surveyor** working exactly as desired. This video shows the results of around 370 still images *(I refer to them as snaps to disambiguate from video frames)*, with 900x600 resolution. These images were down-sampled from 6000x4000 resolution captures on the Fujifilm X-T2. Note that the point cloud model starts out in pretty good shape, but right around 0:33 on the timer, significant noise gets introduced into the result. 
 
-<video width="1280" height="720" controls="controls">
-  <source src="https://drive.google.com/open?id=1i3VFRosg8Wgpp74V4YPQ8L_vGL_gnX_z" type="video/mp4">
-</video>
+<iframe src="https://drive.google.com/file/d/1i3VFRosg8Wgpp74V4YPQ8L_vGL_gnX_z/preview" width="640" height="480"></iframe>
 
 - This next video is of a clear failure. This video shows the results of **Surveyor** processing a ~4000-frame video (AVI format) taken at 1280x720 resolution at 60 frames/sec. I visually inspected the video, and I thought it was smooth as silk. I could not clearly pick out ANY distortion, tearing, blurring, or anything else that might cause a problem. Sure enough...watch what happens to the dense point cloud throughout the video.
 
-<video width="1280" height="720" controls="controls">
-  <source src="https://drive.google.com/open?id=1vPdYIB3mlwVFP6zwow8iLrNSvJpmTIaW" type="video/mp4">
-</video>
+<iframe src="https://drive.google.com/file/d/1vPdYIB3mlwVFP6zwow8iLrNSvJpmTIaW/preview" width="640" height="480"></iframe>
 
 - Here is a quick video showing some of the intermediate results from using DSO. This is also running on the 370 snaps down-sampled to 900x600 from the X-T2.
 
-<video width="1280" height="720" controls="controls">
-  <source src="https://drive.google.com/open?id=1UcqqPfop-trrudnOrNwVeff2xeKAHdZ_" type="video/mp4">
-</video>
+<iframe src="https://drive.google.com/file/d/1UcqqPfop-trrudnOrNwVeff2xeKAHdZ_/preview" width="640" height="480"></iframe>
 
 - This video is also of the intermediate results from using DSO. This video was taken in the middle of a run using the ~4000-frame video feed at 60 frames/sec. The errors here are far more subdued than what can be seen in the REMODE video, though towards the end you can see duplication and skewing in the sparse point cloud.
 
-<video width="1280" height="720" controls="controls">
-  <source src="https://drive.google.com/open?id=1U-MNpBcBBD8gcgmZU77JqgXbr0TwR1yn" type="video/mp4">
-</video>
+<iframe src="https://drive.google.com/file/d/1U-MNpBcBBD8gcgmZU77JqgXbr0TwR1yn/preview" width="640" height="480"></iframe>
 
 In any case, the results show a mix of very promising results mixed with some very odd failures. The video feed, at least from the X-T2 camera (regardless of video quality, it seems), should be avoided at all costs, while the snapshots yield the most promising results.
 
+<!--
 <TODO : ## Lessons Learned?>
 <TODO : ## Future Work>
+-->
