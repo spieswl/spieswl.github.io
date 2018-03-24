@@ -15,7 +15,7 @@ For the past several weeks, I have been working on an independent project that I
 
 Before I get much further, check out the **Surveyor** repository [over at GitHub](https://github.com/spieswl/surveyor). The software still has improvement to be done, but even now the project has promise. More implementation and usage details are there, while this write-up is focused the background history, thought processes, and lessons-learned from the project. I will mention the two algorithms (and accompanying code) that are being used: ***Direct Sparse Odometry (DSO)*** and  ***REgularized MOnocular Depth Estimation (REMODE)***, both somewhat recent developments in the computer vision domain. 
 
-## Surveyor
+### Surveyor
 
 <p align="center"><iframe src="https://drive.google.com/file/d/1PNMfx6Irwad7ekdQdnSYdrvyljGEk8MV/preview" width="960" height="540"></iframe></p>
 
@@ -23,13 +23,13 @@ When we were originally asked to submit project proposals to the MSR administrat
 
 The initial design focused on the utility of recent algorithms coming out of robotics and computer vision departments at the [Technical University of Munich](https://vision.in.tum.de/) (which you may know from the TUM Mono datasets, or other content like LSD-SLAM) and the [University of Zurich](http://rpg.ifi.uzh.ch/). Presentations of work from both groups continue to be impressive, but the original design idea seemed more interesting when thought of as a fusion of approaches. The design progressed from output-side to input-side: `REMODE` was selected because it was a vetted dense reconstruction algorithm that only needs per-frame camera pose estimates (in addition to the assumed 2D images), while `DSO` is lean, performs well over long trajectories, and can operate at pretty high frame rates. That last piece helps keep alive the long-term goal of having a mapping system that can operate untethered from a desktop (or even a laptop) computer. If more expensive calculation needs to take place to complete the `REMODE`-driven modeling step, such as on a GPU, that can easily be offloaded to a later tethered "modeling" stage, after the initial captures and trajectory calculation is performed by `DSO` during the "mapping" stage.
 
-## Why One Camera? Why No Depth Sensing?
+### Why One Camera? Why No Depth Sensing?
 
 A single camera system, though *potentially* more challenging for depth estimation tasks, simplifies hardware requirements and allowed me the chance to use monocular vision datasets. I spent a majority of time in development and testing working with image sequences from a Fujifilm X-T2 mirrorless camera; not typical computer vision capture equipment to be sure! Single camera systems are also far more common in the world; I think there certainly exists a future where someone could pick up a smartphone with a well-characterized optical system, record some images or video, offload some calculation, and get a 3D model out of it. 
 
 No depth sensing seemed like a good way to differentiate this approach. [Google Cartographer](https://google-cartographer.readthedocs.io/en/latest/), as one example, is a highly sophisticated SLAM system that relies on multiple inputs, including laser- or IR-based depth sensing. While this software is nowhere near as mature as Cartographer, there are far fewer moving parts to deal with here. Unfortunately, this leads to the imaging component being a true "single point of failure". There are no backups to **Surveyor** in situations where conditions are not conducive to taking good pictures.
 
-## Results So Far...
+### Results So Far...
 
 Below are a select few videos of importance, minus the one I made in a professional vein shown prior in this write-up, that show the intermediate and final results of the **Surveyor** system at this point. There is clearly still work to be done on the software side, and I have a growing list of hardware and technical considerations to improve the user experience concerning this application.
 
@@ -37,17 +37,25 @@ Below are a select few videos of importance, minus the one I made in a professio
 
 <p align="center"><iframe src="https://drive.google.com/file/d/1i3VFRosg8Wgpp74V4YPQ8L_vGL_gnX_z/preview" width="960" height="540"></iframe></p>
 
+<br>
+
 - This next video is of a clear failure. This video shows the results of **Surveyor** processing a ~4000-frame video (AVI format) taken at 1280x720 resolution at 60 frames/sec. I visually inspected the video, and I thought it was smooth as silk. I could not clearly pick out ANY distortion, tearing, blurring, or anything else that might cause a problem. Sure enough...watch what happens to the dense point cloud throughout the video.
 
 <p align="center"><iframe src="https://drive.google.com/file/d/1vPdYIB3mlwVFP6zwow8iLrNSvJpmTIaW/preview" width="960" height="540"></iframe></p>
+
+<br>
 
 - Here is a quick video showing some of the intermediate results from using DSO. This is also running on the 370 snaps down-sampled to 900x600 from the X-T2.
 
 <p align="center"><iframe src="https://drive.google.com/file/d/1UcqqPfop-trrudnOrNwVeff2xeKAHdZ_/preview" width="960" height="540"></iframe></p>
 
+<br>
+
 - This video is also of the intermediate results from using DSO. This video was taken in the middle of a run using the ~4000-frame video feed at 60 frames/sec. The errors here are far more subdued than what can be seen in the REMODE video, though towards the end you can see duplication and skewing in the sparse point cloud.
 
 <p align="center"><iframe src="https://drive.google.com/file/d/1U-MNpBcBBD8gcgmZU77JqgXbr0TwR1yn/preview" width="960" height="540"></iframe></p>
+
+<br>
 
 In any case, the results show a mix of very promising results mixed with some very odd failures. The video feed, at least from the X-T2 camera (regardless of video quality, it seems), should be avoided at all costs, while the snapshots yield the most promising results.
 
