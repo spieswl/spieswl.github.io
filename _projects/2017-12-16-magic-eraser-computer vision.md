@@ -6,7 +6,7 @@ keywords:           software, python, computer vision, opencv, image processing,
 tags:               [Software, Python, OpenCV, Computer Vision]
 
 folders:
-  images:           "magic-eraser-cv" # This path is project-dependent; don't forget to change it!
+  images:           "magic-eraser-cv"                       # This path is project-dependent; don't forget to change it!
 
 published:          true
 ---

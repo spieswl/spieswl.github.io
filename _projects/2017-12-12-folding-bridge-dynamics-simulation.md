@@ -6,7 +6,7 @@ keywords:           dynamics, software, mathematica, simulation, bridge dynamics
 tags:               [Software, Simulation, Mathematica]
 
 folders:
-  images:           "horn-bridge-sim" # This path is project-dependent; don't forget to change it!
+  images:           "horn-bridge-sim"                       # This path is project-dependent; don't forget to change it!
 
 published:          true
 ---

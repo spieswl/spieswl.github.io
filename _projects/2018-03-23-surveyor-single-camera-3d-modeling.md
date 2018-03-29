@@ -6,7 +6,7 @@ keywords:           ros, computer vision, slam, structure from motion, cameras, 
 tags:               [ROS, 3D Modeling, Computer Vision, Structure from Motion, C++, Python]
 
 folders:
-  images:           "surveyor" # This path is project-dependent; don't forget to change it!
+  images:           "surveyor"                              # This path is project-dependent; don't forget to change it!
 
 published:          true
 ---

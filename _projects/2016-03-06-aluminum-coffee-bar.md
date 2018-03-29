@@ -6,7 +6,7 @@ keywords:           furniture, crafts, carpentry, coffee bar, extrusion, hobby, 
 tags:               [Furniture, Extrusion, Hobbyist]
 
 folders:
-  images:           "coffee-bar" # This path is project-dependent; don't forget to change it!
+  images:           "coffee-bar"                            # This path is project-dependent; don't forget to change it!
 
 published:          true
 ---
