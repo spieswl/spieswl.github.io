@@ -8,7 +8,7 @@ tags:               [ROS, Python, Baxter, Object Manipulation]
 folders:
   images:           "baxter-container"                      # This path is project-dependent; don't forget to change it!
 
-published:          false
+published:          true
 ---
 
 
