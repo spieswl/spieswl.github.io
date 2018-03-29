@@ -8,7 +8,7 @@ tags:               [ROS, Python, Baxter, Object Manipulation]
 folders:
   images:           "baxter-container"                      # This path is project-dependent; don't forget to change it!
 
-published:          false
+published:          true
 ---
 
 
@@ -25,6 +25,8 @@ Baxter natively runs the Robot Operating System, so all of our code was written 
 
 Check out our results! We cleverly surmised that the additional joint range of Baxter's wrists (versus that of a human) could make it possible to remove a lid in one full counter-clockwise motion. Keep an eye out for the small reverse turn you see right before the tightening step; that was a quick tweak we made to see if we can get the threads seated correctly every time Baxter brings the lid down, and it works!
 
-<p align="center"><iframe src="https://drive.google.com/file/d/1EaoCfeFKYYQqXFVEPJns-Yj-1wORPHBg/preview" width="1920" height="1080"></iframe></p>
+<div class="project-video">
+    <iframe src="https://drive.google.com/file/d/1EaoCfeFKYYQqXFVEPJns-Yj-1wORPHBg/preview" allowFullscreen></iframe>
+</div>
 
 On a side note, I have been experimenting with different decision making structures (see [decision_making](http://wiki.ros.org/decision_making) on the ROS Wiki) that will eventually get rolled into the `container_manipulator` package to replace the canned sequence routine contained in `sequencer.py`, but those updates are not yet ready. Come back later for more updates!
