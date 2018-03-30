@@ -29,4 +29,6 @@ Check out our results! We cleverly surmised that the additional joint range of B
     <iframe src="https://drive.google.com/file/d/1EaoCfeFKYYQqXFVEPJns-Yj-1wORPHBg/preview" allowFullscreen></iframe>
 </div>
 
+<br>
+
 On a side note, I have been experimenting with different decision making structures (see [decision_making](http://wiki.ros.org/decision_making) on the ROS Wiki) that will eventually get rolled into the `container_manipulator` package to replace the canned sequence routine contained in `sequencer.py`, but those updates are not yet ready. Come back later for more updates!
