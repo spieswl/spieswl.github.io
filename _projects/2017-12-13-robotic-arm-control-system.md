@@ -6,7 +6,7 @@ keywords:           software, simulation, python, robotics, mobile robots, contr
 tags:               [Software, Simulation, Python, Robotics, Controls]
 
 folders:
-  images:           "mobile-robot-follower" # This path is project-dependent; don't forget to change it!
+  images:           "mobile-robot-follower"                 # This path is project-dependent; don't forget to change it!
 
 published:          true
 ---

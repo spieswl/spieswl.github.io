@@ -6,7 +6,7 @@ keywords:           furniture, crafts, carpentry, coffee bar, extrusion, hobby, 
 tags:               [Furniture, Extrusion, Hobbyist]
 
 folders:
-  images:           "coffee-bar" # This path is project-dependent; don't forget to change it!
+  images:           "coffee-bar"                            # This path is project-dependent; don't forget to change it!
 
 published:          true
 ---
@@ -21,7 +21,7 @@ After seeing the usefulness of extruded profiles first-hand, I thought up a way 
 
 I designed a table which used 25mm profiles, sourced from **[80/20 Inc.](https://8020.net/)**, that were anodized with a black finish at the factory. In my opinion, the black finish provides better decorative value than other profiles, which normally come with a clear finish, leaving the natural silver color of aluminum exposed. The dimensions of the frame itself, 40″W x 34″H x 18″D, allowed for a standard, birch, ‘butcher block’ tabletop to be mounted on the top of the stand after trimming two of the edges down. In lieu of a stain or urethane coating, the butcher block was treated with a beeswax-infused mineral oil to provide food-safe protection. Two shelves, also made from birch, were trimmed and mounted on the inside of the frame, supported by black aluminum gussets. These shelves allow for significant storage space for ceramics and glassware inside the frame. Leveling feet from **[McMaster-Carr](https://www.mcmaster.com/)** are installed in tapped holes on the bottom of the extrusion, which could be later replaced by casters.
 
-<img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/P003.png" style="width:270px; padding:4px 4px 4px 4px; margin:0px 16px 0px 16px; float:left">
+<img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/P003.jpg" style="width:270px; padding:4px 4px 4px 4px; margin:0px 16px 0px 16px; float:left">
 
 The unique structure of aluminum extrusion allows the designer to brace cross-members with gussets, tap the ends to screw other fixtures into place, or bore through the center to secure and suspend materials at a perpendicular angle to the aluminum profile. The downsides to using extrusion, or any other metal framing material, really come from the cost, and the difficulty in which is presented when trying to cut bars to length or bore through the frame. If you have a drill and a saw capable of piercing aluminum, then I highly recommend using extruded aluminum profiles for your next project.
 

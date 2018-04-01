@@ -6,7 +6,7 @@ keywords:           dynamics, software, mathematica, simulation, bridge dynamics
 tags:               [Software, Simulation, Mathematica]
 
 folders:
-  images:           "horn-bridge-sim" # This path is project-dependent; don't forget to change it!
+  images:           "horn-bridge-sim"                       # This path is project-dependent; don't forget to change it!
 
 published:          true
 ---
@@ -18,7 +18,7 @@ At the end of the Fall 2017 term of my graduate studies, I wrote a simulation pr
 The Mathematica project notebook evolved through three different stages:
 * **Initial problem setup & physical characterization**
 * **Finding the correct constraints on the bridge's operation**
-* **Modelling the impact condition and attempting some form of control over the bridge's action**
+* **Modeling the impact condition and attempting some form of control over the bridge's action**
 
 The final form of the project is an animation of the bridge unfolding under the effects of gravity and experiencing an impact on the far side pylon. I implemented some basic controls, mostly so that the framework would exist should I choose to return later and install a control law sufficient to safely deploy the bridge. As of right now, it can only delay (or accelerate) the opening of the bridge under gravity, which is not enough to prevent a hard collision on the far pylon. For the purposes of getting some meaningful data out of the simulation, I made sure to take a reading of the velocity experienced at the end of the final leaf at the moment of impact. At the moment, the simulated bridge hits far too hard to be considered "safe."
 
