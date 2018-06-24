@@ -49,7 +49,7 @@ You will need to set up SSH access, so that simple `git` commands or Windows too
 ```bash
 $ ssh admin@<nas-address>
 $ sudo -i
-
+$
 $ cd /volume1/homes/git-username/
 $ mkdir .ssh
 ```
@@ -65,10 +65,10 @@ $ scp ~/.ssh/id_rsa.pub root@<nas-address>:/volume1/homes/git-username/.ssh
 ```bash
 $ ssh admin@<nas-address>
 $ sudo -i
-
+$
 $ cd /volume1/homes/git-username/.ssh
 $ mv id_rsa.pub authorized_keys
-
+$
 $ cd /volume1/homes/
 $ chown -R git-username:administrators git-username/.ssh
 $ chmod 750 git-username
@@ -83,15 +83,15 @@ Following along with the assumption that the `<git-username>` user will access g
 ```bash
 $ # SSH into the NAS server as git-username
 $ ssh <git-username>@<nas-address>
-
+$
 $ # Navigate to your prospective repository location and initialize a new, shared repository
 $ mkdir /volume1/git
 $ cd /volume1/git
 $ git init --bare --shared <dummy-name.git>
-
+$
 $ # It also may be a good idea to open up the permissions for the git repository, just in case
 $ chmod -R 766 <dummy-name.git>
-
+$
 $ # Finally, update the pack information for the git service running on the NAS
 $ cd <dummy-name.git>
 $ git update-server-info
@@ -99,7 +99,7 @@ $ git update-server-info
 
 #### Cloning a Repository
 
-Try this command in a sandbox folder:
+Try this command in a sandbox folder on your local machine:
 
 ```bash
 $ git clone ssh://<git-username>@<nas-address>/volume1/git/<dummy-name.git>
@@ -107,7 +107,7 @@ $ git clone ssh://<git-username>@<nas-address>/volume1/git/<dummy-name.git>
 
 **Viola!** You can now push to and pull from the repository on your Synology NAS.
 
-#### Helpful References and Extensions
+#### References and Helpful Extensions
 
 [How to login to DSM with root permission via SSH/Telnet](https://www.synology.com/en-us/knowledgebase/DSM/tutorial/General/How_to_login_to_DSM_with_root_permission_via_SSH_Telnet)<br>
 [Configure Synology NAS as Git Server](https://gist.github.com/walkerjeffd/374750c366605cd5123d)<br>
