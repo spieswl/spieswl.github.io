@@ -11,7 +11,7 @@ folders:
 published:          true
 ---
 
-Late last year, I got the idea to start poking around **Synology** forums and support venues to see if someone had figured out how to run a ***Git*** server on Synology NASes. After all, the performance needed to run a shared Git server is easily provided by even the most spartan of Synology devices. I currently own a **13-series NAS running DiskStation Manager (`DSM`) 6.1** which, in addition to holding music, movies, and pictures, also gives the capability to back up content like school work, personal projects, and things not necessarily appropriate to upload to a publicly available system, such as **[GitHub](https://github.com/)**. It turns out, Synology has a great add-on package for DSM and there are some nice how-to guides out there, although generally a few (important!) steps are sometimes missing from the guides-in-question, so I am going to recreate the effort I went through to set up my own Git server on a standard Synology NAS.
+Late last year, I got the idea to start poking around **Synology** forums and support venues to see if someone had figured out how to run a ***Git*** server on Synology NASes. After all, the performance needed to run a shared Git server is easily provided by even the most spartan of Synology devices. I currently own a **13-series NAS running DiskStation Manager (`DSM`) 6.1** which, in addition to holding music, movies, and pictures, also gives the capability to back up content like school work, personal projects, and things not necessarily appropriate to upload to a publicly available system like **[GitHub](https://github.com/)**. It turns out, Synology has a great add-on package for `DSM` and there are decent how-to guides out there, although each guide is typically missing at least one critical step. This guide will recreate the effort I went through to set up my own Git server on a practically-untouched Synology NAS.
 
 Although it is true that private repository facilities exist on service providers like GitHub (which may negate the need for this guide entirely), you may be an individual that wants more explicit control over your repository or you may want to keep specific data from being on a site hosted by another organization. In my case, I use my Git server to keep a plethora of work on two Ubuntu and two Windows 10 operating systems all up-to-date. All it takes is running a mere handful of commands across all my devices - a truly wonderful experience the first time you question whether or not you updated the work on your laptop last night. In the event that you have a Synology device, you want a little more control, and you can handle using the command line and connecting via **SSH**, read on.
 
@@ -50,14 +50,14 @@ You will need to set up SSH access, so that simple `git` commands or Windows too
 $ ssh admin@<nas-address>
 $ sudo -i
 
-$ cd /volume1/homes/git-username/
+$ cd /volume1/homes/<git-username>/
 $ mkdir .ssh
 ```
 
 * On the local machine, copy your public RSA key to the newly-made `.ssh` folder on the NAS:
 
 ```bash
-$ scp ~/.ssh/id_rsa.pub root@<nas-address>:/volume1/homes/git-username/.ssh
+$ scp ~/.ssh/id_rsa.pub root@<nas-address>:/volume1/homes/<git-username>/.ssh
 ```
 
 * Back on the NAS server, grant your public key access as an authorized user to the `<git-username>` profile and set permissions accordingly:
@@ -66,14 +66,14 @@ $ scp ~/.ssh/id_rsa.pub root@<nas-address>:/volume1/homes/git-username/.ssh
 $ ssh admin@<nas-address>
 $ sudo -i
 
-$ cd /volume1/homes/git-username/.ssh
+$ cd /volume1/homes/<git-username>/.ssh
 $ mv id_rsa.pub authorized_keys
 
 $ cd /volume1/homes/
-$ chown -R git-username:administrators git-username/.ssh
-$ chmod 750 git-username
-$ chmod 700 git-username/.ssh
-$ chmod 600 git-username/.ssh/authorized_keys
+$ chown -R <git-username>:administrators <git-username>/.ssh
+$ chmod 750 <git-username>
+$ chmod 700 <git-username>/.ssh
+$ chmod 600 <git-username>/.ssh/authorized_keys
 ```
 
 #### Creating a Dummy Repository
@@ -81,7 +81,7 @@ $ chmod 600 git-username/.ssh/authorized_keys
 Following along with the assumption that the `<git-username>` user will access git repositories either in `/volume1/root/` or just `/volume1/` itself, we need to actually initialize the repository now. I will assume `/volume1/git/<dummy-name.git>` is the target repository; make changes to the target path or repository name as required. *You will have to do this step for every distinct repository you establish on the server.*
 
 ```bash
-$ # SSH into the NAS server as git-username
+$ # SSH into the NAS server as <git-username>
 $ ssh <git-username>@<nas-address>
 
 $ # Navigate to your prospective repository location and initialize a new, shared repository
