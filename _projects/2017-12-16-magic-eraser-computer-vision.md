@@ -38,9 +38,9 @@ frame_firstImage = vid_capture.read()[1]
 
 We made some assumptions at the start of development that greatly simplified our path forward:
 
-1. ***We can identify (and, later, mask) the text by setting threshold values for pixels matching HSV values corresponding with red text.***
-2. ***The text being erased does not move throughout the video, so the original mask is valid for the duration of the video.***
-3. ***Erasing as little of the background texture as possible, while potentially making our texture synthesis more difficult, is preferable to preserve the integrity of the rest of the video.***
+1. _**We can identify (and, later, mask) the text by setting threshold values for pixels matching HSV values corresponding with red text.**_
+2. _**The text being erased does not move throughout the video, so the original mask is valid for the duration of the video.**_
+3. _**Erasing as little of the background texture as possible, while potentially making our texture synthesis more difficult, is preferable to preserve the integrity of the rest of the video.**_
 
 Our solution was split into two components: one component (`magicEraser.py`) handled by myself and one component (`imageTiling.py`) handled by my teammate, Lauren. My component handled the parsing of the video feed, identifying and masking the foreground text, and passing the "masked" image to Lauren's Python script. The following text is one part of the few functions required to identify, mask, and pass on the processed image from any arbitrary frame of the video:
 
@@ -100,9 +100,9 @@ def eraseTextWithMask(frame_BGR, frame_HSV, mask, replacement_texture):
 
 Some challenges we identified along the way:
 
-1. ***There were regions we absolutely needed to prevent our texture synthesizer from pulling from to ensure that we could blend the new texture with the background texture.***
-2. ***The video feed we were given was very noisy. Morphological operations on the image were required to trim out noise and restore key areas for the masking and cursor-search operations.***
-3. ***Our initial design only included functionality to develop one synthesized 'tile' that ends up going everywhere. You can clearly see texture similarities in the final product.***
+1. _**There were regions we absolutely needed to prevent our texture synthesizer from pulling from to ensure that we could blend the new texture with the background texture.**_
+2. _**The video feed we were given was very noisy. Morphological operations on the image were required to trim out noise and restore key areas for the masking and cursor-search operations.**_
+3. _**Our initial design only included functionality to develop one synthesized 'tile' that ends up going everywhere. You can clearly see texture similarities in the final product.**_
 
 The easiest way to show how our solution progressed is to pull up the input, intermediate results, and final output for an example frame of the video. White regions in the frame represent 'erased' text that needs to be filled in, while blue regions represent areas where we prevented the script from pulling samples from.
 

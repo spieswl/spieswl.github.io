@@ -3,7 +3,7 @@ layout:             project
 title:              "Extruded Aluminum Coffee Bar"
 description:        "Using extruded aluminum profiles to make a custom piece of furniture for the home."
 keywords:           furniture, crafts, carpentry, coffee bar, extrusion, hobby, coffee, aluminum, ideas
-tags:               [Furniture, Extrusion, Hobbyist]
+tags:               [Furniture, Extrusion, Hobby]
 
 folders:
   images:           "coffee-bar"                            # This path is project-dependent; don't forget to change it!
