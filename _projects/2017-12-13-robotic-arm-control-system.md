@@ -1,6 +1,8 @@
 ---
 layout:             project
 title:              "Mobile Robotic Arm Controller used with VREP"
+date:               "2017-12-13"
+
 description:        "I wrote a controller to take a specific robotic arm, use its initial conditions, and follow a pre-defined trajectory through space."
 keywords:           software, simulation, python, robotics, mobile robots, controls, controller, trajectory follower, youbot
 tags:               [Software, Simulation, Python, Robotics, Controls]

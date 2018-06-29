@@ -1,6 +1,8 @@
 ---
 layout:             project
 title:              "Simulation of the Dynamics of a Folding Bridge"
+date:               "2017-12-12"
+
 description:        "Coding a simulation of the dynamics of the three-leaf, folding Hörn bridge in Kiel, Germany."
 keywords:           dynamics, software, mathematica, simulation, bridge dynamics, euler-lagrange
 tags:               [Software, Simulation, Mathematica]

@@ -1,6 +1,8 @@
 ---
 layout:             project
 title:              "Surveyor: Single Camera 3D Modeling"
+date:               "2018-03-23"
+
 description:        "Independent computer vision project to build a point cloud modeling system that works exclusively with 2D images."
 keywords:           ros, computer vision, slam, structure from motion, cameras, c++, python
 tags:               [ROS, 3D Modeling, Computer Vision, Structure from Motion, C++, Python]

@@ -1,6 +1,8 @@
 ---
 layout:             project
 title:              "Simple Texture Synthesis and Replacement with OpenCV"
+date:               "2017-12-16"
+
 description:        "This project involved performing contextual texture replacement on pre-recorded video feed with OpenCV."
 keywords:           software, python, computer vision, opencv, image processing, texture synthesis
 tags:               [Software, Python, OpenCV, Computer Vision]
