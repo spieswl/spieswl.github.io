@@ -11,7 +11,7 @@ tags:               [Computer Vision, Parallel Programming, Point Clouds, CUDA, 
 folders:
   images:           "CUDA-2d-depth-fusion"                  # This path is project-dependent; don't forget to change it!
 
-published:          false
+published:          true
 ---
 
 <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/03_transfer_process.png" style="width:800px; padding:4px 4px 4px 4px; display: block">
@@ -26,7 +26,7 @@ The last goal could be specifically outlined as **take an input 2D image, fuse i
 
 While the skeleton code I put together achieves **Goal 3** with a fairly simple kernel (_shown below_), this code contains a little bit of everything: block / thread indexing, padding input data to neatly fit in shared device memory, use of constant (_texture_) memory, and some bitwise operations.
 
-```C++
+```cpp
 __global__ void convertImgToPCD(unsigned char* image, float* depth, float* PCD, size_t img_rows, size_t img_cols)
 {
     int index = blockIdx.x * blockDim.x + threadIdx.x;
@@ -76,7 +76,7 @@ In addition, an easy way to get profiling information for **Goal 2**, especially
 
 If you recall that my kernel code posted above is just a few FP operations to leave room for future expansion, so I could quickly shift the balance back into the GPU's favor by doing more sophisticated operations in the kernel. The neatest feature I picked up on (which enabled measurement of the prior transfers), thanks to [Mark Harris' article on CUDA events](https://devblogs.nvidia.com/how-implement-performance-metrics-cuda-cc/), was using built-in timing capabilities in the CUDA events API. An example of which can be viewed below:
 
-```C++
+```cpp
 #define CUDA_CALL(x) { cudaError_t cuda_error__ = (x); if (cuda_error__) printf("CUDA error: " #x " returned \"%s\"\n", cudaGetErrorString(cuda_error__)); }
 
 ...
@@ -103,7 +103,7 @@ void xferDataFromHostToDevice(void* device_ptr, const void* host_ptr, size_t dat
 
 As for **Goal 1**, I have used successfully used code that _**started**_ from this project, although it has morphed so much as to be nigh unrecognizable except for some utility functions and the data transfer functions executed on the host. The full, original `main` function I started with is shown so you readers can get a sense of what the base program was supposed to be doing.
 
-```C++
+```cpp
 int main(int argc, char **argv)
 {
     // Initial device checks
