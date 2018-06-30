@@ -16,7 +16,7 @@ published:          true
 
 <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/03_transfer_process.png" style="width:800px; padding:4px 4px 4px 4px; display: block">
 
-I put together a small CUDA program towards the end of March 2018 to supplement a class I was taking on parallel computing. At the time, I was neck deep in my **[Surveyor](https://spieswl.github.io/projects/2018/surveyor-single-camera-3d-modeling)** project, which involved a lot of Point Cloud generation and wanted an excuse to develop some GPU code that might end up having a future use. I ended up writing some `C++` / `CUDA` code that achieved a few specific goals:
+I put together a small CUDA program at the end of March 2018 to supplement a class I was taking on parallel computing with [Nikos Hardavellas](http://users.eecs.northwestern.edu/~hardav/). At the time, I was neck deep in my **[Surveyor](https://spieswl.github.io/projects/2018/surveyor-single-camera-3d-modeling)** project, which involved a lot of Point Cloud generation and wanted an excuse to develop some GPU code that might end up having a future use. I ended up writing some `C++` / `CUDA` code that achieved a few specific goals:
 
 1. Create a small base off which I could quickly create move in-depth, parallelized computer vision code in the future.
 2. Experiment with methods to time host-to-device transfers, kernel execution, and device-to-host transfers.
@@ -24,7 +24,7 @@ I put together a small CUDA program towards the end of March 2018 to supplement 
 
 The last goal could be specifically outlined as **take an input 2D image, fuse it with known depth information from other sources, and pack the point vectors into a Point Cloud format file (PCD).**
 
-While the skeleton code I put together achieves **Goal 3** with a fairly simple kernel (_shown below_), this code contains a little bit of everything: block / thread indexing, padding input data to neatly fit in shared device memory, use of constant (_texture_) memory, and some bitwise operations.
+While the skeleton code I put together achieves **Goal 3** with a fairly simple kernel (_shown below_), this code contains some boilerplate features: block / thread indexing, padding input data to neatly fit in shared device memory, use of constant (_texture_) memory, and some bitwise operations that can be easily changed out later.
 
 ```cpp
 __global__ void convertImgToPCD(unsigned char* image, float* depth, float* PCD, size_t img_rows, size_t img_cols)

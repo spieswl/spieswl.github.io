@@ -13,11 +13,9 @@ folders:
 published:          true
 ---
 
-Every now and then, it can be fun to tackle otherwise straightforward or simple problems with the intention of seeing what you can do.
+As part of our introductory Computer Vision course at Northwestern, a [fellow colleague](https://github.com/laurenhut/) and I teamed up to create a "Smart" eraser program using **[Python](https://www.python.org/)** and Python bindings in **[OpenCV](https://opencv.org/)**. Our program works by using some simple image processing techniques on each frame of a sampled video feed. For each frame, we identified red foreground handwriting against a background texture of printed words, erase the foreground handwriting based on the position of an 'eraser' cursor (in this case, a marker held near the top of the frame), and synthesize a new texture for the erased regions that blends in with the background paper.
 
-As part of our introductory Computer Vision course at Northwestern, a [fellow colleague](https://github.com/laurenhut/) and I teamed up to create a "Smart" eraser program using **[Python](https://www.python.org/)** and **[OpenCV](https://opencv.org/)**. Our program works by using some simple image processing techniques on each frame of a sampled video feed. For each frame, we identified red foreground handwriting against a background texture of printed words, erase the foreground handwriting based on the position of an 'eraser' cursor (in this case, a marker held near the top of the frame), and synthesize a new texture for the erased regions that blends in with the background paper.
-
-The "Smart" eraser program we developed operates on an AVI-format video file, using built-in `OpenCV` functionality as seen here:
+The "Smart" eraser program we developed operates on an AVI-format video file, using `OpenCV` video file parsing functionality as seen here:
 
 ```python
 import cv2
@@ -28,12 +26,38 @@ import sys
 
 ...
 
-# Define the working path for the target video file, based on input 'videoFile'
+# Define the working path for the target video file
 vid_path = os.path.dirname(os.path.abspath(__file__)) + "/" + videoFile
 vid_capture = cv2.VideoCapture(vid_path)
 
-# Read first frame from the video feed
+# Read first frame from the video feed and convert to HSV space
 frame_firstImage = vid_capture.read()[1]
+frame_firstHSVImage = cv2.cvtColor(frame_firstImage, cv2.COLOR_BGR2HSV)
+
+# Define frame height and width boundaries
+frame_height = frame_firstImage.shape[0]  # Nominally 240
+frame_width = frame_firstImage.shape[1]   # Nominally 320
+
+# Develop mask (and inverse mask) of red text based on first video frame
+mask_Text = developTextMask(frame_firstHSVImage)
+
+# Pass masked image with occluded areas to imageTiling function
+frame_preTiledImage = tilingMaskSetup(frame_firstImage, mask_Text)
+frame_postTiledImage = imageTiling.process_image(frame_preTiledImage.copy(), frame_height, frame_width, tile_size=22, overlap_width=5)
+
+# Extract the post-tiled image only in the area defined by the text mask
+frame_TileMask = cv2.bitwise_and(frame_postTiledImage, frame_postTiledImage, mask=mask_Text)
+
+# ////////////////////  Main image processing loop  ////////////////////
+while vid_capture.isOpened():
+
+    # Read all successive frames from the video feed
+    vid_frameInBuffer, frame_baseImage = vid_capture.read()
+
+    if vid_frameInBuffer == True:
+        # Etc.
+    else:
+        break
 
 ...
 ```
@@ -110,4 +134,4 @@ The easiest way to show how our solution progressed is to pull up the input, int
 
 <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/results.png" style="width:1000px; padding:4px 4px 4px 4px;display: block">
 
-We ended up with a fairly clean solution; one we are both relatively pleased with. Of course, the utility of a program that can do simplistic texture replacement on one single video source is extraordinarily low, but we learned a good deal about video and image processing, applying `OpenCV` functions, and ended up getting some practice with standard computer vision tasks. The project code is [available on GitHub](https://github.com/spieswl/magic-eraser), as well as the documentation and images supporting our result, but beyond some post-presentation clean-up, we will probably not be changing aspects of this project in the future. If you have comments or questions about this project or our solution, please reach out! I can be reached via the Administrator contact information on the **[About](https://spieswl.github.io/about)** page.
+We ended up with a fairly clean solution, though entirely unsuitable for anything other than this toy problem (which is fine for a final project). Of course, the utility of a program that can do simplistic texture replacement on one single video source is extraordinarily low, but we learned a good deal about video and image processing, applying `OpenCV` functions, and ended up getting some practice with applying computer vision skills. The project code is [available on GitHub](https://github.com/spieswl/magic-eraser), as well as the documentation and images supporting our result, but beyond some post-presentation clean-up, this project is likely frozen for the foreseeable the future. If you have comments or questions about this project or our solution, please reach out! I can be reached via the Administrator contact information on the **[About](https://spieswl.github.io/about)** page.
