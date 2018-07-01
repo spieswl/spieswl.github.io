@@ -1,6 +1,8 @@
 ---
 layout:             project
 title:              "Surveyor: Single Camera 3D Modeling"
+date:               "2018-03-23"
+
 description:        "Independent computer vision project to build a point cloud modeling system that works exclusively with 2D images."
 keywords:           ros, computer vision, slam, structure from motion, cameras, c++, python
 tags:               [ROS, 3D Modeling, Computer Vision, Structure from Motion, C++, Python]
@@ -11,9 +13,9 @@ folders:
 published:          true
 ---
 
-For the past several weeks, I have been working on an independent project that I feel has excellent potential. Nicknamed **Surveyor**, my project blends computer vision and 3D reconstruction algorithms on a base provided by the Robot Operating System (ROS) into a software package that can take 2D images, perform some computation, and return a dense point cloud. If it works correctly, the system could be used to model objects large and small, though my interest lies in being able to map ***spaces*** of arbitrary size with some degree of accuracy. The true novelty of this project is that, unlike *most* systems involving visually driven 3D reconstruction, no separate depth sensing is performed at any step in the process.
+For the past several weeks, I have been working on an independent project that I feel has excellent potential. Nicknamed **Surveyor**, my project blends computer vision and 3D reconstruction algorithms on a base provided by the Robot Operating System (ROS) into a software package that can take 2D images, perform some computation, and return a dense point cloud. If it works correctly, the system could be used to model objects large and small, though my interest lies in being able to map _**spaces**_ of arbitrary size with some degree of accuracy. The true novelty of this project is that, unlike *most* systems involving visually driven 3D reconstruction, no separate depth sensing is performed at any step in the process.
 
-Before I get much further, check out the **Surveyor** repository [over at GitHub](https://github.com/spieswl/surveyor). The software still has improvement to be done, but even now the project has promise. More implementation and usage details are there, while this write-up is focused on the background history, thought processes, and lessons-learned from the project. I will also make mention of the two underlying algorithms (and accompanying code) that are being used: ***Direct Sparse Odometry (DSO)*** and  ***REgularized MOnocular Depth Estimation (REMODE)***, both somewhat recent developments in the computer vision domain. 
+Before I get much further, check out the **Surveyor** repository [over at GitHub](https://github.com/spieswl/surveyor). The software still has improvement to be done, but even now the project has promise. More implementation and usage details are there, while this write-up is focused on the background history, thought processes, and lessons-learned from the project. I will also make mention of the two underlying algorithms (and accompanying code) that are being used: _**Direct Sparse Odometry (DSO)**_ and _**REgularized MOnocular Depth Estimation (REMODE)**_, both somewhat recent developments in the computer vision domain. 
 
 ### Surveyor
 
@@ -37,7 +39,7 @@ No depth sensing seemed like a good way to differentiate this approach. [Google 
 
 Below are a select few videos of importance, minus the one I made in a professional vein shown prior in this write-up, that show the intermediate and final results of the **Surveyor** system up to this point. There is still work to be done on the software side, and I have a growing list of hardware and technical considerations to improve the user experience concerning this application that I intend to publish as an update to this post.
 
-- This video is pretty close to **Surveyor** working exactly as desired. This video shows the results of around 370 still images *(I refer to them as snaps to disambiguate from video frames)*, with 900x600 resolution. These images were down-sampled from 6000x4000 resolution captures on the Fujifilm X-T2. Note that the point cloud model starts out in pretty good shape, but right around 0:33 on the timer, significant noise gets introduced into the result. 
+- This video is pretty close to **Surveyor** working exactly as desired. This video shows the results of around 370 still images _(I refer to them as snaps to disambiguate from video-derived frames)_, with 900x600 resolution. These images were down-sampled from 6000x4000 resolution captures on the Fujifilm X-T2. Note that the point cloud model starts out in pretty good shape, but right around 0:33 on the timer, significant noise gets introduced into the result. 
 
 <div class="project-video">
     <iframe src="https://drive.google.com/file/d/1i3VFRosg8Wgpp74V4YPQ8L_vGL_gnX_z/preview" allowFullScreen></iframe>

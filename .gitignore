@@ -1,41 +1,4 @@
-### Template Inclusions to Ignore Below ###
-
-# Compiled Sources #
-####################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-
-# Logs & Databases #
-####################
-*.log
-*.sql
-*.sqlite
-
-# OS Generated Files #
-######################
-.DS_Store
-.DS_Store?
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-
-# Python Specific Files #
-#########################
-*.pyc
-*.pyo
-
-# Automatic File Backups #
-##########################
-*.bak
-*.swp
-*~
-
-#############################################
-
 ### User-Custom Git Ignore Files Below ###
+.sass-cache/
+_site/
 
-*.idea*

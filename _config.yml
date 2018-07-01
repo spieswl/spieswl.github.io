@@ -19,16 +19,16 @@ author:
     email:              spieswl@gmail.com
     github_username:    spieswl
 
-# Collections info
+# Projects / Posts info
 collections:
     projects:
         output:         true
         permalink:      /projects/:year/:title
+permalink:              /insights/:year/:title
 
 # Build settings
 source:                 ./
 destination:            ./_site
-permalink:              /insights/:year/:title
 markdown:               kramdown
 highlighter:            rouge
 timezone:               America/Chicago

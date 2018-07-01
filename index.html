@@ -1,12 +1,15 @@
 ---
-layout: main
-title: Home
+layout:             main
+title:              Home
 ---
 
 <div class="projects">
     <div class="project-list">
 
-        {% for project in site.projects reversed limit:6 %}
+        {% assign index_grid_limit = 8 %}
+        {% assign listing = site.projects | sort:"date" | reverse %}
+
+        {% for project in listing limit:index_grid_limit %}
             <div class="project-thumb" style="background-image: url({{ site.url }}/assets/images/projects/{{ project.folders.images }}/thumb.png)">
                 <a href="{{ project.url }}">
                     <div class="project-thumb-overlay">
@@ -42,7 +45,7 @@ title: Home
 
 <div class="posts">
 
-    {% for post in site.posts limit:4 %}
+    {% for post in site.posts limit:6 %}
         {% unless post.next %}
             <h4 class="year">{{ post.date | date: '%Y' }}</h4>
         {% else %}

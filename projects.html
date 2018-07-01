@@ -1,12 +1,14 @@
 ---
-layout: page
-title: Projects
+layout:             page
+title:              Projects
 ---
 
 <div class="projects">
     <div class="project-list">
 
-        {% for project in site.projects reversed %}
+        {% assign listing = site.projects | sort:"date" | reverse %}
+
+        {% for project in listing %}
             <div class="project-thumb" style="background-image: url({{ site.url }}/assets/images/projects/{{ project.folders.images }}/thumb.png)">
                 <a href="{{ project.url }}">
                     <div class="project-thumb-overlay">

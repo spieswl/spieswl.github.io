@@ -1,7 +1,7 @@
 ---
-layout: page
-title: 	About Myself
-image1: assets/images/portrait_01.jpg
+layout:             page
+title:              About Myself
+image1:             assets/images/portrait_01.jpg
 ---
 
 <img id="portrait" src="{{ site.baseurl }}/{{ page.image1 }}" width="268" height="360" align="right" style="margin:0px 12px 0px 12px">
