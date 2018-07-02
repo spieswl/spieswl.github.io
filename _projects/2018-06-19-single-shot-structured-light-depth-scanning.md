@@ -4,8 +4,8 @@ title:              "UNDER DEVELOPMENT: High-Resolution 3D Reconstruction from a
 date:               "2018-06-19"
 
 description:        "UNDER DEVELOPMENT: This project, directed by Northwestern University's Computational Photography Lab, combines structured light projection, a stereo camera setup, and real-time image processing to perform extremely precise 3D reconstruction of near-field objects."
-keywords:           structured light, 3d scanning, depth sensing, computer vision, stereo vision, rendering, point clouds, C++
-tags:               [Computer Vision, Stereo Vision, 3D Modeling, Rendering, Point Clouds, C++, Under Development]
+keywords:           structured light, 3d scanning, depth sensing, computer vision, stereo vision, rendering, point clouds, C++, opencv
+tags:               [C++, OpenCV, Computer Vision, Stereo Vision, 3D Modeling, Rendering, Point Clouds, Under Development]
 
 folders:
   images:           "highres-singleshot-3d-recon"           # This path is project-dependent; don't forget to change it!

@@ -5,7 +5,7 @@ date:               "2017-12-13"
 
 description:        "I wrote a controller to take a specific robotic arm, use its initial conditions, and follow a pre-defined trajectory through space."
 keywords:           software, simulation, python, robotics, mobile robots, controls, controller, trajectory follower, youbot
-tags:               [Software, Simulation, Python, Robotics, Controls]
+tags:               [Python, Kinematics, Simulation, Robotics, Controls]
 
 folders:
   images:           "mobile-robot-follower"                 # This path is project-dependent; don't forget to change it!

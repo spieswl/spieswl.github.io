@@ -5,7 +5,7 @@ date:               "2016-03-06"
 
 description:        "Using extruded aluminum profiles to make a custom piece of furniture for the home."
 keywords:           furniture, crafts, carpentry, coffee bar, extrusion, hobby, coffee, aluminum, ideas
-tags:               [Furniture, Extrusion, Hobby]
+tags:               [Crafting, Extrusion, Hobbyist]
 
 folders:
   images:           "coffee-bar"                            # This path is project-dependent; don't forget to change it!

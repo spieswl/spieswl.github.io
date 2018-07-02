@@ -5,7 +5,7 @@ date:               "2017-12-17"
 
 description:        "Rethink Robotics' Baxter robot finds all kinds of use in research environments. We use Baxter to find the lid of a bottle (capped with an AR tag) and initiate a sequence to open the bottle."
 keywords:           ros, python, baxter, object manipulation, rethink robotics, AR markers
-tags:               [ROS, Python, Baxter, Object Manipulation]
+tags:               [ROS, Python, Robotics, Baxter]
 
 folders:
   images:           "baxter-container"                      # This path is project-dependent; don't forget to change it!
