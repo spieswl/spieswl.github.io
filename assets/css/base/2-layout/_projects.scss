@@ -97,9 +97,11 @@
     width: 100%;
 
     padding: 4px 4px 4px 4px;
-
-    display: block;
-    text-align: center;
+    
+    img {
+        display: block;
+        text-align: center;
+    }
 
     a { border: 0; }
     
