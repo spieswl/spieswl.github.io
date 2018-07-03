@@ -30,7 +30,7 @@ The controller was entirely written in Python, and uses the _**[numpy](http://ww
 
 Results for the error feedback components are also included for both the "P-" and "PI"-controller configurations.
 
-<div class="project-image">
+<div class="project-image" style="display: inline">
     <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/P_ctrl_results.png" style="width:540px">
     <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/PI_ctrl_results.png" style="width:540px">
 </div>

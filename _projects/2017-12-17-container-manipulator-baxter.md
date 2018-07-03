@@ -19,7 +19,7 @@ Our project team, composed of myself and four others hailing from the _MS Roboti
 
 Baxter natively runs the Robot Operating System, so all of our code was written in Python, designed to run on ROS, and makes use of other "ROS-wrapped" libraries. In particular, AR tag detection was facilitated by the **[ar_track_alvar](http://wiki.ros.org/ar_track_alvar)** package. Otherwise, all code was written by our team over the course of a two-week period.
 
-<div class="project-image">
+<div class="project-image" style="display: inline">
     <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/opening_lid.gif" style="width:308px; padding:8px 8px 8px 8px;">
     <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/move_bottle.gif" style="width:370px; padding:8px 8px 12px 8px;">
 </div>
