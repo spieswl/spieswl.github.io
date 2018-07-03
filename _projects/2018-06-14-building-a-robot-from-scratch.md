@@ -19,7 +19,7 @@ The culmination of a series of Mechatronics classes I took for the MSR program w
 
 With the stage set, the rest of this project write-up is going to walk you through all of the discipline areas and talk about my experiences designing each aspect of the kart. First, a look at the finished product:
 
-<div style="width: 100%; text-align: center;">
+<div class="project-image">
     <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/thumb.png">
         <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/thumb.png" style="width:400px; padding:0px 0px 0px 0px;">
     </a>
@@ -28,7 +28,7 @@ With the stage set, the rest of this project write-up is going to walk you throu
     </a>
 </div>
 
-<div style="width: 100%; text-align: center">
+<div class="project-image">
     <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/02_finished_side.png">
         <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/02_finished_side.png" style="width:533px; padding:0px 0px 0px 0px;">
     </a>
