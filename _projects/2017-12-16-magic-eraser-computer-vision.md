@@ -132,6 +132,8 @@ Some challenges we identified along the way:
 
 The easiest way to show how our solution progressed is to pull up the input, intermediate results, and final output for an example frame of the video. White regions in the frame represent 'erased' text that needs to be filled in, while blue regions represent areas where we prevented the script from pulling samples from.
 
-<img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/results.png" style="width:1000px; padding:4px 4px 4px 4px;display: block">
+<div class="project-image">
+    <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/results.png" style="width:1000px">
+</div>
 
 We ended up with a fairly clean solution, though entirely unsuitable for anything other than this toy problem (which is fine for a final project). Of course, the utility of a program that can do simplistic texture replacement on one single video source is extraordinarily low, but we learned a good deal about video and image processing, applying `OpenCV` functions, and ended up getting some practice with applying computer vision skills. The project code is [available on GitHub](https://github.com/spieswl/magic-eraser), as well as the documentation and images supporting our result, but beyond some post-presentation clean-up, this project is likely frozen for the foreseeable the future. If you have comments or questions about this project or our solution, please reach out! I can be reached via the Administrator contact information on the **[About](https://spieswl.github.io/about)** page.

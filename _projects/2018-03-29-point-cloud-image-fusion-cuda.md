@@ -14,7 +14,9 @@ folders:
 published:          true
 ---
 
-<img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/03_transfer_process.png" style="width:800px; padding:4px 4px 4px 4px; display: block">
+<div class="project-image">
+    <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/03_transfer_process.png" style="width:800px">
+</div>
 
 I put together a small CUDA program at the end of March 2018 to supplement a class I was taking on parallel computing with [Nikos Hardavellas](http://users.eecs.northwestern.edu/~hardav/). At the time, I was neck deep in my **[Surveyor](https://spieswl.github.io/projects/2018/surveyor-single-camera-3d-modeling)** project, which involved a lot of Point Cloud generation and wanted an excuse to develop some GPU code that might end up having a future use. I ended up writing some `C++` / `CUDA` code that achieved a few specific goals:
 
@@ -68,11 +70,15 @@ __global__ void convertImgToPCD(unsigned char* image, float* depth, float* PCD, 
 
 The results are mostly for show, as I ran this code on the images and depthmaps from Handa, Newcombe, Angeli, and Davison **[1]**, which are fully synthetic. See here:
 
-<img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/01_image_results.png" style="width:1500px; padding:4px 4px 4px 4px; display: block">
+<div class="project-image">
+    <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/01_image_results.png" style="width:1500px">
+</div>
 
 In addition, an easy way to get profiling information for **Goal 2**, especially about host->device and device->host transfer times, was really critical in looking at whether or not it made sense (from an execution timing perspective) to involve the GPU at all. Turns out, based on results from my machine (`Core i7-7700k and a GeForce GTX 980 Ti, Compute 5.2`), that execution time for smaller inputs tends to be dominated by GPU transfer overhead.
 
-<img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/02_transfer_results.png" style="width:900px; padding:4px 4px 4px 4px; display: block">
+<div class="project-image">
+    <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/02_transfer_results.png" style="width:900px">
+</div>
 
 If you recall that my kernel code posted above is just a few FP operations to leave room for future expansion, so I could quickly shift the balance back into the GPU's favor by doing more sophisticated operations in the kernel. The neatest feature I picked up on (which enabled measurement of the prior transfers), thanks to [Mark Harris' article on CUDA events](https://devblogs.nvidia.com/how-implement-performance-metrics-cuda-cc/), was using built-in timing capabilities in the CUDA events API. An example of which can be viewed below:
 

@@ -214,9 +214,7 @@ th {
 
 tbody tr:nth-child(odd) {
     td,
-    th {
-        background-color: #f9f9f9;
-    }
+    th { background-color: #f9f9f9; }
 }
 
 /*! Elemental Styles */
@@ -341,9 +339,7 @@ tbody tr:nth-child(odd) {
         font-weight: bold;
         font-family: 'Fira Sans Regular', monospace;
 
-        &:hover {
-            background-color: transparent;
-        }
+        &:hover { background-color: transparent; }
     }
 
     small {
