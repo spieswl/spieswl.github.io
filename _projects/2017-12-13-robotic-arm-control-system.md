@@ -1,9 +1,9 @@
 ---
 layout:             project
-title:              "Mobile Robotic Arm Controller used with VREP"
+title:              "Driving a Kuka YouBot in VREP with Python"
 date:               "2017-12-13"
 
-description:        "I wrote a controller to take a specific robotic arm, use its initial conditions, and follow a pre-defined trajectory through space."
+description:        "I wrote a controller in Python to take a specific robotic arm, use its initial conditions, and follow a pre-defined trajectory through space."
 keywords:           software, simulation, python, robotics, mobile robots, controls, controller, trajectory follower, youbot
 tags:               [Python, Kinematics, Simulation, Robotics, Controls]
 
@@ -30,7 +30,7 @@ The controller was entirely written in Python, and uses the _**[numpy](http://ww
 
 Results for the error feedback components are also included for both the "P-" and "PI"-controller configurations.
 
-<div class="project-image" style="display: inline">
+<div class="project-image">
     <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/P_ctrl_results.png" style="width:540px">
     <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/PI_ctrl_results.png" style="width:540px">
 </div>
