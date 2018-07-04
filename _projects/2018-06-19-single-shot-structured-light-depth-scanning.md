@@ -10,7 +10,7 @@ tags:               [C++, OpenCV, Computer Vision, Stereo Vision, 3D Modeling, R
 folders:
   images:           "highres-singleshot-3d-recon"           # This path is project-dependent; don't forget to change it!
 
-published:          false
+published:          true
 ---
 
 Over the summer months, I am participating in a research and development project that represents a particular fusion of stereo computer vision and 3D model reconstruction methods. As the lead software engineer, I will have the honor of being embedded in Northwestern University's **[Computational Photography Lab](http://compphotolab.northwestern.edu/)** for the duration of the project. While part of the lab, I will be working with Dr. Oliver Cossairt and Dr. Florian Willomitzer on software implementing a novel application of structured light projection and subsequent measurement based on the captured image data. I will be going light on the details of the project in this write-up, but the **Related Work** section will direct you to an article written by Dr. Willomitzer on the subject, and I can talk about the project goals in abstract and highlight skills I will be honing over the course of the next few months.

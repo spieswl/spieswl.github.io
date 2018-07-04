@@ -1,6 +1,6 @@
 ---
 layout:             project
-title:              "Surveyor: Single Camera 3D Modeling"
+title:              "Surveyor: Single Camera 3D Modeling in ROS"
 date:               "2018-03-23"
 
 description:        "Independent computer vision project to build a point cloud modeling system that works exclusively with 2D images."
