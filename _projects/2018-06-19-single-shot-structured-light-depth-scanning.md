@@ -23,7 +23,7 @@ For the purpose of understanding the technical context, watch the linked video o
     <iframe width="560" height="315" src="https://www.youtube.com/embed/hlMLigk1UfU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
-This [multi-line triangulation principle](http://crd.northwestern.edu/visualizations/high-resolution-single-shot-3d-imaging/) allows for the efficient capture of dense 3D data about observed objects with the use of only two cameras. Even with minimal hardware and "single-shot" operation, local measurement uncertainty is better than 200 micrometers. The system works without needing spatial encoding or other indexing methods that might cause the loss of spatial resolution. All of this results in an efficient, capable model capture system that compares favorably with the capabilities of _every other active 3D scanning system on the market_.
+This multi-line triangulation principle allows for the efficient capture of dense 3D data about observed objects with the use of only two cameras. Even with minimal hardware and "single-shot" operation, local measurement uncertainty is better than 200 micrometers. The system works without needing spatial encoding or other indexing methods that might cause the loss of spatial resolution. All of this results in an efficient, capable model capture system that compares favorably with the capabilities of _every other active 3D scanning system on the market_.
 
 I am working with Dr. Willomitzer and the **Computational Photography Lab** to develop the real-time software controls and device interfaces for the 3D sensing system described in the the multi-line triangulation article.
 
