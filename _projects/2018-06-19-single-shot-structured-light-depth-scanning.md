@@ -62,4 +62,4 @@ As the leading (and only) software engineer on the project, my responsibilities 
 While this seems like a tall order (and it is), the experience gained from taking part in such a project will be 
 _**invaluable**_. Finally, pending successful development of the software, my experience working with the **Computational Photography Lab** and the deployment of such a technology should result in excellent networking opportunities as I look beyond my career at Northwestern University.
 
-Since this project is in the _**Under Development**_ category, check back later this summer to see the results of our collaboration! Don't forget to send me a message (check the **[About](https://spieswl.github.io/about)** page for contact information) if you have any comments or questions about the project!
+Since this project is in the _**Under Development**_ category, check back later this summer to see the results of our collaboration! Don't forget to send me a message (check the **[About]({{site.url}}/about)** page for contact information) if you have any comments or questions about the project!

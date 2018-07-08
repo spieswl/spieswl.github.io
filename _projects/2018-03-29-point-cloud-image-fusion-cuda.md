@@ -18,7 +18,7 @@ published:          true
     <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/03_transfer_process.png" style="width:800px">
 </div>
 
-I put together a small CUDA program at the end of March 2018 to supplement a class I was taking on parallel computing with [Nikos Hardavellas](http://users.eecs.northwestern.edu/~hardav/). At the time, I was neck deep in my **[Surveyor](https://spieswl.github.io/projects/2018/surveyor-single-camera-3d-modeling)** project, which involved a lot of Point Cloud generation and wanted an excuse to develop some GPU code that might end up having a future use. I ended up writing some `C++` / `CUDA` code that achieved a few specific goals:
+I put together a small CUDA program at the end of March 2018 to supplement a class I was taking on parallel computing with [Nikos Hardavellas](http://users.eecs.northwestern.edu/~hardav/). At the time, I was neck deep in my **[Surveyor]({{site.url}}/projects/2018/surveyor-single-camera-3d-modeling)** project, which involved a lot of Point Cloud generation and wanted an excuse to develop some GPU code that might end up having a future use. I ended up writing some `C++` / `CUDA` code that achieved a few specific goals:
 
 1. Create a small base off which I could quickly create move in-depth, parallelized computer vision code in the future.
 2. Experiment with methods to time host-to-device transfers, kernel execution, and device-to-host transfers.
@@ -237,7 +237,7 @@ int main(int argc, char **argv)
 }
 ```
 
-That's all for this mini-project write-up. As usual, check the **[About](https://spieswl.github.io/about)** page and reach out to me if you have any questions or comments!
+That's all for this mini-project write-up. As usual, check the **[About]({{site.url}}/about)** page and reach out to me if you have any questions or comments!
 
 
 #### References
