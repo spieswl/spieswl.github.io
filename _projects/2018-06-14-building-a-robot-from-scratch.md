@@ -110,16 +110,17 @@ The software design was split into two distinct parts:
     </a>
 </div>
 
-The high-level structure of the code is as follows: The microcontroller code initializes and sets up an internal state machine. It then immediately attempts to open a socket to the Android phone via USB OTG, thanks to `Harmony`, a set of Microchip-provided libraries. The microcontroller uses data from the phone application to determine how to drive the motors via a **PI control** loop. The system continually runs through the `[app<->PI control]` sequence until powered down.
+The high-level structure of the code is as follows: The microcontroller code, written in `C`, initializes and sets up an internal state machine. It then immediately attempts to open a socket to the Android phone via USB OTG. The microcontroller uses data from the phone application, written in `Java`, to determine how to drive the motors via a **PI control** loop. The system continually runs through the **[app<->PI control]** sequence until powered down.
 
 The microcontroller uses a single PI controller, at a modest (about 50 Hertz) frequency to output two individual PWM signals. The PWM signals are clamped to fall in a range that corresponds to 0-100% motor power. Depending on where the microcontroller "perceives" the line to be, it will raise or lower the left or right motor power appropriately, while attempting to maintain some amount of forward velocity. The PWM frequency itself is set to about 20 kiloHertz.
 
-The microcontroller "perceives" the line position by being told where the line is in the camera's field of view. The phone application does this by passing an integer value that represents the line position in pixel coordinates on the rear-facing camera. The Android application intercepts the camera stream and does color segmentation to identify a specific, colored line on the track-in this case, I am picking out the red portion of the line. Since I know how wide the camera image is, I can set the center of the image to correspond to equal power applied in the forward direction for both motors.
+The microcontroller "perceives" the line position by being told where the line is in the camera's field of view. Thanks to `Harmony`, a set of Microchip-provided libraries, the microcontroller can receive data via **USB OTG** while the phone application is running. The Android application intercepts the camera stream and does color segmentation to identify a specific, colored line on the track-in this case, I am picking out the red portion of the line. The application passes along the line position by passing an integer value that represents the line position in pixel coordinates on the rear-facing image plane.  Since I know how wide the camera image is, I can set center-image values to correspond to equal power applied in the forward direction for both motors. Everything outside of the center then triggers a change in applied motor power.
 
 There are plenty of other clever things done in the code, such as exposing controls for color saturation and intensity thresholds that can be tuned on the phone's display as the ambient lighting changes. If you wish to check out the code, load it up in the respective IDE and check it out!
 
 You can see an example of the course at right. **NOTE** that there is a ramp cross-over, which isn't shown on this image file, that connects the vertical straightaway and closes the loop on the track.
 
+<br>
 <br>
 
 
