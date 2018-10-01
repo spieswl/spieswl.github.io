@@ -5,7 +5,7 @@ date:               "2017-12-17"
 
 description:        "Rethink Robotics' Baxter robot finds all kinds of use in research environments. We use Baxter to find the lid of a bottle (capped with an AR tag) and initiate a sequence to open the bottle."
 keywords:           ros, python, baxter, object manipulation, rethink robotics, AR markers
-tags:               [ROS, Python, Baxter, Object Manipulation]
+tags:               [ROS, Python, Robotics, Baxter]
 
 folders:
   images:           "baxter-container"                      # This path is project-dependent; don't forget to change it!
@@ -19,9 +19,9 @@ Our project team, composed of myself and four others hailing from the _MS Roboti
 
 Baxter natively runs the Robot Operating System, so all of our code was written in Python, designed to run on ROS, and makes use of other "ROS-wrapped" libraries. In particular, AR tag detection was facilitated by the **[ar_track_alvar](http://wiki.ros.org/ar_track_alvar)** package. Otherwise, all code was written by our team over the course of a two-week period.
 
-<div style="width: 100%; text-align: center">
-    <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/opening_lid.gif" style="width:308px; padding:8px 24px 8px 24px;">
-    <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/move_bottle.gif" style="width:370px; padding:8px 24px 8px 24px;">
+<div class="project-image">
+    <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/opening_lid.gif" style="width:308px; padding:8px 8px 8px 8px;">
+    <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/move_bottle.gif" style="width:370px; padding:8px 8px 12px 8px;">
 </div>
 
 Some of our results can be found immediately prior to and after this section. The video does a particularly good job of demonstrating Baxter's capabilities as a laundry assistant. We cleverly surmised that the additional joint range of Baxter's wrists (versus that of a human) could make it possible to remove the lid in one full counter-clockwise motion. Keep an eye out for the small reverse turn you see right before the tightening step; that was a tweak we made to see if we can get the threads seated correctly every time Baxter brings the lid down, and it works...just like how a person might backthread a bottle!

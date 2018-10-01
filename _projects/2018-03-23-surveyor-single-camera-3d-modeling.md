@@ -1,11 +1,11 @@
 ---
 layout:             project
-title:              "Surveyor: Single Camera 3D Modeling"
+title:              "Surveyor: Single Camera 3D Modeling in ROS"
 date:               "2018-03-23"
 
 description:        "Independent computer vision project to build a point cloud modeling system that works exclusively with 2D images."
-keywords:           ros, computer vision, slam, structure from motion, cameras, c++, python
-tags:               [ROS, 3D Modeling, Computer Vision, Structure from Motion, C++, Python]
+keywords:           ros, computer vision, slam, structure from motion, cameras, c++, python, opencv
+tags:               [ROS, C++, Python, OpenCV, 3D Modeling, Computer Vision, Structure from Motion]
 
 folders:
   images:           "surveyor"                              # This path is project-dependent; don't forget to change it!
@@ -47,7 +47,7 @@ Below are a select few videos of importance, minus the one I made in a professio
 
 <br>
 
-- This next video is of a clear failure. This video shows the results of **Surveyor** processing a ~4000-frame video (AVI format) taken at 1280x720 resolution at 60 frames/sec. I visually inspected the video, and I thought it was smooth as silk. I could not clearly pick out ANY distortion, tearing, blurring, or anything else that might cause a problem. Sure enough...watch what happens to the dense point cloud throughout the video.
+- This next video is of a clear failure. This video shows the results of **Surveyor** processing a roughly 4000 frame video (AVI format) taken at 1280x720 resolution at 60 frames/sec. I visually inspected the video, and I thought it was smooth as silk. I could not clearly pick out ANY distortion, tearing, blurring, or anything else that might cause a problem. Sure enough...watch what happens to the dense point cloud throughout the video.
 
 <div class="project-video">
     <iframe src="https://drive.google.com/file/d/1vPdYIB3mlwVFP6zwow8iLrNSvJpmTIaW/preview" allowFullScreen></iframe>
@@ -63,7 +63,7 @@ Below are a select few videos of importance, minus the one I made in a professio
 
 <br>
 
-- This video is also of the intermediate results from using DSO. This video was taken in the middle of a run using the ~4000-frame video feed at 60 frames/sec. The errors here are far more subdued than what can be seen in the REMODE video, though towards the end you can see duplication and skewing in the sparse point cloud.
+- This video is also of the intermediate results from using DSO. This video was taken in the middle of a run using the roughly 4000 frame video feed at 60 frames/sec. The errors here are far more subdued than what can be seen in the REMODE video, though towards the end you can see duplication and skewing in the sparse point cloud.
 
 <div class="project-video">
     <iframe src="https://drive.google.com/file/d/1U-MNpBcBBD8gcgmZU77JqgXbr0TwR1yn/preview" allowFullScreen></iframe>
