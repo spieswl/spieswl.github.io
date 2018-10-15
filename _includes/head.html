@@ -68,8 +68,8 @@
     <meta property="og:site_name" content="{% if page.author.name %}{{ page.author.name }}{% else %}{{ site.author.name }}{% endif %}">
     <meta property="og:locale" content="{{ site.og_locale }}">
 
+    <link rel="icon" type="image/png" href="{{ site.url }}/assets/images/favicon.png">
     <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl | prepend: site.url }}">
 
     <script src="{{ "/assets/js/modernizr.custom.js" | prepend: site.baseurl | prepend: site.url }}"></script>

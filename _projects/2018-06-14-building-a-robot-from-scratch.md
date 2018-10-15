@@ -8,7 +8,7 @@ keywords:           embedded systems, C, android, mechanical engineering, electr
 tags:               [C, Android, Robotics, Embedded Systems, Mechanical, Electrical, 3D Printing, Laser Cutting, OnShape]
 
 folders:
-  images:           "cotton-kandy-kart"                          # This path is project-dependent; don't forget to change it!
+  images:           "cotton-kandy-kart"                     # This path is project-dependent; don't forget to change it!
 
 published:          true
 ---
