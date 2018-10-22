@@ -7,7 +7,7 @@ image1:             assets/images/portrait_01.jpg
 
 <img id="portrait" src="{{ site.baseurl }}/{{ page.image1 }}" width="268" height="360" align="right" style="margin:0px 12px 0px 12px">
 
-William Spies is an aspiring Roboticist and Research Scientist currently serving in the Computational Photography Lab at Northwestern University. Under the guidance of Dr. Oliver Cossairt and Dr. Florian Willomitzer, he is focusing on two practical applications of computer vision for scientific data collection. One project is the development of a computer vision framework for metrology applications, while the other is a 3D reconstruction system using machine vision cameras and programmed in C++.
+William Spies is an aspiring Roboticist and Research Scientist currently serving in the Computational Photography Lab at Northwestern University. Since joining the lab, under the guidance of Dr. Oliver Cossairt and Dr. Florian Willomitzer, he has been focusing on two practical applications of computer vision for scientific data collection. One project is the development of a computer vision framework for metrology applications, while the other is a 3D reconstruction system using machine vision cameras and programmed in C++.
 
 In September of 2018, he graduated from Northwestern University (GO WILDCATS!) with his **Masters of Science in Robotics** from the accelerated **[MSR](http://www.mccormick.northwestern.edu/robotics/)** program. While studying, he specialized in computer vision applications, 3d reconstruction and point cloud management, embedded systems programming, and parallel programming methods (whether through vectorization or bulk compute via GPUs).
 
