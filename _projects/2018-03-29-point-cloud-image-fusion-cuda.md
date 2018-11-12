@@ -236,8 +236,7 @@ int main(int argc, char **argv)
 }
 ```
 
-That's all for this mini-project write-up. As usual, check the **[About]({{site.url}}/about)** page and reach out to me if you have any questions or comments!
-
+That's all for this mini-project write-up. As usual, check the **[About]({{site.url}}/about)** page and reach out to the Administrator email if you have any questions or comments!
 
 #### References
 
