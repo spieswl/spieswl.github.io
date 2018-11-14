@@ -8,7 +8,7 @@ tags:               [WebRTC, JavaScript, Mobile Development, Computer Vision, Re
 folders:
   images:           "webrtc-realities"                      # This path is post-dependent; don't forget to change it!
 
-published:          false
+published:          true
 ---
 
 In [the project entry describing my most recent work with **WebRTC**]({{site.url}}/projects/2018/2018-11-14-webrtc-and-computational-photography.md), I covered a number of _MediaCapture_ features I am using to implement an adaptable image capture system for my colleagues. The project write-up focuses on motivations, implementation for specific applications, potential extensions of the work...the type of information that demonstrates the potential of a technology. This post, on the other hand, exists so that I may speak, at length, about my frustrations with using WebRTC to create the tool in the first place. I am venting more than I would normally do in such a post, but I have spent a lot of time studying these APIs, and the development surrounding them, and the way devices respond to them...and it has been immensely frustrating at points.
