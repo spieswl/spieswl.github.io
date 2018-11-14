@@ -10,7 +10,7 @@ tags:               [WebRTC, JavaScript, Python, Computer Vision, Deflectometry,
 folders:
   images:           "webrtc-perception"                     # This path is project-dependent; don't forget to change it!
 
-published:          false
+published:          true
 ---
 
 During my time spent in Northwestern University's **[Computational Photography Lab](http://compphotolab.northwestern.edu/)**, I divided my attention between the 3D Scanner project [described here]({{site.url}}/projects/2018/single-shot-structured-light-depth-scanning) and another project centered around **[WebRTC](https://webrtc.org/)**. WebRTC (_RTC stands for Real-Time Communications_) is a suite of APIs that enables the capture and transfer of video and audio content entirely through a web browser. Several applications and products already leverage WebRTC for video conferencing, gaming, media sharing, and other social applications, so it has benefited from steady growth and support since its introduction at the 2013 Google I/O developers conference. A select few have also used WebRTC to facilitate IoT applications, serve as the framework for hobbyist projects, and have integrated it into cutting-edge computer science and robotics research.
