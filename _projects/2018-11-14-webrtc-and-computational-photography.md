@@ -33,7 +33,7 @@ One more thing: if you are intending to re-implement portions of this project or
 
 The project "metapackage" is named **webrtc-perception** and is hosted over at GitHub at [https://github.com/spieswl/webrtc-perception](https://github.com/spieswl/webrtc-perception). The application-specific code is contained within the "content" folder, while the metapackage serves as a catch-all issue tracker and documentation holder that we can collectively address.
 
-Speaking more specifically than above, **webrtc-perception** uses WebRTC to establish a connection between the server and the client device in a seamless manner. `getUserMedia()` and other _MediaStream_ components simplify connecting to a client device, such as an integrated camrea. The client device, thanks to `MediaStream` features, also allows the server to decide which photography settings to use for that particular camera (such as **_exposure time_**, **_ISO_**, **_white balance_**, **_focus distance_**, rear **_torch_** status, etc.) for a particular application. The client signals to the server when it is ready to begin data capture, and the server responds with a signal to start "measuring" with the device. The server handles gathering data from the client and performing application-specific computation on the gathered data. My server architecture uses Python and `aiortc` to connect with a client via WebRTC without needing to use a web browser. The Python code also converts the results of the computation into a format which can be transmitted to another, separate website designed to display (and make available, if necessary) the results. My system attempts to do this as close to real-time as possible, so that the user in control of the measurement client can evaluate the measurement process in something akin to a feedback loop.
+Speaking more specifically than above, **webrtc-perception** uses WebRTC to establish a connection between the server and the client device in a seamless manner. `getUserMedia()` and other _MediaStream_ components simplify connecting to a client device, such as an integrated camrea. The client device, thanks to `MediaStream` features, also allows the server to decide which photography settings to use for that particular camera (such as _**exposure time**_, _**ISO**_, _**white balance**_, _**focus distance_**, rear _**torch**_ status, etc.) for a particular application. The client signals to the server when it is ready to begin data capture, and the server responds with a signal to start "measuring" with the device. The server handles gathering data from the client and performing application-specific computation on the gathered data. My server architecture uses Python and `aiortc` to connect with a client via WebRTC without needing to use a web browser. The Python code also converts the results of the computation into a format which can be transmitted to another, separate website designed to display (and make available, if necessary) the results. My system attempts to do this as close to real-time as possible, so that the user in control of the measurement client can evaluate the measurement process in something akin to a feedback loop.
 
 At present, two sub-projects currently make their home in the metapackage: **`rtc-shapeshifter`** and **`rtc-deflectometry`**. Each sub-project is tied to active research in the **Computational Photography Lab**. The next couple sections outline the aspirations of each sub-project and how my colleagues are using **webrtc-perception** to achieve those aims.
 
@@ -43,7 +43,7 @@ At present, two sub-projects currently make their home in the metapackage: **`rt
 
 <div class="project-image">
     <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/sfs_slide_1.png">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/sfs_slide_1.png" style="width:600x; padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/sfs_slide_1.png" style="width:600px; padding:0px 0px 0px 0px;">
     </a>
     <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/sfs_slide_2.png">
         <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/sfs_slide_2.png" style="width:600px; padding:0px 0px 0px 0px;">
@@ -60,7 +60,7 @@ In short, Kai is using the **webrtc-perception** framework to make it easier for
 
 <div class="project-image">
     <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/pmd_slide_1.png">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/pmd_slide_1.png" style="width:800x; padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/pmd_slide_1.png" style="width:800px; padding:0px 0px 0px 0px;">
     </a>
 </div>
 
@@ -68,11 +68,10 @@ Florian's application uses **webrtc-perception** to access the front-facing came
 
 <!-- TODO : Results screencap goes here -->
 
-More details on the device calibration, our results for both `rtc-shapeshifter` and `rtc-deflectometry`, and ideas for extensions to our work can be found in the paper on **[webrtc-deflectometry]()**, which is coming soon.
+More details on the device calibration, our results for both `rtc-shapeshifter` and `rtc-deflectometry`, and ideas for extensions to our work can be found in the paper on **[webrtc-perception]()**, which is coming soon.
 
 <hr>
 
 On a closing note, `JavaScript` is not my programming language of choice and I do not usually take on projects with a heavy web development focus. Instead, the opportunity to provide not only just a single computer vision tool, but a complete computer vision toolbox for my fellow researchers was appealing enough that I was eager to contribute to the development of **`webrtc-perception`**. The fact that this project has immediate application to ongoing research and WebRTC itself provided a straightforward path to creating an end-to-end scientific tool was also a notable bonus. All things considered, I do not see myself moving away from working in `C++` or `Python` anytime soon.
 
 Do not miss checking the **[About]({{site.url}}/about)** page for my most recent contact information if you want to talk about this work, or any other content!
-
