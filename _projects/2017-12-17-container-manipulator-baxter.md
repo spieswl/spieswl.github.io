@@ -30,4 +30,6 @@ Some of our results can be found immediately prior to and after this section. Th
     <iframe src="https://drive.google.com/file/d/1EaoCfeFKYYQqXFVEPJns-Yj-1wORPHBg/preview" allowFullscreen></iframe>
 </div>
 
-The source code for this project can be found [here, on my GitHub](https://github.com/spieswl/container_manipulator); note that this fork is dedicated to continuing experimentation and further post-project clean-up. Otherwise, forked commit is exactly as we left it at the end of the demonstration.
+<hr>
+
+The source code for this project can be found [here, on my GitHub](https://github.com/spieswl/container_manipulator); please note that this fork is dedicated to continuing experimentation and further post-project clean-up. Otherwise, the source commit is exactly as our group left it at the end of the demonstration. If you wish to speak about this project, or any other content on this site, feel free to reach out to the Administrator contact info listed on the **[About]({{site.url}}/about)** page.

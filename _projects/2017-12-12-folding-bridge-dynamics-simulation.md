@@ -31,7 +31,9 @@ The final form of the project is an animation of the bridge unfolding under the 
     <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/results.png" style="width:940px">
 </div>
 
-This project, though I am admittedly not an avid Mathematica user, was an incredible amount of fun to work on. For those who would be interested in expanding on the foundations of the dynamic simulation already in place, or those curious to see an example of how I structured the evaluation and animation components, the source code for the project is available on **[GitHub](https://github.com/spieswl/horn-bridge-dynamics_sim)**! Finally, send me a message (check the **[About]({{site.url}}/about)** page for the administrator's contact information) if you have any comments or questions about the project!
+This project, though I am admittedly not an avid Mathematica user, was an incredible amount of fun to work on. For those who would be interested in expanding on the foundations of the dynamic simulation already in place, or those curious to see an example of how I structured the evaluation and animation components, the source code for the project is available on **[GitHub](https://github.com/spieswl/horn-bridge-dynamics_sim)**!
+
+Finally, send me a message (check the **[About]({{site.url}}/about)** page for the most recent contact information) if you have any comments or questions about the project, or any other questions about the content on this site.
 
 **BONUS:** Here's a GIF of the animation in action.
 

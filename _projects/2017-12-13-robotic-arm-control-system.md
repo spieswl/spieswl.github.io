@@ -35,4 +35,7 @@ Results for the error feedback components are also included for both the "P-" an
     <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/PI_ctrl_results.png" style="width:540px">
 </div>
 
-This code is not available at this moment for academic purposes; as far as I know, this project has been used multiple years in a row in Kevin's class. To shield future students from potential academic impropriety (*sorry, students!*), my code will not be made available on GitHub until Kevin comes up with a new final project! However, I can speak at length with those who have interests about the technical aspects of the code written for this project. As usual, check the **[About]({{site.url}}/about)** page for the relevant contact information if you want to chat!
+This code is not available at this moment for academic purposes; as far as I know, this project has been used multiple years in a row in Kevin's class. To shield future students from potential academic impropriety (*sorry, students!*), my code will not be made available on GitHub until Kevin comes up with a new final project! However, I can speak at length with those who have interests about the technical aspects of the code written for this project.
+
+As usual, check the **[About]({{site.url}}/about)** page for the most recent contact information if you want to talk about this project, or any other content on this site.
+

@@ -3,8 +3,7 @@ layout:             project
 title:              "Fusing Images and Depth Maps with CUDA"
 date:               "2018-03-29"
 
-description:        "A small parallel programming project, acting as a base for future CUDA development,
-which serves to fuse 2D images and depth maps into a PCD (Point Cloud) file."
+description:        "A small parallel programming project, acting as a base for future CUDA development, which serves to fuse 2D images and depth maps into a PCD (Point Cloud) file."
 keywords:           CUDA, computer vision, parallel computing, point clouds, c++
 tags:               [C++, CUDA, Computer Vision, Parallel Programming, Point Clouds]
 
@@ -237,8 +236,7 @@ int main(int argc, char **argv)
 }
 ```
 
-That's all for this mini-project write-up. As usual, check the **[About]({{site.url}}/about)** page and reach out to me if you have any questions or comments!
-
+That's all for this mini-project write-up. As usual, check the **[About]({{site.url}}/about)** page and reach out to the Administrator email if you have any questions or comments!
 
 #### References
 
