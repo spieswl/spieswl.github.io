@@ -17,16 +17,16 @@ He graduated from the University of Cincinnati (GO BEARCATS!) with his **Bachelo
 
 He originally hails from Cincinnati, OH, and he misses quite a lot about his hometown...although he still prefers _Graeter's_ above _Aglamesis Brothers_. 🍦 When not in the lab or working on side projects, you can find him searching out new coffee shops and food spots, playing board games, looking for interesting architecture, swing dancing, and visiting the lake shore with his incredible wife.
 
-If you have professional inquiries, check the [Resume](/resume) section of the website and follow up at **resume@spieswl.com**.
+If you have professional inquiries, check the [Resume](/resume) section of the website and follow up at **resume [at] spieswl.com**.
 
-If you have other questions about the site, send an email to **admin@spieswl.com**.
+If you have other questions about the site, send an email to **admin [at] spieswl.com**.
 
 <hr/>
 
 ## About the Website ##
 
-This site, and any opinions or insights expressed on the part of the author or other attributed parties, are wholly the responsibility of William Spies. Any software, directions, schematics, and other creative content is to be used at your own risk; the author bears no responsibility if you happen to graze, taze, or lase yourself while following one of his project ideas!
+This site, and any opinions or insights expressed on the part of the author, are the responsibility of William Spies. Any software, directions, schematics, and other creative content is to be used at your own risk; the author bears no responsibility if you happen to graze, taze, or lase yourself while recreating one of his project ideas!
 
-The website infrastructure is covered under [MIT License](https://opensource.org/licenses/MIT) and is freely available at [GitHub](https://github.com/spieswl/spieswl.github.io). 
+Original pictures, code, documents, or other non-website-related content is covered by a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-Original pictures, code, and other content is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+The website infrastructure (everything other than original content covered above) is covered under [MIT License](https://opensource.org/licenses/MIT) and is freely available at [GitHub](https://github.com/spieswl/spieswl.github.io).
