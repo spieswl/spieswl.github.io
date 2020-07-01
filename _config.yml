@@ -16,7 +16,7 @@ post_assets:            assets/images/posts
 # Site author info
 author:
     name:               "William Spies"
-    email:              spieswl@gmail.com
+    email:              admin@spieswl.com
     github_username:    spieswl
 
 # Projects / Posts info
@@ -31,7 +31,7 @@ source:                 ./
 destination:            ./_site
 markdown:               kramdown
 highlighter:            rouge
-timezone:               America/Chicago
+timezone:               America/Denver
 exclude:                ["README.md", "LICENSE.md"]
 
 # Site configurations

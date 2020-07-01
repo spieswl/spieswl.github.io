@@ -55,11 +55,11 @@
 
     background-color: rgba(0,0,0,0.9);
     opacity: 0;
-    -o-transition: opacity .2s ease-in-out;
-    -ms-transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
-    transition: opacity .2s ease-in-out;
+    -o-transition: opacity 100ms ease-in-out;
+    -ms-transition: opacity 100ms ease-in-out;
+    -moz-transition: opacity 100ms ease-in-out;
+    -webkit-transition: opacity 100ms ease-in-out;
+    transition: opacity 100ms ease-in-out;
 
     strong {
         padding: 20px;
@@ -100,6 +100,6 @@
     display: block;
 
     a { border: 0; }
-    
+
     a:hover { background-color: transparent; }
 }
