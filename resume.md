@@ -10,7 +10,7 @@ html_resume:        "assets/docs/Resume_spieswl_20200220.html"
 html_image:         "assets/images/html_icon.png"
 ---
 
-If you have professional inquiries, grab a copy of one of these resume formats and remember to follow up at **resume@spieswl.com**.
+If you have professional inquiries, grab a copy of one of these resume formats and reach out at **resume[at]spieswl.com**.
 
 ##### PDF Format 
 

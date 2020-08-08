@@ -1,14 +1,14 @@
 ---
 layout:             project
 title:              "Building a Robotic Kart from Scratch"
-date:               "2018-06-14"
+date:               "2018-06-14"                            # Used for project sorting by date
 
 description:        "Building a robot from nothing involves a lot of work across a variety of disciplines; we go through the full process of building a line-following robot from scratch."
 keywords:           embedded systems, C, android, mechanical engineering, electrical engineering, schematic entry, fabrication, advanced manufacturing, laser cutting, 3D printing, onshape
 tags:               [C, Android, Robotics, Embedded Systems, Mechanical, Electrical, 3D Printing, Laser Cutting, OnShape]
 
-folders:
-  images:           "cotton-kandy-kart"                     # This path is project-dependent; don't forget to change it!
+specifics:
+    images:         "cotton-kandy-kart"                     # This path is project-dependent; don't forget to change it!
 
 published:          true
 ---
@@ -20,20 +20,20 @@ The ultimate aim of a series of Mechatronics courses I took for the MSR program 
 With the stage set, the rest of this project write-up is going to walk you through all of the discipline areas and talk about my experiences designing each aspect of the kart. First, **[look over at GitHub for the roll-up repository](https://github.com/spieswl/cotton-kandy-kart)** holding mechanical designs (_pardon the PDFs_), electrical schematics, and the necessary software. Note that _**[MPLAB IDE](http://www.microchip.com/mplab/mplab-x-ide)**_ and _**[Android Studio](https://developer.android.com/studio/)**_ were used to perform the programming, and _**[Autodesk EAGLE](https://www.autodesk.com/products/eagle/overview)**_ was used for the electrical schematics and PCB layout. 
 
 <div class="project-image">
-    <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/thumb.png">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/thumb.png" style="width:400px; padding:0px 0px 0px 0px;">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/thumb.png">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/thumb.png" style="width:400px; padding:0px 0px 0px 0px;">
     </a>
-    <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/01_finished_front.png">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/01_finished_front.png" style="width:533px; padding:0px 0px 0px 0px;">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_finished_front.png">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_finished_front.png" style="width:533px; padding:0px 0px 0px 0px;">
     </a>
 </div>
 
 <div class="project-image">
-    <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/02_finished_side.png">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/02_finished_side.png" style="width:533px; padding:0px 0px 0px 0px;">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_finished_side.png">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_finished_side.png" style="width:533px; padding:0px 0px 0px 0px;">
     </a>
-    <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/03_finished_top.png">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/03_finished_top.png" style="width:400px; padding:0px 0px 0px 0px;">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_finished_top.png">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_finished_top.png" style="width:400px; padding:0px 0px 0px 0px;">
     </a>
 </div>
 
@@ -47,10 +47,10 @@ The mechanical design of the vehicle was where I was able to get the most creati
 
 <div class="project-image">
     <a href="https://github.com/spieswl/cotton-kandy-kart/blob/master/mech/CKK-WH01-01_DD_v6.pdf">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/m1_wheel_design.png" style="width:500px; padding:0px 6px 0px 6px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/m1_wheel_design.png" style="width:500px; padding:0px 6px 0px 6px;">
     </a>
     <a href="https://github.com/spieswl/cotton-kandy-kart/blob/master/mech/CKK-CHAS01-01_DD_v2.pdf">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/m2_chassis_design.png" style="width:500px; padding:0px 6px 0px 6px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/m2_chassis_design.png" style="width:500px; padding:0px 6px 0px 6px;">
     </a>
 </div>
 
@@ -69,14 +69,14 @@ The battery and motors are clamped to the chassis with custom-fit, 3D-printed pi
 The electrical design was oriented around several design constraints, most of which involved the need for peripheral motor control and a USB interface to the phone. As mentioned earlier, core processing was handled with a 32-bit **PIC32MX250F128B** microcontroller. The components were sourced from either **DigiKey** or **Sparkfun**, although there were a ton of components laying around the lab that our class was also permitted to use. The left two images show the final, populated, soldered control board, right before I mounted it to the chassis.
 
 <div class="project-image">
-    <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/05_elecPCB_top.png">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/05_elecPCB_top.png" style="width:350px; padding:0px 0px 0px 0px;">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/05_elecPCB_top.png">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/05_elecPCB_top.png" style="width:350px; padding:0px 0px 0px 0px;">
     </a>
-    <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/06_elecPCB_bottom.png">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/06_elecPCB_bottom.png" style="width:350px; padding:0px 0px 0px 0px;">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/06_elecPCB_bottom.png">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/06_elecPCB_bottom.png" style="width:350px; padding:0px 0px 0px 0px;">
     </a>
-    <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/07_motorPCB_top.png">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/07_motorPCB_top.png" style="width:350px; padding:0px 0px 0px 0px;">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/07_motorPCB_top.png">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/07_motorPCB_top.png" style="width:350px; padding:0px 0px 0px 0px;">
     </a>
 </div>
 
@@ -86,10 +86,10 @@ Spacing for the 8-pin header interface provided the only position constraint for
 
 <div class="project-image">
     <a href="https://github.com/spieswl/cotton-kandy-kart/blob/master/elec/controller_schematic.pdf">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/e1_controller_schematic.png" style="height:450px; padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/e1_controller_schematic.png" style="height:450px; padding:0px 0px 0px 0px;">
     </a>
     <a href="https://github.com/spieswl/cotton-kandy-kart/blob/master/elec/controller_layout.pdf">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/e2_controller_layout.png" style="width:450px; padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/e2_controller_layout.png" style="width:450px; padding:0px 0px 0px 0px;">
     </a>
 </div>
 
@@ -105,8 +105,8 @@ The software design was split into two distinct parts:
 2. **The line-finding Android application.**
 
 <div class="project-image">
-    <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/08_techcuptrack.png">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/08_techcuptrack.png" style="width:400px; margin:24px; float:right">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/08_techcuptrack.png">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/08_techcuptrack.png" style="width:400px; margin:24px; float:right">
     </a>
 </div>
 

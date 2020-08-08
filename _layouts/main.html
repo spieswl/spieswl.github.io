@@ -7,7 +7,6 @@ published:          true
     {% include head.html %}
 
     <body>
-
         <div class="wrap">
             <div class="masthead">
                 <div class="container">
@@ -15,19 +14,14 @@ published:          true
                         <a href="{{ site.url }}" title="{{ site.title }}" class="title">{{ site.title | upcase }}</a>
                         <small>{{ site.tagline }}</small>
                     </h2>
-
                     {% include nav.html %}
-
                 </div>
             </div>
-
             <div id="content" class="container content">
                 {{ content }}
             </div>
         </div>
-
         {% include foot.html %}
-
     </body>
 
 </html>

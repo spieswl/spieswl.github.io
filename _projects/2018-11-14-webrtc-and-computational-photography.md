@@ -1,14 +1,14 @@
 ---
 layout:             project
 title:              "webrtc-perception : Using WebRTC for Computational Photography"
-date:               "2018-11-14"
+date:               "2018-11-14"                            # Used for project sorting by date
 
 description:        "Devices capable of providing images for computational applications are abundant, but, outside of mobile app 'walled gardens', few frameworks are freely available for academic, artistic, or scientific use. This project contains examples of using WebRTC for surface reconstruction, surface measurement, and near-real-time modeling with consumer-accessible tablets or cell phones."
 keywords:           webrtc, javascript, computer vision, web development, computational photography, image processing, photometric stereo, phase measured deflectometry
 tags:               [WebRTC, JavaScript, Python, Computer Vision, Deflectometry, Photometric Stereo]
 
-folders:
-  images:           "webrtc-perception"                     # This path is project-dependent; don't forget to change it!
+specifics:
+    images:         "webrtc-perception"                     # This path is project-dependent; don't forget to change it!
 
 published:          true
 ---
@@ -42,11 +42,11 @@ At present, two sub-projects currently make their home in the metapackage: **`rt
 **`rtc-shapeshifter`** is a _WebRTC_-based tool that expands upon a concept originally presented by one of my colleagues [Chia-Kai Yeh](https://github.com/kaiyeh0913) called "[Shape by Shifting](https://ieeexplore.ieee.org/abstract/document/8109194)". His work originally used DSLR cameras to get early results and switched to using an iPhone (with some special hardware) in its later configuration, which made it a prime candidate for a measurement technique that could be extended by _webrtc-perception_. While this entry will not go into deep technical detail on his work, I have included some slides from a presentation we held for a technical interest group here at Northwestern University on October 19th:
 
 <div class="project-image">
-    <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/sfs_slide_1.png">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/sfs_slide_1.png" style="width:600px; padding:0px 0px 0px 0px;">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/sfs_slide_1.png">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/sfs_slide_1.png" style="width:600px; padding:0px 0px 0px 0px;">
     </a>
-    <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/sfs_slide_2.png">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/sfs_slide_2.png" style="width:600px; padding:0px 0px 0px 0px;">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/sfs_slide_2.png">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/sfs_slide_2.png" style="width:600px; padding:0px 0px 0px 0px;">
     </a>
 </div>
 
@@ -59,8 +59,8 @@ In short, Kai is using the _webrtc-perception_ framework to make it easier for h
 **`rtc-deflectometry`** is a WebRTC-based tool that implements _**Phase Measuring Deflectometry (PMD)**_ in order to optically measure partially specular surfaces. In particular, Dr. Florian Willomitzer, the leading CPL post-doc, was eager to measure some special glass tiles that we have in the lab. These glass tiles have a particular surface shape that bears some historical relevance, so implementing PMD techniques on consumer devices using WebRTC to try and recover the surface shape is the goal of this sub-project. PMD, for those who are unfamiliar, can be described as using light projected in a periodic pattern along with an observing camera element to perceive how a surface deforms the observation of the pattern.
 
 <div class="project-image">
-    <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/pmd_slide_1.png">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/pmd_slide_1.png" style="width:800px; padding:0px 0px 0px 0px;">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/pmd_slide_1.png">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/pmd_slide_1.png" style="width:800px; padding:0px 0px 0px 0px;">
     </a>
 </div>
 

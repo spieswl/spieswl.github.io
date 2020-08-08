@@ -1,12 +1,11 @@
 ---
 layout:             page
-title:              Insights
+title:              Blog
 ---
 
 {% include tag_parser.html %}
 
 <div class="posts">
-
     {% for post in site.posts %}
         {% unless post.next %}
             <h3 class="year">{{ post.date | date: '%Y' }}</h2>
@@ -28,7 +27,5 @@ title:              Insights
                 {% endfor %}
             </div>
         </div>
-
     {% endfor %}
-
 </div>

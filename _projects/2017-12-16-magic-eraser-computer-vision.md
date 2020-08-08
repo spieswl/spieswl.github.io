@@ -1,14 +1,14 @@
 ---
 layout:             project
 title:              "Simple Texture Synthesis and Replacement with OpenCV"
-date:               "2017-12-16"
+date:               "2017-12-16"                            # Used for project sorting by date
 
 description:        "This project involved performing contextual texture replacement on pre-recorded video feed with OpenCV."
 keywords:           python, computer vision, opencv, image processing, texture synthesis
 tags:               [Python, OpenCV, Computer Vision]
 
-folders:
-  images:           "magic-eraser-cv"                       # This path is project-dependent; don't forget to change it!
+specifics:
+    images:         "magic-eraser-cv"                       # This path is project-dependent; don't forget to change it!
 
 published:          true
 ---
@@ -133,7 +133,7 @@ Some challenges we identified along the way:
 The easiest way to show how our solution progressed is to pull up the input, intermediate results, and final output for an example frame of the video. White regions in the frame represent 'erased' text that needs to be filled in, while blue regions represent areas where we prevented the script from pulling samples from.
 
 <div class="project-image">
-    <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/results.png" style="width:1000px">
+    <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/results.png" style="width:1000px">
 </div>
 
 We ended up with a fairly clean solution, though entirely unsuitable for anything other than this toy problem (which is fine for a final project). Of course, the utility of a program that can do simplistic texture replacement on one single video source is extraordinarily low, but we learned a good deal about video and image processing, applying `OpenCV` functions, and ended up getting some practice with applying computer vision skills. The project code is [available on GitHub](https://github.com/spieswl/magic-eraser), as well as the documentation and images supporting our result, but beyond some post-presentation clean-up, this project is likely frozen for the foreseeable the future.

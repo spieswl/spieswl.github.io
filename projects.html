@@ -5,11 +5,10 @@ title:              Projects
 
 <div class="projects">
     <div class="project-list">
-
         {% assign listing = site.projects | sort:"date" | reverse %}
 
         {% for project in listing %}
-            <div class="project-thumb" style="background-image: url({{ site.url }}/assets/images/projects/{{ project.folders.images }}/thumb.png)">
+            <div class="project-thumb" style="background-image: url({{ site.url }}/{{ site.assets.projects }}/{{ project.specifics.images }}/thumb.png)">
                 <a href="{{ project.url }}">
                     <div class="project-thumb-overlay">
                         <strong>{{ project.title }}</strong>
@@ -17,6 +16,5 @@ title:              Projects
                 </a>
             </div>
         {% endfor %}
-
     </div>
 </div>

@@ -1,14 +1,14 @@
 ---
 layout:             project
 title:              "Orthrus: High-Resolution 3D Reconstruction from a Single Shot"
-date:               "2018-06-19"
+date:               "2018-06-19"                            # Used for project sorting by date
 
 description:        "This project, directed by Northwestern University's Computational Photography Lab, combines structured light projection, a stereo camera setup, and real-time image processing to perform extremely precise 3D reconstruction of near-field objects."
 keywords:           structured light, 3d scanning, depth sensing, computer vision, stereo vision, rendering, point clouds, C++, opencv
 tags:               [C++, OpenCV, Computer Vision, Stereo Vision, 3D Modeling, Rendering, Point Clouds, Under Development]
 
-folders:
-  images:           "orthrus"                               # This path is project-dependent; don't forget to change it!
+specifics:
+    images:         "orthrus"                               # This path is project-dependent; don't forget to change it!
 
 published:          true
 ---
@@ -41,7 +41,7 @@ The idea is to make a system that can capture, generate, and render a high-resol
 Although this may not represent every library or package used, at a minimum I will be using features from the latest C++ standard (`C++17`), [OpenCV](https://opencv.org/), [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page), [PCL](http://www.pointclouds.org/), an as-yet-unidentified rendering pipeline, and an as-yet-unidentified GUI framework to accomplish these tasks.
 
 <div class="project-image">
-    <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/01_technologies.png" style="width:800px">
+    <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_technologies.png" style="width:800px">
 </div>
 
 We have also talked at length about potential feature expansions, which could add mesh generation, Python bindings, or other quality-of-life improvements.

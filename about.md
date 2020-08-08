@@ -1,11 +1,11 @@
 ---
 layout:             page
-title:              About William
+title:              About William Spies
 
-image1:             assets/images/portrait_01.jpg
+portrait:           assets/images/portrait_01.jpg
 ---
 
-<img id="portrait" src="{{ site.baseurl }}/{{ page.image1 }}" width="268" height="360" align="right" style="margin:0px 12px 0px 12px">
+<img id="portrait" src="{{ site.baseurl }}/{{ page.portrait }}" width="268" height="360" align="right" style="margin:0px 12px 0px 12px">
 
 William Spies is an aspiring Roboticist and Research Scientist currently serving in the Computational Photography Lab at Northwestern University. Since joining the lab, under the guidance of Dr. Oliver Cossairt and Dr. Florian Willomitzer, he has been focusing on two practical applications of computer vision for scientific data collection. One project is the development of a computer vision framework for metrology applications, while the other is a 3D reconstruction system using machine vision cameras and programmed in C++.
 
@@ -17,15 +17,15 @@ He graduated from the University of Cincinnati (GO BEARCATS!) with his **Bachelo
 
 He originally hails from Cincinnati, OH, and he misses quite a lot about his hometown...although he still prefers _Graeter's_ above _Aglamesis Brothers_. 🍦 When not in the lab or working on side projects, you can find him searching out new coffee shops and food spots, playing board games, looking for interesting architecture, swing dancing, and visiting the lake shore with his incredible wife.
 
-If you have professional inquiries, check the [Resume](/resume) section of the website and follow up at **resume [at] spieswl.com**.
+If you have professional inquiries, check the [Resume](/resume) section of the website for PDF and/or HTML versions of my resume.
 
-If you have other questions about the site, send an email to **admin [at] spieswl.com**.
+If you have other questions about the site, please send an email to **admin[at]spieswl.com**.
 
 <hr/>
 
 ## About the Website ##
 
-This site, and any opinions or insights expressed on the part of the author, are the responsibility of William Spies. Any software, directions, schematics, and other creative content is to be used at your own risk; the author bears no responsibility if you happen to graze, taze, or lase yourself while recreating one of his project ideas!
+This site, and any opinions or insights expressed on my part, are the responsibility of me, William Spies. Any software, directions, schematics, and other creative content is to be used at your own risk; I bear no responsibility if you happen to graze, taze, or lase yourself while recreating one of my projects!
 
 Original pictures, code, documents, or other non-website-related content is covered by a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 

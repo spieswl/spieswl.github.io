@@ -1,12 +1,13 @@
 ---
 layout:             post
 title:              "Running a Git Server on your Synology NAS"
+
 description:        "Discrete NAS systems are useful for data storage, but are increasingly used for hosting local services, such as a git server. I describe how I set up my Synology NAS to host locally-available git repositories."
 keywords:           git, networking, synology, git server, NAS
 tags:               [git, Synology, NAS Servers]
 
-folders:
-  images:           "synology-git-server"                   # This path is post-dependent; don't forget to change it!
+specifics:
+    images:         "synology-git-server"                   # This path is post-dependent; don't forget to change it!
 
 published:          true
 ---
@@ -23,7 +24,7 @@ Let's get the Git Server package installed.
 
 1. Log into your Synology as the `admin`, go to the **Package Center**, and install the *Git Server* package.
 
-<img src="{{ site.url }}/{{ site.post_assets }}/{{ page.folders.images }}/01_git_server_install.png" style="width:640px; padding:4px 4px 4px 4px;display: block">
+<img src="{{ site.url }}/{{ site.assets.posts }}/{{ page.specifics.images }}/01_git_server_install.png" style="width:640px; padding:4px 4px 4px 4px;display: block">
 
 You will need to set up SSH access, so that simple `git` commands or Windows tools (*TortoiseGit* using *PuTTy* to connect, for example) don't require credentials every time you need to interact with your repositories.
 
@@ -38,7 +39,7 @@ You will need to set up SSH access, so that simple `git` commands or Windows too
 * 5) Add this new user to the *Administrators* group. Depending on your repository location, you may need to add *Read/Write* permissions for the `root` part of the NAS filesystem inside `/volume1`.
 * 6) Go to the **Main Menu > Git Server** and click the *Allow Access* check box for `<git-username>`.
 
-<img src="{{ site.url }}/{{ site.post_assets }}/{{ page.folders.images }}/02_added_access.png" style="width:590px; padding:4px 4px 4px 4px;display: block">
+<img src="{{ site.url }}/{{ site.assets.posts }}/{{ page.specifics.images }}/02_added_access.png" style="width:590px; padding:4px 4px 4px 4px;display: block">
 
 **NOTE:** From here on out, I will be using the command line (and connecting via SSH instead of the Synology browser-based front end). In order to follow along, you will need the IP address for your Synology NAS on the network. I will refer to that IP as `<nas-address>` where necessary. Just replace `<nas-address>` with your server's IP address when following these instructions. If you are using a Windows machine, you may need a terminal emulator to continue, such as **[PuTTy](https://www.putty.org/)**.
 
