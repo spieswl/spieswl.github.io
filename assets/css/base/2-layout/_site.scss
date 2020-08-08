@@ -23,7 +23,8 @@ body {
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    font-family: 'Fira Sans', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -60,7 +61,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 
     .year i.fa {
         margin-top: -5px;
@@ -69,7 +70,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
 }
 
 h4,
@@ -106,9 +107,10 @@ hr {
 
 abbr {
     color: #555;
+    text-transform: uppercase;
+
     font-size: 85%;
     font-weight: 700;
-    text-transform: uppercase;
 
     &[title] {
         cursor: help;
@@ -118,6 +120,7 @@ abbr {
 
 code {
     color: #f14e32;
+
     font-family: "Fira Mono", monospace;
     font-size: 0.8rem;
 }
@@ -134,6 +137,7 @@ pre {
     display: block;
     background-color: #f9f9f9;
     overflow: auto;
+
     font-family: "Fira Mono", monospace;
     font-size: 0.7rem;
     line-height: 1.4;
@@ -145,6 +149,7 @@ pre {
         display: block;
         color: inherit;
         background-color: transparent;
+
         font-size: 0.7rem;
     }
 
@@ -218,7 +223,6 @@ tbody tr:nth-child(odd) {
 }
 
 /*! Elemental Styles */
-
 .back {
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -238,6 +242,7 @@ tbody tr:nth-child(odd) {
     margin-bottom: 8px;
 
     color: #888;
+
     font-size: 80%;
 }
 
@@ -307,6 +312,7 @@ tbody tr:nth-child(odd) {
 
     color: #888;
     text-align: justify;
+
     font-size: 80%;
 }
 
@@ -336,8 +342,8 @@ tbody tr:nth-child(odd) {
 
     a {
         color: #505050;
+        font-family: 'Montserrat';
         font-weight: bold;
-        font-family: 'Fira Mono';
 
         &:hover { background-color: transparent; }
     }
