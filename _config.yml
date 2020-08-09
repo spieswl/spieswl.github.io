@@ -1,9 +1,8 @@
 # Basic site info
 title:                  "William Spies"
-tagline:                "Technical and Personal Blog"
-description:            "Technical and Personal Blog of William Spies"
+tagline:                "Personal & Technical Blog"
+description:            "Personal & Technical Blog of William Spies"
 keywords:               "William Spies, blog, electronics, engineering, robotics"
-show_social_icons:      true # edit file in /_includes/social_links.html
 og_locale:              "en_US"
 
 # Site author info

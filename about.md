@@ -21,7 +21,7 @@ If you have professional inquiries, check the [Resume](/resume) section of the w
 
 If you have other questions about the site, please send an email to **admin[at]spieswl.com**.
 
-<hr/>
+<hr>
 
 ## About the Website ##
 

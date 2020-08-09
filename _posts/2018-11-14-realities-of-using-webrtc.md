@@ -30,7 +30,7 @@ Throughout the process of writing _webrtc-perception_, I have faced continuous c
 
 As computer vision systems and other applications push for more control over their component cameras for various reasons, having the ability to place constraints on the operation of these cameras grows in priority. For CV applications that have low-level access to machine vision cameras, or native apps on smart phones, much work has already been done to ensure consistent and comprehensive interfaces exist for programmers to use. On the _**Orthrus**_ project, for example, my `C++` code uses a Point Grey Research-supplied library for working with their cameras that can be objectified and used to great effect by motivated programmers. In the case of WebRTC, we are provided a similar, simple interface in the _MediaStream Image Capture_ API. The W3C documentation specifically mentions constrainable properties that, when modified, can be used to change the operation of a camera device immediately. If you'll note the following chart (_pulled from [Section 9.2](https://www.w3.org/TR/image-capture/#mediatrackcapabilities-section) in the W3C Working Draft_), the specification includes a lot of constraints accessible by a programmer!
 
-<div class="project-image">
+<div class="post-image">
     <img src="{{ site.url }}/{{ site.assets.posts }}/{{ page.specifics.images }}/mediatrack_capabilities.png" style="width:822px">
 </div>
 
@@ -40,7 +40,7 @@ That's a good start! But, watch out, **focusDistance** is not officially support
 
 The chart below (drawn from [this page](https://w3c.github.io/web-roadmaps/media/capture.html)) says quite a bit about the adoption rate of WebRTC and MediaCapture features.
 
-<div class="project-image">
+<div class="post-image">
     <img src="{{ site.url }}/{{ site.assets.posts }}/{{ page.specifics.images }}/webrtc_feature_chart.png" style="width:790px">
 </div>
 
@@ -68,7 +68,7 @@ This is a _fun_ one, and I am also still trying to determine the scope of this i
 
 A picture of the controls with certain constrainable settings activated is shown below, and further down is the code that is executed when the remote device receives the desired settings from the host device.
 
-<div class="project-image">
+<div class="post-image">
     <img src="{{ site.url }}/{{ site.assets.posts }}/{{ page.specifics.images }}/constraint_settings.png" style="width:800px">
 </div>
 
