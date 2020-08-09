@@ -13,7 +13,6 @@ layout:             main
     {% assign post = page %}
         {% if post.tags.size > 0 %}
 
-            <h6>Tagged</h6>
             {% assign tags_content = "" %}
             {% for post_tag in post.tags %}
                 {% capture tags_content_temp %}

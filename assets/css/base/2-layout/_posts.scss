@@ -29,8 +29,12 @@
         background: #006699;
         color: #ffffff;
     }
-    a { border-bottom: 1px solid #006699; }
-    a:hover { border: 0; }
+    a {
+        border-bottom: 1px solid #006699;
+    }
+    a:hover {
+        border: 0;
+    }
 }
 
 .post-top-meta {
@@ -100,6 +104,10 @@
     display: block;
     text-align: center;
 
-    a { border: 0; }
-    a:hover { background-color: transparent; }
+    a {
+        border: 0;
+    }
+    a:hover {
+        background-color: transparent;
+    }
 }
