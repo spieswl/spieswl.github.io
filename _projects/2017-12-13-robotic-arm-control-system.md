@@ -10,7 +10,7 @@ tags:               [Python, Kinematics, Simulation, Robotics, Controls]
 specifics:
     images:         "mobile-robot-follower"                 # This path is project-dependent; don't forget to change it!
 
-published:          true
+published:          false
 ---
 
 Northwestern University's **MSR** program involves taking a number of sophisticated courses intended to familiarize students with advanced concepts in robotics, such as computer vision, robotic manipulation (understanding and implementing kinematic and dynamic control of robotic systems), embedded systems, and other areas. Part of the final evaluation of [Dr. Kevin Lynch](http://www.mccormick.northwestern.edu/research-faculty/directory/profiles/lynch-kevin.html)'s Robotic Manipulation course involved demonstrating the application of our accumulated knowledge about kinematic control to a problem involving a **Kuka YouBot** in an interactive simulation running in Coppelia Robotics' **[VREP](http://www.coppeliarobotics.com/)**.

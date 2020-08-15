@@ -10,7 +10,7 @@ tags:               [ROS, C++, Python, OpenCV, 3D Modeling, Computer Vision, Str
 specifics:
     images:         "surveyor"                              # This path is project-dependent; don't forget to change it!
 
-published:          true
+published:          false
 ---
 
 For the past several weeks, I have been working on an independent project that I feel has excellent potential. Nicknamed **Surveyor**, my project blends computer vision and 3D reconstruction algorithms on a base provided by the Robot Operating System (ROS) into a software package that can take 2D images, perform some computation, and return a dense point cloud. If it works correctly, the system could be used to model objects large and small, though my interest lies in being able to map _**spaces**_ of arbitrary size with some degree of accuracy. The true novelty of this project is that, unlike *most* systems involving visually driven 3D reconstruction, no separate depth sensing is performed at any step in the process.

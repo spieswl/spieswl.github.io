@@ -10,7 +10,7 @@ tags:               [Dynamics, Simulation, Mathematica]
 specifics:
     images:         "horn-bridge-sim"                       # This path is project-dependent; don't forget to change it!
 
-published:          true
+published:          false
 ---
 
 Around the end of the **Fall 2017** term, I wrote a program in **[Wolfram Mathematica 11](https://www.wolfram.com/mathematica/)** with the intent to try and recreate the dynamics of the Hörn bridge in Kiel, Germany. This bridge is well-known for its elegant design and [unique opening and closing behavior](https://www.youtube.com/watch?v=E5BF3Lvmi_8), so I opted to try and recreate the bridge as a project in my Machine Dynamics class with [Todd Murphey](https://nxr.northwestern.edu/people/todd-murphey). Thanks to its status as a unique feat of bridge engineering, there was some technical literature available on the bridge which allowed me to gain some insight into the control and operation of the bridge. From there, it was all coding and evaluation in Mathematica.

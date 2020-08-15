@@ -10,7 +10,7 @@ tags:               [ROS, Python, Robotics, Baxter]
 specifics:
     images:         "baxter-container"                      # This path is project-dependent; don't forget to change it!
 
-published:          true
+published:          false
 ---
 
 We have a few Baxter and Sawyer robots from Rethink Robotics down in the labs at Northwestern, so we students often get the chance to write code or fabricate parts for 'mature' robots when presented with practical problems. In the interests of giving us hands-on time with these robots, several student groups were asked to come up with mini-projects involving either **[Baxter](https://www.rethinkrobotics.com/baxter/)** or **[Sawyer](https://www.rethinkrobotics.com/sawyer/)**. These mini-projects needed to have some defined end goal that could be achieved in the span of only two weeks with a team of 4-5 individuals. Proposed mini-projects ranged from manipulating Keurig K-Cups to make coffee, solving a _[Labyrinth](https://en.wikipedia.org/wiki/Labyrinth_(marble_game))_, integrating a voice control system, and opening screw-lid containers with Baxter or Sawyer's end effectors.

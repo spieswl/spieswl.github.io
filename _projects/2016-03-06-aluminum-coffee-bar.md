@@ -10,7 +10,7 @@ tags:               [Crafting, Extrusion, Hobbyist]
 specifics:
     images:         "coffee-bar"                            # This path is project-dependent; don't forget to change it!
 
-published:          true
+published:          false
 ---
 
 In the scientific and industrial realms, extruded aluminum “profiles” have made a name as a highly flexible and useful building material. Its unique geometry simultaneously allows for immense strength and great utility. Profiles can serve as structural material, machine guarding, architectural or artistic pieces, and as a platform for mounting devices and fixtures. In my experiences, one can find daily use for such material, both at home and at work.

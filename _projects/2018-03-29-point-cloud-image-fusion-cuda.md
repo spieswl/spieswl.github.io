@@ -10,7 +10,7 @@ tags:               [C++, CUDA, Computer Vision, Parallel Programming, Point Clo
 specifics:
     images:         "CUDA-2d-depth-fusion"                  # This path is project-dependent; don't forget to change it!
 
-published:          true
+published:          false
 ---
 
 <div class="project-image">

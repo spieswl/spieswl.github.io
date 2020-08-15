@@ -9,7 +9,7 @@ tags:               [git, Synology, NAS Servers]
 specifics:
     images:         "synology-git-server"                   # This path is post-dependent; don't forget to change it!
 
-published:          true
+published:          false
 ---
 
 Late last year, I got the idea to start poking around **Synology** forums and support venues to see if someone had figured out how to run a ***Git*** server on Synology NASes. After all, the performance needed to run a shared Git server is easily provided by even the most spartan of Synology devices. I currently own a **13-series NAS running DiskStation Manager (`DSM`) 6.1** which, in addition to holding music, movies, and pictures, also gives the capability to back up content like school work, personal projects, and things not necessarily appropriate to upload to a publicly available system like **[GitHub](https://github.com/)**. It turns out, Synology has a great add-on package for `DSM` and there are decent how-to guides out there, although each guide is typically missing at least one critical step. This guide will recreate the effort I went through to set up my own Git server on a practically-untouched Synology NAS.
