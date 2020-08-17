@@ -1,4 +1,5 @@
 ### User-Custom Git Ignore Files Below ###
 .sass-cache/
+.jekyll-cache/
 _site/
 

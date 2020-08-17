@@ -1,29 +1,43 @@
 ---
 layout:             page
-title:              About William Spies
+title:              Allow Me to Introduce Myself
 
-portrait:           assets/images/portrait_01.jpg
+images:             assets/images/about
 ---
 
-<img id="portrait" src="{{ site.baseurl }}/{{ page.portrait }}" width="268" height="360" align="right" style="margin:0px 12px 0px 12px">
+<img id="portrait" src="{{ site.baseurl }}/{{ page.images }}/portrait_01.png" width="320" height="480" align="right" style="margin:0px 12px 0px 12px">
 
-William Spies is an aspiring Roboticist and Research Scientist currently serving in the Computational Photography Lab at Northwestern University. Since joining the lab, under the guidance of Dr. Oliver Cossairt and Dr. Florian Willomitzer, he has been focusing on two practical applications of computer vision for scientific data collection. One project is the development of a computer vision framework for metrology applications, while the other is a 3D reconstruction system using machine vision cameras and programmed in C++.
+My name is William Spies, and I am a Robotics Software Engineer at **[Outrider Technologies](https://www.outrider.ai/)** here in lovely Colorado. It is a pleasure to make your acquaintance!
 
-In September of 2018, he graduated from Northwestern University (GO WILDCATS!) with his **Masters of Science in Robotics** from the accelerated **[MSR](http://www.mccormick.northwestern.edu/robotics/)** program. While studying, he specialized in computer vision applications, 3d reconstruction and point cloud management, embedded systems programming, and parallel programming methods (whether through vectorization or bulk compute via GPUs).
+At present, I am helping to bring robotics and automation into the realm of logistics and trucking. Robotic manipulators, 2D/3D vision platforms, and cutting-edge safety systems are but a few of the technologies I routinely interact with. My past experiences in delivering industrial automation solutions for the largest companies in the world have equipped me with a broadened and unique perspective on robotics. I am known among my colleagues for being methodical, practical, supportive, and relentless. Finally, I am proud to be a part of an elite team of movers and shakers, all of whom are a joy to work with!
 
-Prior to his graduate studies, William was a **systems project engineer**, **systems programmer**, and **leading electrical engineer** with ATS Automation Tooling Systems in Columbus, OH. His project portfolio carries the distinction of delivering automated industrial systems currently in use at companies such as General Motors, Dow Chemical, Oral-B, Tesla Motors, First Solar, and various other enterprises. At the time of his acceptance to Northwestern in 2017, he had celebrated his 5th year at ATS, and was leading a team of a dozen systems programmers with over 100 years of programming experience. He was given several opportunities to work on fully-automated, robotic-arm-swinging industrial assembly systems, and those experiences served as crucial stepping stones to where he finds himself today. While in Columbus, he spent a great deal of time at the [Columbus Idea Foundry](https://ideafoundry.com/), and he considers them to be an incredible up-and-coming force for creativity, mischief, and entrepreneurship.
+My time here at Outrider, however, only represents a brief portion of my story so far...
 
-He graduated from the University of Cincinnati (GO BEARCATS!) with his **Bachelors of Science in Electrical Engineering** in June of 2012, along with a minor in Photonics. Along the way, he was privileged to support the engineering of space electronics while on co-op with L-3 Communications Cincinnati Electronics. He spent his free time serving as part of a partnership between Habitat for Humanity and the University of Cincinnati, and took opportunities to show leadership in engineering and interpersonal development in his community through the **[University Honors Program](https://www.uc.edu/honors.html)** and the **[Center for Community Engagement](https://www.uc.edu/cce.html)**.
+I originally hail from Cincinnati, Ohio *(goetta is the real deal, Cincinnati-style chili is just a trap for the out-of-towners)* where I was raised and went to undergrad. I graduated from the [University of Cincinnati](https://www.uc.edu/) ***(GO BEARCATS!)*** in June of 2012 with my **Bachelors of Science in Electrical Engineering**, along with a minor in Photonics. During my undergraduate career, I spent just over a year co-oping at **[L3Harris Cincinnati Electronics](https://www2.l3t.com/ce/)** in the Space Avionics group, where I worked on avionics systems that are used on [active launch platforms](https://en.wikipedia.org/wiki/National_Security_Space_Launch) still today. Much of my free time was consumed by serving as part of a partnership between [Habitat for Humanity and the University of Cincinnati](https://www.uc.edu/profiles/profile.asp?id=8840), and I took opportunities to show leadership in engineering and community relationship building through the **[University Honors Program](https://www.uc.edu/honors.html)** and the **[Center for Community Engagement](https://www.uc.edu/cce.html)**.
 
-He originally hails from Cincinnati, OH, and he misses quite a lot about his hometown...although he still prefers _Graeter's_ above _Aglamesis Brothers_. 🍦 When not in the lab or working on side projects, you can find him searching out new coffee shops and food spots, playing board games, looking for interesting architecture, swing dancing, and visiting the lake shore with his incredible wife.
+After my undergraduate studies, I served from mid-2012 to mid-2017 as a **leading Electrical Design Engineer**, **Systems Programmer**, and **Systems Project Engineer** with **[ATS Automation](https://atsautomation.com/)** in Columbus, Ohio. My project portfolio carries the distinction of delivering custom industrial automation systems currently in use by General Motors, Dow Chemical, TRW Automotive, Oral-B, Tesla Motors, First Solar, and various other corporations. I was given several opportunities to lead controls development on cutting-edge, highly-automated industrial manufacturing lines, and those opportunities served as critical stepping stones on the path to where I find myself today. At the peak of my responsibilities at ATS, I was leading a warm and brilliant team of twelve Systems Programmers with over 100 cumulative years of systems and robot programming experience. I also passed many moments at the **[Columbus Idea Foundry](https://ideafoundry.com/)** *(an incredible place for fostering creativity, mischief, and entrepreneurship, I highly recommend a visit if you are in town)* and was an active participant in the Columbus swing dancing community, where I met my lovely and wonderful wife. 😍
 
-If you have professional inquiries, check the [Resume](/resume) section of the website for PDF and/or HTML versions of my resume.
+Towards the end of my time in Columbus, I kicked off the next chapter of my life by applying to graduate schools around the country. I was accepted to Northwestern University's accelerated **[MSR](http://www.mccormick.northwestern.edu/robotics/)** program in early 2017 and we moved up to Chicago shortly thereafter. In September of 2018, I graduated from Northwestern University ***(GO WILDCATS!)*** with my **Masters of Science in Robotics** along with a cohort of nearly two dozen other phenomenal individuals. While studying at NU, I specialized in computer vision applications, 3D reconstruction, embedded systems programming *(a.k.a. working in [ROS](https://www.ros.org/))*, and robotic manipulation.
 
-If you have other questions about the site, please send an email to **admin[at]spieswl.com**.
+Part of my responsibilites to the MSR program led me to join the **[Computational Photography Lab](https://compphotolab.northwestern.edu/)** as a Research Scientist under Dr. Oliver Cossairt. For the several months I worked in the CPL, my main areas of focus involved working alongside Dr. Florian Willomitzer on an improved implementation of [Flying Triangulation](https://arxiv.org/abs/1305.4168) and on a novel use of `WebRTC` to facilitate surface measurements of [famous paintings](https://www.mccormick.northwestern.edu/news/articles/2019/02/diagnosing-art-acne-in-georgia-okeeffe-paintings.html?utm_source=northwestern&utm_medium=email&utm_campaign=mccormick-alumni-enewsletter&utm_content=alumni__03-04-19_) or [stained glass works](https://www.osapublishing.org/oe/abstract.cfm?uri=oe-28-7-9027) using consumer-grade electronic devices *(that's my hand holding the Android tablet in Figure 1.a)*.
+
+When I am not building some amazing robots or working on a side project, you can find me searching for new coffee shops and food spots, trying out a new board game, rock climbing, playing with my dog Luna, looking for interesting architecture, swing dancing, reading a good book, or playing *Factorio*.
+
+Of course, that is nowhere near a complete life picture...but some pictures may help fill in a few gaps:
+
+<div style="text-align:center">
+    <img src="{{ site.baseurl }}/{{ page.images }}/climbing.png" width="320" height="480" style="margin:0px 4px 0px 4px">
+    <img src="{{ site.baseurl }}/{{ page.images }}/couple.png" width="320" height="480" style="margin:0px 4px 0px 4px">
+    <img src="{{ site.baseurl }}/{{ page.images }}/hammock.png" width="320" height="480" style="margin:0px 4px 0px 4px">
+</div>
 
 <hr>
 
-## About the Website ##
+If you have professional inquiries, check the [Resume](/resume) section of the website for PDF and HTML versions of my resume for a specially-reserved contact address.
+
+If you have other questions about the site, please send an email to **admin[at]spieswl.com**.
+
+### About the Website ###
 
 This site, and any opinions or insights expressed on my part, are the responsibility of me, William Spies. Any software, directions, schematics, and other creative content is to be used at your own risk; I bear no responsibility if you happen to graze, taze, or lase yourself while recreating one of my projects!
 
