@@ -10,7 +10,7 @@ tags:               [C, Android, Robotics, Embedded Systems, Mechanical, Electri
 specifics:
     images:         "cotton-kandy-kart"                     # This path is project-dependent; don't forget to change it!
 
-published:          false
+published:          true
 ---
 
 The ultimate aim of a series of Mechatronics courses I took for the MSR program was a project to build a robotic kart from scratch and let it drive autonomously around a race track as part of a design competition. My kart, nicknamed Cotton Kandy (_check out the vehicle color scheme_), was designed and built over the course of several weeks in the Spring of 2018. Every aspect of the kart, including the mechanical design, the electrical controls (with one exception that provided by the class administrator), the software running on the microcontroller and on an Android cell phone, and the assembly of the vehicle was all handled by myself during the lead-up to the competition. As a result, I accrued significant cross-disciplinary design experience...and I had a fantastic time while doing so.
@@ -86,7 +86,7 @@ Spacing for the 8-pin header interface provided the only position constraint for
 
 <div class="project-image">
     <a href="https://github.com/spieswl/cotton-kandy-kart/blob/master/elec/controller_schematic.pdf">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/e1_controller_schematic.png" style="height:450px; padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/e1_controller_schematic.png" style="width:637px; padding:0px 0px 0px 0px;">
     </a>
     <a href="https://github.com/spieswl/cotton-kandy-kart/blob/master/elec/controller_layout.pdf">
         <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/e2_controller_layout.png" style="width:450px; padding:0px 0px 0px 0px;">

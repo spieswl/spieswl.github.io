@@ -58,6 +58,11 @@
         }
     }
 
+    .container img {
+        max-width: 15rem;
+        border-radius: 2px;
+    }
+
     .post-list-date {
         margin-left: 0;
         float: none;
@@ -74,7 +79,7 @@
 
     .project-thumb {
         height: 40vw;
-        width: 80vw;
+        width: 60vw;
     }
 
     a {
@@ -97,19 +102,39 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .masthead-title {
+        text-align: center;
+    }
+
     body {
         font-size: 0.9rem;
     }
 
     .nav {
         font-size: 0.7rem;
+        line-height: 2.4;
+    }
+
+    .nav-left {
+        margin: 20px 0px -10px -42px;
+        text-align: center;
+
+        ul {
+            display: inline-block;
+        }
+    }
+
+    .nav-right {
+        margin: 0px 0px -20px -42px;
+        text-align: center;
+
+        ul {
+            display: inline-block;
+        }
     }
 
     .container img {
-        max-width: 100vw;
-        margin-left: -16px;
-        margin-right: -16px;
-        border-radius: 0px;
-        transform: none;
+        max-width: 12rem;
+        border-radius: 1px;
     }
 }
