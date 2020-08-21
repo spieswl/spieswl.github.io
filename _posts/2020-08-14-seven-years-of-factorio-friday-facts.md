@@ -20,13 +20,14 @@ My wife knows well of my occasional addictions to ***Factorio***; it is one of t
 
 Today is the day they officially released their product to everyone. As a way to celebrate their incredible journey, I wanted to share some of my favorite entries from the last seven years of **Factorio Friday Facts**:
 
-<h5>Getting Started</h5>
+##### Getting Started
 * **[FFF #1](https://factorio.com/blog/post/fff-1)**
 * **[FFF #9](https://factorio.com/blog/post/fff-9)**
 * **[FFF #14](https://factorio.com/blog/post/fff-14)**
 * **[FFF #23 - Year After](https://factorio.com/blog/post/fff-23)**
 <hr>
-<h5>Graphics and GUI Design</h5>
+
+##### Graphics and GUI Design
 * **[FFF #179 - New resource graphics & concrete](https://factorio.com/blog/post/fff-179)** : Cool description of using Python scripting to procedurally randomize resource tiles.
 * **[FFF #191 - Gui improvements](https://factorio.com/blog/post/fff-191)**
 * **[FFF #194 - Automated combinator pipeline](https://factorio.com/blog/post/fff-194)** : A fantastic look at a highly automated graphics generation pipeline.
@@ -41,7 +42,8 @@ Today is the day they officially released their product to everyone. As a way to
 * **[FFF #337 - Statistics GUI and Mod Debugger](https://factorio.com/blog/post/fff-337)** : The presentation of data is so important to the developers at Wube. See how they track and display factory performance statistics here.
 * **[FFF #348 - The final GUI update](https://factorio.com/blog/post/fff-348)**
 <hr>
-<h5>An Incredible Culture of Optimization</h5>
+
+##### An Incredible Culture of Optimization
 * **[FFF #115 - The power switch](https://factorio.com/blog/post/fff-115)** : Good write-up here on graph optimization as it relates to some of their system designs.
 * **[FFF #151 - The plans for 0.14](https://factorio.com/blog/post/fff-151)** : Optimizing their simulation update loop to work around a multithreaded architecture.
 * **[FFF #176 - Belts optimization for 0.15](https://factorio.com/blog/post/fff-176)** : Incredible analysis of transport belts and optimizing their performance. A **MUST READ**.
@@ -56,13 +58,15 @@ Today is the day they officially released their product to everyone. As a way to
 * **[FFF #317 - New pathfinding algorithm](https://factorio.com/blog/post/fff-317)** : A FFF relevant to robotics! Pathfinding at an insane scale using A* and clever chunk reduction to facilitate pathfinding.
 * **[FFF #331 - 0.18.0 release & Train pathfinder changes](https://factorio.com/blog/post/fff-331)** : Continuing optimizations involving train pathfinding.
 <hr>
-<h5>Crazy Times in Troubleshooting Networking</h5>
+
+##### Crazy Times in Troubleshooting Networking
 * **[FFF #136 - Map Transfers](https://factorio.com/blog/post/fff-136)** : As multiplayer functionality was added, more FFF segments start focusing on networking...
 * **[FFF #143 - Matching server and UDP NAT punching](https://factorio.com/blog/post/fff-143)** : Interesting to see `STUN` and `ICE` mentioned here in 2016; I will later spend time studying the same things when working on `webrtc-perception`.
 * **[FFF #196 - Back on track](https://factorio.com/blog/post/fff-196)** : They create their own Wireshark plugin in order to do deep packet introspection.
 * **[FFF #302 - The multiplayer megapacket](https://factorio.com/blog/post/fff-302)** : Experiments with hundreds of connected players in a multiplayer session leads to a discovery that a connection recovery mechanism is not behaving as expected.
 <hr>
-<h5>On Software Engineering</h5>
+
+##### On Software Engineering
 * **[FFF #46 - Knowledge sharing](https://factorio.com/blog/post/fff-46)**
 * **[FFF #55 - MP preview](https://factorio.com/blog/post/fff-55)** : This has a great section on determinism testing, which is hugely important for a game so reliant on maintaining a deterministic simulation.
 * **[FFF #60 - Tests all around](https://factorio.com/blog/post/fff-60)** : Some miscellaneous information bookends a succinctly written understanding of how each abstract level of automated testing improves Wube Software's ability to maintain performance.
@@ -74,7 +78,8 @@ Today is the day they officially released their product to everyone. As a way to
 * **[FFF #312 - Fluid mixing saga & Landfill terrain](https://factorio.com/blog/post/fff-312)** : Before reading this, go check out how much work has been put into fluid simulation...then read this one about breaking it.
 * **[FFF #349 - The 1.0 plan](https://factorio.com/blog/post/fff-349)** : The release date moves closer. They show off more debug and introspection capabilities, including a fascinating prototype inspection system.
 <hr>
-<h5>The Journey</h5>
+
+##### The Journey
 * **[FFF #34 - Sales, Support, Stress and Steam](https://factorio.com/blog/post/fff-34)**
 * **[FFF #81 - Chain signals](https://factorio.com/blog/post/fff-81)** : Some incredible effort / results comparisons at the beginning of this article. We will come back to these statistics later...
 * **[FFF #102 - Getting close](https://factorio.com/blog/post/fff-102)** : A few anecdotes about database management give way to observations on success after seeing how it affected one of their most well-known contemporaries.
@@ -89,7 +94,8 @@ Today is the day they officially released their product to everyone. As a way to
 * **[FFF #327 - 2020 Vision](https://factorio.com/blog/post/fff-327)** : Nearing the end of the pre-release development period. It's been a long time coming...
 * **[FFF #352 - New website](https://factorio.com/blog/post/fff-352)** : While this could probably be in the graphics / GUI section, this is really about how their project (and everything that it has touched) has matured over the past several years.
 <hr>
-<h5>The Human Experience</h5>
+
+##### The Human Experience
 * **[FFF #69 - Sympathy for the creeper](https://factorio.com/blog/post/fff-69)** : A clever twist on the perspective of the player-character as given by the game's art director.
 * **[FFF #224 - Bots versus belts](https://factorio.com/blog/post/fff-224)** : A philosophical discussion about how some components in the game overincentivize a certain kind of playstyle, much to some developers' chagrin.
 * **[FFF #225 - Bots versus belts (part 2)](https://factorio.com/blog/post/fff-225)** : A controversial **FFF #224** leads to some community feedback that the developers have to deal with.
