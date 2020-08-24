@@ -5,7 +5,7 @@ title:              About Myself
 images:             assets/images/about
 ---
 
-<img src="{{ site.baseurl }}/{{ page.images }}/portrait_01.png" width="320" height="480" align="right" style="margin:12px 12px 12px 12px">
+<img src="{{ site.baseurl }}/{{ page.images }}/portrait_01.png" width="320" align="right" style="margin:12px 12px 12px 12px">
 
 Hello! My name is William Spies, and I am a **Robotics Software Engineer** at **[Outrider Technologies](https://www.outrider.ai/)** here in sunny Colorado.
 
@@ -24,9 +24,9 @@ When I am not tinkering with robots or working on side projects, you can find me
 Of course, I cannot hope to include everything in just this segment...but pictures may help fill in a few gaps:
 
 <div style="text-align:center">
-    <img src="{{ site.baseurl }}/{{ page.images }}/climbing.png" width="320" height="480" style="margin:4px 4px 4px 4px">
-    <img src="{{ site.baseurl }}/{{ page.images }}/couple.png" width="320" height="480" style="margin:4px 4px 4px 4px">
-    <img src="{{ site.baseurl }}/{{ page.images }}/hammock.png" width="320" height="480" style="margin:4px 4px 4px 4px">
+    <img src="{{ site.baseurl }}/{{ page.images }}/climbing.png" width="320" style="margin:4px 4px 4px 4px">
+    <img src="{{ site.baseurl }}/{{ page.images }}/couple.png" width="320" style="margin:4px 4px 4px 4px">
+    <img src="{{ site.baseurl }}/{{ page.images }}/hammock.png" width="320" style="margin:4px 4px 4px 4px">
 </div>
 
 <hr>
