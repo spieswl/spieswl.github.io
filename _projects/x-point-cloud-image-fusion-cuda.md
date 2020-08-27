@@ -1,14 +1,14 @@
 ---
 layout:             project
 title:              "Fusing Images and Depth Maps with CUDA"
-date:               "2018-03-29"                            # Used for project sorting by date
+date:               "2018-03-29"
 
 description:        "A small parallel programming project, acting as a base for future CUDA development, which serves to fuse 2D images and depth maps into a PCD (Point Cloud) file."
 keywords:           CUDA, computer vision, parallel computing, point clouds, c++
 tags:               [C++, CUDA, Computer Vision, Parallel Programming, Point Clouds]
 
 specifics:
-    images:         "CUDA-2d-depth-fusion"                  # This path is project-dependent; don't forget to change it!
+    images:         "CUDA-2d-depth-fusion"
 
 published:          false
 ---

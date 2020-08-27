@@ -1,14 +1,14 @@
 ---
 layout:             project
 title:              "webrtc-perception : Using WebRTC for Computational Photography"
-date:               "2018-11-14"                            # Used for project sorting by date
+date:               "2018-11-14"
 
 description:        "Devices capable of providing images for computational applications are abundant, but, outside of mobile app 'walled gardens', few frameworks are freely available for academic, artistic, or scientific use. This project contains examples of using WebRTC for surface reconstruction, surface measurement, and near-real-time modeling with consumer-accessible tablets or cell phones."
 keywords:           webrtc, javascript, computer vision, web development, computational photography, image processing, photometric stereo, phase measured deflectometry
 tags:               [WebRTC, JavaScript, Python, Computer Vision, Deflectometry, Photometric Stereo]
 
 specifics:
-    images:         "webrtc-perception"                     # This path is project-dependent; don't forget to change it!
+    images:         "webrtc-perception"
 
 published:          false
 ---

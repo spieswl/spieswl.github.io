@@ -1,14 +1,14 @@
 ---
 layout:             project
 title:              "Simple Texture Synthesis and Replacement with OpenCV"
-date:               "2017-12-16"                            # Used for project sorting by date
+date:               "2017-12-16"
 
 description:        "This project involved performing contextual texture replacement on pre-recorded video feed with OpenCV."
 keywords:           python, computer vision, opencv, image processing, texture synthesis
 tags:               [Python, OpenCV, Computer Vision]
 
 specifics:
-    images:         "magic-eraser-cv"                       # This path is project-dependent; don't forget to change it!
+    images:         "magic-eraser-cv"
 
 published:          false
 ---

@@ -1,14 +1,14 @@
 ---
 layout:             project
 title:              "Making a Coffee Bar Out of Extruded Aluminum"
-date:               "2016-03-06"                            # Used for project sorting by date
+date:               "2016-03-06"
 
 description:        "This project recap shows how I used extruded aluminum profiles to make a custom coffee bar."
 keywords:           crafts, carpentry, furniture, coffee bar, extrusion
 tags:               [Crafting, Furniture]
 
 specifics:
-    images:         "coffee-bar"                            # This path is project-dependent; don't forget to change it!
+    images:         "coffee-bar"
 
 published:          true
 ---

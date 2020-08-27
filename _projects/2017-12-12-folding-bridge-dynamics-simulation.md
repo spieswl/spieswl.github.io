@@ -1,14 +1,14 @@
 ---
 layout:             project
 title:              "Simulation of the Dynamics of a Folding Bridge"
-date:               "2017-12-12"                            # Used for project sorting by date
+date:               "2017-12-12"
 
 description:        "Coding up a simulation of the dynamics of the three-leaf, folding Hörn bridge in Kiel, Germany."
 keywords:           dynamics, software, mathematica, simulation, mathematica
 tags:               [Dynamics, Simulation]
 
 specifics:
-    images:         "horn-bridge-sim"                       # This path is project-dependent; don't forget to change it!
+    images:         "horn-bridge-sim"
 
 published:          true
 ---

@@ -7,7 +7,7 @@ keywords:           factorio, retrospective
 tags:               [Factorio, Retrospectives]
 
 specifics:
-    images:         "factorio-friday-facts"                 # This path is post-dependent; don't forget to change it!
+    images:         "factorio-friday-facts"
 
 published:          true
 ---

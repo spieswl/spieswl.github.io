@@ -1,14 +1,14 @@
 ---
 layout:             project
 title:              "Orthrus: High-Resolution 3D Reconstruction from a Single Shot"
-date:               "2018-06-19"                            # Used for project sorting by date
+date:               "2018-06-19"
 
 description:        "This project, directed by Northwestern University's Computational Photography Lab, combines structured light projection, a stereo camera setup, and real-time image processing to perform extremely precise 3D reconstruction of near-field objects."
 keywords:           structured light, 3d scanning, depth sensing, computer vision, stereo vision, rendering, point clouds, C++, opencv
 tags:               [C++, OpenCV, Computer Vision, Stereo Vision, 3D Modeling, Rendering, Point Clouds, Under Development]
 
 specifics:
-    images:         "orthrus"                               # This path is project-dependent; don't forget to change it!
+    images:         "orthrus"
 
 published:          false
 ---

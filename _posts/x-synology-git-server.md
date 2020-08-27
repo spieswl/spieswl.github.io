@@ -7,7 +7,7 @@ keywords:           git, networking, synology, git server, NAS
 tags:               [git, Synology, NAS Servers]
 
 specifics:
-    images:         "synology-git-server"                   # This path is post-dependent; don't forget to change it!
+    images:         "synology-git-server"
 
 published:          false
 ---

@@ -7,7 +7,7 @@ keywords:           python, cygwin, NLTK, windows, pip
 tags:               [Cygwin, NLTK, Python]
 
 specifics:
-    images:           "nltk"                                  # This path is post-dependent; don't forget to change it!
+    images:           "nltk"
 
 published:          false
 ---
