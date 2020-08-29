@@ -24,7 +24,7 @@ This project also leans on another library named `aiortc` to implement Python-ba
 A barebones illustration of the _webrtc-perception_ framework is shown in the following graphic. This will give you an idea of what an end-to-end system _could_ look like, but without the _rtc-shapeshifter_- or _rtc-deflectometry_-specific details included.
 
 <div class="project-image">
-    <img src="https://raw.githubusercontent.com/spieswl/webrtc-perception/master/docs/webrtc-perception_block_diagram.png" style="width:800px">
+    <img src="https://raw.githubusercontent.com/spieswl/webrtc-perception/master/docs/webrtc-perception_block_diagram.png" width="800">
 </div>
 
 One more thing: if you are intending to re-implement portions of this project or are otherwise unfamiliar with the implementation details of WebRTC, I encourage you to investigate the videos and guide content over at [https://webrtc.org/start/](https://webrtc.org/start/). There are plenty of resources to get people unfamiliar with WebRTC caught up to speed. Take particular note of `MediaStream` and `RTCDataChannel` details, as our tools make use of those two extensively.
@@ -43,10 +43,10 @@ At present, two sub-projects currently make their home in the metapackage: **`rt
 
 <div class="project-image">
     <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/sfs_slide_1.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/sfs_slide_1.png" style="width:600px; padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/sfs_slide_1.png" width="600" style="padding:0px 0px 0px 0px;">
     </a>
     <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/sfs_slide_2.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/sfs_slide_2.png" style="width:600px; padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/sfs_slide_2.png" width="600" style="padding:0px 0px 0px 0px;">
     </a>
 </div>
 
@@ -60,7 +60,7 @@ In short, Kai is using the _webrtc-perception_ framework to make it easier for h
 
 <div class="project-image">
     <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/pmd_slide_1.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/pmd_slide_1.png" style="width:800px; padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/pmd_slide_1.png" width="800" style="padding:0px 0px 0px 0px;">
     </a>
 </div>
 

@@ -21,19 +21,19 @@ With the stage set, the rest of this project write-up just goes through all the 
 
 <div class="project-image">
     <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/thumb.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/thumb.png" style="width:400px; padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/thumb.png" width="400" style="padding:0px 0px 0px 0px;">
     </a>
     <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_finished_front.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_finished_front.png" style="width:533px; padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_finished_front.png" width="533" style="padding:0px 0px 0px 0px;">
     </a>
 </div>
 
 <div class="project-image">
     <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_finished_side.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_finished_side.png" style="width:533px; padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_finished_side.png" width="533" style="padding:0px 0px 0px 0px;">
     </a>
     <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_finished_top.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_finished_top.png" style="width:400px; padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_finished_top.png" width="400" style="padding:0px 0px 0px 0px;">
     </a>
 </div>
 
@@ -47,10 +47,10 @@ The mechanical design of the vehicle was where I got most creative. All mechanic
 
 <div class="project-image">
     <a href="https://github.com/spieswl/robotic-kart-v1/blob/master/mech/CCK-WH01-01_DD.pdf">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/m1_wheel_design.png" style="width:500px; padding:0px 6px 0px 6px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/m1_wheel_design.png" width="500" style="padding:0px 6px 0px 6px;">
     </a>
     <a href="https://github.com/spieswl/robotic-kart-v1/blob/master/mech/CCK-CHAS01-01_DD.pdf">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/m2_chassis_design.png" style="width:500px; padding:0px 6px 0px 6px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/m2_chassis_design.png" width="500" style="padding:0px 6px 0px 6px;">
     </a>
 </div>
 
@@ -70,13 +70,13 @@ The electrical design was oriented around several design constraints, most of wh
 
 <div class="project-image">
     <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/05_elecPCB_top.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/05_elecPCB_top.png" style="width:350px; padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/05_elecPCB_top.png" width="350" style="padding:0px 0px 0px 0px;">
     </a>
     <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/06_elecPCB_bottom.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/06_elecPCB_bottom.png" style="width:350px; padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/06_elecPCB_bottom.png" width="350" style="padding:0px 0px 0px 0px;">
     </a>
     <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/07_motorPCB_top.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/07_motorPCB_top.png" style="width:350px; padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/07_motorPCB_top.png" width="350" style="padding:0px 0px 0px 0px;">
     </a>
 </div>
 
@@ -86,10 +86,10 @@ Spacing for the 8-pin header interface provided the only position constraint for
 
 <div class="project-image">
     <a href="https://github.com/spieswl/robotic-kart-v1/blob/master/elec/controller_schematic.pdf">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/e1_controller_schematic.png" style="width:637px; padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/e1_controller_schematic.png" width="637" style="padding:0px 0px 0px 0px;">
     </a>
     <a href="https://github.com/spieswl/robotic-kart-v1/blob/master/elec/controller_layout.pdf">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/e2_controller_layout.png" style="width:450px; padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/e2_controller_layout.png" width="450" style="padding:0px 0px 0px 0px;">
     </a>
 </div>
 
@@ -106,7 +106,7 @@ The software design was split into two distinct parts:
 
 <div class="project-image">
     <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/08_techcuptrack.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/08_techcuptrack.png" style="width:400px; margin:24px; float:right">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/08_techcuptrack.png" width="400" style="margin:24px; float:right">
     </a>
 </div>
 

@@ -19,7 +19,7 @@ First, some details on the challenge are in order. The simulated problem was bui
 
 <div class="project-image">
     <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_youbot_home.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_youbot_home.png" style="width:480px">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_youbot_home.png" width="480">
     </a>
 </div>
 
@@ -27,7 +27,7 @@ The controller was written in Python, and uses the _**[numpy](http://www.numpy.o
 
 <div class="project-image">
     <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_on-path_follower.gif">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_on-path_follower.gif" style="width:800px">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_on-path_follower.gif" width="800">
     </a>
 </div>
 
@@ -35,10 +35,10 @@ Results for the error feedback components are also included for both the "P-" an
 
 <div class="project-image">
     <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_P_ctrl_results.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_P_ctrl_results.png" style="width:540px">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_P_ctrl_results.png" width="540">
     </a>
     <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/04_PI_ctrl_results.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/04_PI_ctrl_results.png" style="width:540px">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/04_PI_ctrl_results.png" width="540">
     </a>
 </div>
 
