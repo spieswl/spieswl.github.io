@@ -1,5 +1,4 @@
-/*! Main Layout Styles */
-
+/*! ---------- Basic Layout CSS ---------- */
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -63,11 +62,6 @@ h2 {
 
 h3 {
     font-size: 1.3rem;
-
-    .year i.fa {
-        margin-top: -5px;
-        margin-right: 5px;
-    }
 }
 
 h4 {
@@ -103,8 +97,8 @@ hr {
     position: relative;
     margin: 1.25em 0;
     border: 0;
-    border-top: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 code {
@@ -196,13 +190,13 @@ tbody tr:nth-child(odd) {
     }
 }
 
-/*! Elemental Styles */
+/*! ---------- Class Styles ---------- */
 .back {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.container {
+.bezel {
     max-width: 60rem;
     margin-left: auto;
     margin-right: auto;
@@ -217,13 +211,8 @@ tbody tr:nth-child(odd) {
     font-size: 0.8em;
 }
 
-.footer {
-    max-width: 60rem;
-    margin: 0 auto 1rem;
-    padding: 0 1rem 1rem;
-}
-
 .masthead {
+    margin-top: -20px;
     margin-bottom: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -232,7 +221,15 @@ tbody tr:nth-child(odd) {
     box-shadow: 0 1px 1px rgba(0,0,0,0.05);
 }
 
-.masthead-title {
+.muted {
+    filter: alpha(opacity=50);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+}
+
+.site-title {
     margin-top: 2rem;
     margin-bottom: 0;
     color: #555555;
@@ -247,15 +244,7 @@ tbody tr:nth-child(odd) {
     }
 }
 
-.muted {
-    filter: alpha(opacity=50);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-    opacity: 0.5;
-    -moz-opacity: 0.5;
-    -khtml-opacity: 0.5;
-}
-
-.nav {
+.site-nav {
     max-width: 60rem;
     margin: 0;
     font-size: 14px;
@@ -295,7 +284,7 @@ tbody tr:nth-child(odd) {
     }
 }
 
-.nav-left {
+.site-nav-left {
     margin: 20px 0 0 -42px;
 
     li {
@@ -303,7 +292,7 @@ tbody tr:nth-child(odd) {
     }
 }
 
-.nav-right {
+.site-nav-right {
     li {
         float: right;
     }
@@ -339,17 +328,4 @@ tbody tr:nth-child(odd) {
         color: #ffffff;
         background: #006699;
     }
-}
-
-.tag-cloud-small {
-  a.tag-anchor {
-    font-size: 0.9em;
-  }
-}
-
-.wrap {
-    width: 100%;
-    position: relative;
-    margin-top: -20px;
-    padding: 0;
 }

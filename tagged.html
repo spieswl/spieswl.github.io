@@ -8,7 +8,7 @@ title:              Tagged
 <h3>Search Blog Postings by Tags:</h3>
 
 {% if tags %}
-<div class="tag-cloud tag-cloud-small" id="Tags">
+<div class="tag-cloud" id="Tags">
     {% for tag in tags %}
         <a class="tag-anchor" href="#{{ tag | slugify }}"><i class="fa fa-tag muted" aria-hidden="true"></i> {{ tag }}</a>
     {% endfor %}
@@ -32,7 +32,7 @@ title:              Tagged
     </style>
 
     <div id="{{ tag | slugify }}">
-        <h4 class="year"><i class="fa fa-tag muted" aria-hidden="true"></i> {{ tag }}</h4>
+        <h4><i class="fa fa-tag muted" aria-hidden="true"></i> {{ tag }}</h4>
 
         {% for post in site.posts %}
             {% if post.tags contains tag %}

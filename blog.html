@@ -8,12 +8,12 @@ title:              Blog
 <div class="posts">
     {% for post in site.posts %}
         {% unless post.next %}
-            <h4 class="year">{{ post.date | date: '%Y' }}</h4>
+            <h4>{{ post.date | date: '%Y' }}</h4>
         {% else %}
             {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
             {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
             {% if year != nyear %}
-                <h4 class="year">{{ post.date | date: '%Y' }}</h4>
+                <h4>{{ post.date | date: '%Y' }}</h4>
             {% endif %}
         {% endunless %}
 

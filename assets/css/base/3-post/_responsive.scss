@@ -1,11 +1,11 @@
-/*! Responsive Styles */
+/*! ---------- Responsive Styles ---------- */
 
 @media only screen and (min-width: 768px) {
     html {
         font-size: 20px;
     }
 
-    .container, .footer, .nav {
+    .bezel, .footer, .site-nav {
         max-width: 48rem;
     }
 
@@ -16,7 +16,7 @@
 }
 
 @media only screen and (min-width: 1024px) {
-    .container, .footer, .nav {
+    .bezel, .footer, .site-nav {
         max-width: 60rem;
     }
 
@@ -27,7 +27,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-    .container, .footer, .nav {
+    .bezel, .footer, .site-nav {
         max-width: 60rem;
     }
 
@@ -38,7 +38,7 @@
 }
 
 @media only screen and (min-width: 1920px) {
-    .container, .footer, .nav {
+    .bezel, .footer, .site-nav {
         max-width: 72rem;
     }
 
@@ -58,7 +58,7 @@
         }
     }
 
-    .container img {
+    .bezel img {
         max-width: 15rem;
         border-radius: 2px;
     }
@@ -110,12 +110,12 @@
         font-size: 0.9rem;
     }
 
-    .nav {
+    .site-nav {
         font-size: 0.7rem;
         line-height: 2.4;
     }
 
-    .nav-left {
+    .site-nav-left {
         margin: 20px 0px -10px -42px;
         text-align: center;
 
@@ -124,7 +124,7 @@
         }
     }
 
-    .nav-right {
+    .site-nav-right {
         margin: 0px 0px -20px -42px;
         text-align: center;
 
@@ -133,7 +133,7 @@
         }
     }
 
-    .container img {
+    .bezel img {
         max-width: 12rem;
         border-radius: 1px;
     }
