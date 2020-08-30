@@ -5,7 +5,7 @@ date:               "2017-12-13"
 
 description:        "I wrote a controller in Python to direct a research-grade mobile robot to follow a defined trajectory in a simulated environment."
 keywords:           software, simulation, python, robotics, controls
-tags:               [Robotics, Python, Simulation]
+tags:               [Python, Simulation, Robotics]
 
 specifics:
     images:         "mobile-robot-follower"

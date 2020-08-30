@@ -5,7 +5,7 @@ date:               "2016-03-06"
 
 description:        "This project recap shows how I used extruded aluminum profiles to make a custom coffee bar."
 keywords:           crafts, carpentry, furniture, coffee bar, extrusion
-tags:               [Crafting, Furniture]
+tags:               [Furniture, DIY]
 
 specifics:
     images:         "coffee-bar"

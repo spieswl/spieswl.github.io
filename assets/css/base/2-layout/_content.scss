@@ -210,8 +210,9 @@
 }
 
 .project-video {
-    height: 0;
     position: relative;
+    margin-top: 0px;
+    margin-bottom: 16px;
     padding-bottom: 56.25%;     /* 16:9 */
     padding-top: 25px;
 }

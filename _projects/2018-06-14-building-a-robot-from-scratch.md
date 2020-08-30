@@ -4,8 +4,8 @@ title:              "Building a Go-Kart Robot from Scratch"
 date:               "2018-06-14"
 
 description:        "Building a robot from nothing crosses a variety of disciplines; I walk through the process of building a simple line-following robot from scratch."
-keywords:           robotics, schematics, mechanical engineering, electrical engineering, programming, fabrication, advanced manufacturing, laser cutting, 3D printing, onshape
-tags:               [Robotics, Schematics]
+keywords:           robotics, design, mechanical engineering, electrical engineering, programming, fabrication, advanced manufacturing, laser cutting, 3D printing, onshape
+tags:               [Design, Robotics]
 
 specifics:
     images:         "cotton-candy-kart"
