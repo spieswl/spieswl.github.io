@@ -8,6 +8,7 @@ keywords:           CUDA, computer vision, parallel computing, point clouds, c++
 tags:               [C++, CUDA, Computer Vision, Parallel Programming, Point Clouds]
 
 specifics:
+    featured:       false
     images:         "CUDA-2d-depth-fusion"
 
 published:          false

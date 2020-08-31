@@ -8,7 +8,7 @@ keywords:           python, computer vision, opencv, image processing, texture s
 tags:               [Python, OpenCV, Computer Vision]
 
 specifics:
-    priority:       "low"
+    featured:       false
     images:         "magic-eraser-cv"
 
 published:          true

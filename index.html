@@ -60,7 +60,7 @@ title:              Home
         {% assign listing = site.projects | sort:"date" | reverse %}
 
         {% for project in listing limit:index_grid_limit %}
-            {% unless project.specifics.priority == "low" %}
+            {% if project.specifics.featured %}
                 <div class="project-thumb" style="background-image: url({{ site.url }}/{{ site.assets.projects }}/{{ project.specifics.images }}/thumb.png)">
                     <a href="{{ project.url }}">
                         <div class="project-thumb-overlay">
@@ -69,7 +69,7 @@ title:              Home
                     </a>
                 </div>
             {% else %}
-            {% endunless %}
+            {% endif %}
         {% endfor %}
     </div>
 </div>

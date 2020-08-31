@@ -8,6 +8,7 @@ keywords:           robotics, design, mechanical engineering, electrical enginee
 tags:               [Design, Robotics]
 
 specifics:
+    featured:       true
     images:         "cotton-candy-kart"
 
 published:          true

@@ -8,6 +8,7 @@ keywords:           ros, python, baxter, object manipulation, rethink robotics, 
 tags:               [ROS, Python, Robotics]
 
 specifics:
+    featured:       true
     images:         "baxter-container"
 
 published:          true

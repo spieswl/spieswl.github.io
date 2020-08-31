@@ -8,6 +8,7 @@ keywords:           crafts, carpentry, furniture, coffee bar, extrusion
 tags:               [Furniture, DIY]
 
 specifics:
+    featured:       false
     images:         "coffee-bar"
 
 published:          true

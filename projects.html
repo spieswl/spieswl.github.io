@@ -12,7 +12,7 @@ title:              Projects
         {% assign listing = site.projects | sort:"date" | reverse %}
 
         {% for project in listing %}
-            {% unless project.specifics.priority == "low" %}
+            {% if project.specifics.featured %}
                 <div class="project-thumb" style="background-image: url({{ site.url }}/{{ site.assets.projects }}/{{ project.specifics.images }}/thumb.png)">
                     <a href="{{ project.url }}">
                         <div class="project-thumb-overlay">
@@ -21,7 +21,7 @@ title:              Projects
                     </a>
                 </div>
             {% else %}
-            {% endunless %}
+            {% endif %}
         {% endfor %}
     </div>
 </div>
@@ -35,7 +35,7 @@ title:              Projects
 <div class="projects">
     <div class="project-list">
         {% for project in listing %}
-            {% if project.specifics.priority == "low" %}
+            {% unless project.specifics.featured %}
                 <div class="project-thumb" style="background-image: url({{ site.url }}/{{ site.assets.projects }}/{{ project.specifics.images }}/thumb.png)">
                     <a href="{{ project.url }}">
                         <div class="project-thumb-overlay">
@@ -44,7 +44,7 @@ title:              Projects
                     </a>
                 </div>
             {% else %}
-            {% endif %}
+            {% endunless %}
         {% endfor %}
     </div>
 </div>

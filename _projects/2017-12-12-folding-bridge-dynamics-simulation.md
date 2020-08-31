@@ -8,6 +8,7 @@ keywords:           dynamics, software, mathematica, simulation, mathematica
 tags:               [Dynamics, Simulation]
 
 specifics:
+    featured:       true
     images:         "horn-bridge-sim"
 
 published:          true

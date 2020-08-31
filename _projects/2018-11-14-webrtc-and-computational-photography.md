@@ -8,6 +8,7 @@ keywords:           webrtc, javascript, computer vision, computational photograp
 tags:               [WebRTC, Deflectometry, Python, Computer Vision]
 
 specifics:
+    featured:       true
     images:         "webrtc-perception"
 
 published:          true

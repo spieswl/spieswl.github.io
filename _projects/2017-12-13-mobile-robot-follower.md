@@ -8,6 +8,7 @@ keywords:           software, simulation, python, robotics, controls
 tags:               [Python, Simulation, Robotics]
 
 specifics:
+    featured:       true
     images:         "mobile-robot-follower"
 
 published:          true

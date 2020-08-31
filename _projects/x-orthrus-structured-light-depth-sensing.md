@@ -8,6 +8,7 @@ keywords:           structured light, 3d scanning, depth sensing, computer visio
 tags:               [C++, OpenCV, Computer Vision, Stereo Vision, 3D Modeling, Rendering, Point Clouds, Under Development]
 
 specifics:
+    featured:       true
     images:         "orthrus"
 
 published:          false

@@ -8,6 +8,7 @@ keywords:           ros, computer vision, slam, structure from motion, cameras, 
 tags:               [ROS, C++, Python, OpenCV, 3D Modeling, Computer Vision, Structure from Motion]
 
 specifics:
+    featured:       true
     images:         "surveyor"
 
 published:          false
