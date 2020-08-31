@@ -54,19 +54,22 @@ title:              Home
 
 <div class="projects">
     <h3>Projects</h3>
-    <!-- Project listing -->
+    <!-- Project listing, only showing featured projects -->
     <div class="project-list">
         {% assign index_grid_limit = 8 %}
         {% assign listing = site.projects | sort:"date" | reverse %}
 
         {% for project in listing limit:index_grid_limit %}
-            <div class="project-thumb" style="background-image: url({{ site.url }}/{{ site.assets.projects }}/{{ project.specifics.images }}/thumb.png)">
-                <a href="{{ project.url }}">
-                    <div class="project-thumb-overlay">
-                        <strong>{{ project.title }}</strong>
-                    </div>
-                </a>
-            </div>
+            {% unless project.specifics.priority == "low" %}
+                <div class="project-thumb" style="background-image: url({{ site.url }}/{{ site.assets.projects }}/{{ project.specifics.images }}/thumb.png)">
+                    <a href="{{ project.url }}">
+                        <div class="project-thumb-overlay">
+                            <strong>{{ project.title }}</strong>
+                        </div>
+                    </a>
+                </div>
+            {% else %}
+            {% endunless %}
         {% endfor %}
     </div>
 </div>

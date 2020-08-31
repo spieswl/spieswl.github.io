@@ -5,6 +5,10 @@ title:              About Myself
 images:             assets/images/about
 ---
 
+<div class="page-meta">
+    <h3 class="page-title">{{ page.title }}</h3>
+</div>
+
 <img src="{{ site.baseurl }}/{{ page.images }}/portrait_01.png" width="320" align="right" style="margin:12px 12px 12px 12px">
 
 Hello! My name is William Spies, and I am a **Robotics Software Engineer** at **[Outrider Technologies](https://www.outrider.ai/)** here in sunny Colorado.

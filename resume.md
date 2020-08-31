@@ -10,6 +10,11 @@ html_resume:        "assets/docs/Resume_spieswl_20200220.html"
 html_image:         "assets/images/html_icon.png"
 ---
 
+<div class="page-meta">
+    <h3 class="page-title">{{ page.title }}</h3>
+</div>
+
+
 If you have professional inquiries, grab a copy of one of these resume formats and reach out at **resume[at]spieswl.com**.
 
 ##### PDF Format
