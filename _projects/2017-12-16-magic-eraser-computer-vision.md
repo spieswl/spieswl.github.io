@@ -12,7 +12,6 @@ specifics:
     images:         "magic-eraser-cv"
 
 published:          true
-
 ---
 
 As part of our first Computer Vision course at Northwestern, a [fellow colleague, Lauren Hutson](https://github.com/laurenhut/) and I teamed up to create a "Smart" eraser program using **[Python](https://www.python.org/)** and Python bindings in **[OpenCV](https://opencv.org/)**. Our program works by using some simple image processing techniques on each frame of a sampled video feed. For each frame, we identified red foreground handwriting against a background texture of printed words, erase the foreground handwriting based on the position of an 'eraser' cursor (_in this case, a marker held near the top of the frame_), and synthesize a new texture for the erased regions that blends in with the background paper.

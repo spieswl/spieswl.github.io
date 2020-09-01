@@ -11,7 +11,7 @@ specifics:
     featured:       false
     images:         "coffee-bar"
 
-published:          true
+published:         true
 ---
 
 One of the benefits of working for an automation supplier is getting to see how things in the industrial realm are built. My experience at **ATS** was that we routinely produced things of great quality across the mechanical, electrical, and software spectrum. While part of that was my job as an electrical and systems engineer, I also got to see first-hand how the tooling, framing, fixtures, and gantries were designed and built. One of the raw materials we used most often is known as extruded aluminum, or extrusion as we liked to call it. Manufactured by companies such as **[80/20 Inc.](https://8020.net/)** and **[Bosch Rexroth](https://www.boschrexroth.com/en/us/products/product-groups/assembly-technology/topics/aluminum-structural-framing/index)**, extrusion often served as structural material, machine guarding, architectural components, or as a platform for mounting devices and fixtures. I often liked to joke that we were the biggest consumer of extruded aluminum in Ohio, and that may not have been too far from the truth in 2015 and 2016. Extruded aluminum gets a lot of use in industrial applications due to its lightweight nature (from the aluminum itself and its unique geometry), high strength-to-weight ratio, and considerable flexibility and utility. While not necessarily the cheapest option for framing out there, the benefits of using extrusion usually outweigh the costs.
