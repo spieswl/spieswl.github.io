@@ -5,10 +5,10 @@ title:              Tagged
 
 {% include tag_parser.html %}
 
-<h2>Search Posts by Tags:</h2>
+<h3>Search Blog Postings by Tags:</h3>
 
 {% if tags %}
-<div class="tag-cloud tag-cloud-small" id="Tags">
+<div class="tag-cloud" id="Tags">
     {% for tag in tags %}
         <a class="tag-anchor" href="#{{ tag | slugify }}"><i class="fa fa-tag muted" aria-hidden="true"></i> {{ tag }}</a>
     {% endfor %}
@@ -17,7 +17,6 @@ title:              Tagged
 
 <div class="posts">
     {% for tag in tags %}
-
     <style>
         #{{ tag | slugify }} {
         transition: opacity 0.5s ease-out;
@@ -33,20 +32,17 @@ title:              Tagged
     </style>
 
     <div id="{{ tag | slugify }}">
-        <h2 class="year" ><i class="fa fa-hashtag muted" aria-hidden="true"></i>{{ tag }}</h2>
+        <h4><i class="fa fa-tag muted" aria-hidden="true"></i> {{ tag }}</h4>
 
         {% for post in site.posts %}
             {% if post.tags contains tag %}
-
                 <div class="post-list">
                     <div class="post-list-date"><small>{{ post.date | date: "%b %d, %Y" }}</small></div>
-                    <div class="text-truncate"><a href="{{ post.url }}">{{ post.title }}</a></div>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
                     <div class="post-list-desc">{{ post.description }}</div>
                 </div>
-
             {% endif %}
         {% endfor %}
     </div>
-
     {% endfor %}
 </div>

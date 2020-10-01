@@ -1,11 +1,11 @@
-/*! Responsive Styles */
+/*! ---------- Responsive Styles ---------- */
 
 @media only screen and (min-width: 768px) {
     html {
         font-size: 20px;
     }
 
-    .container, .footer, .nav {
+    .bezel, .footer, .site-nav {
         max-width: 48rem;
     }
 
@@ -16,7 +16,7 @@
 }
 
 @media only screen and (min-width: 1024px) {
-    .container, .footer, .nav {
+    .bezel, .footer, .site-nav {
         max-width: 60rem;
     }
 
@@ -27,7 +27,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-    .container, .footer, .nav {
+    .bezel, .footer, .site-nav {
         max-width: 60rem;
     }
 
@@ -38,7 +38,7 @@
 }
 
 @media only screen and (min-width: 1920px) {
-    .container, .footer, .nav {
+    .bezel, .footer, .site-nav {
         max-width: 72rem;
     }
 
@@ -58,6 +58,11 @@
         }
     }
 
+    .bezel img {
+        max-width: 15rem;
+        border-radius: 2px;
+    }
+
     .post-list-date {
         margin-left: 0;
         float: none;
@@ -74,7 +79,7 @@
 
     .project-thumb {
         height: 40vw;
-        width: 80vw;
+        width: 60vw;
     }
 
     a {
@@ -89,23 +94,47 @@
         word-break: break-word;
 
         /* Adds a hyphen where the word breaks, if supported (No Blink) */
-        -ms-hyphens: auto;
         -moz-hyphens: auto;
+        -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
     }
 }
 
 @media only screen and (max-width: 480px) {
+    .masthead-title {
+        text-align: center;
+    }
+
     body {
         font-size: 0.9rem;
     }
 
-    .container img {
-        max-width: 100vw;
-        margin-left: -16px;
-        margin-right: -16px;
-        border-radius: 0px;
-        transform: none;
+    .site-nav {
+        font-size: 0.7rem;
+        line-height: 2.4;
+    }
+
+    .site-nav-left {
+        margin: 20px 0px -10px -42px;
+        text-align: center;
+
+        ul {
+            display: inline-block;
+        }
+    }
+
+    .site-nav-right {
+        margin: 0px 0px -20px -42px;
+        text-align: center;
+
+        ul {
+            display: inline-block;
+        }
+    }
+
+    .bezel img {
+        max-width: 12rem;
+        border-radius: 1px;
     }
 }

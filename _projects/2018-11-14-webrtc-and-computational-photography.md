@@ -3,75 +3,85 @@ layout:             project
 title:              "webrtc-perception : Using WebRTC for Computational Photography"
 date:               "2018-11-14"
 
-description:        "Devices capable of providing images for computational applications are abundant, but, outside of mobile app 'walled gardens', few frameworks are freely available for academic, artistic, or scientific use. This project contains examples of using WebRTC for surface reconstruction, surface measurement, and near-real-time modeling with consumer-accessible tablets or cell phones."
-keywords:           webrtc, javascript, computer vision, web development, computational photography, image processing, photometric stereo, phase measured deflectometry
-tags:               [WebRTC, JavaScript, Python, Computer Vision, Deflectometry, Photometric Stereo]
+description:        "Devices capable of providing images for computational applications are abundant but few web frameworks are freely available for academic, artistic, or scientific use. This project contains examples of using WebRTC for surface reconstruction, surface measurement, and near real-time modeling with consumer-grade mobile devices."
+keywords:           webrtc, javascript, computer vision, computational photography, image processing, photometric stereo, phase measured deflectometry
+tags:               [WebRTC, Deflectometry, Python, Computer Vision]
 
-folders:
-  images:           "webrtc-perception"                     # This path is project-dependent; don't forget to change it!
+specifics:
+    featured:       true
+    images:         "webrtc-perception"
 
 published:          true
 ---
 
-During my time spent in Northwestern University's **[Computational Photography Lab](http://compphotolab.northwestern.edu/)**, I divided my attention between the 3D Scanner project [described here]({{site.url}}/projects/2018/single-shot-structured-light-depth-scanning) and another project centered around **[WebRTC](https://webrtc.org/)**. WebRTC (_RTC stands for Real-Time Communications_) is a suite of APIs that enables the capture and transfer of video and audio content entirely through a web browser. Several applications and products already leverage WebRTC for video conferencing, gaming, media sharing, and other social applications, so it has benefited from steady growth and support since its introduction at the 2013 Google I/O developers conference. A select few have also used WebRTC to facilitate IoT applications, serve as the framework for hobbyist projects, and have integrated it into cutting-edge computer science and robotics research.
+During my time spent in Northwestern University's **[Computational Photography Lab](http://compphotolab.northwestern.edu/)**, I divided my attention between the mothballed [handheld 3D scanner project]({{site.url}}/projects/2018/single-shot-structured-light-depth-scanning) and another project oriented around **[WebRTC](https://webrtc.org/)**. WebRTC (_RTC stands for Real-Time Communications_) is a suite of APIs that enables the capture and transfer of video and audio content entirely through a web browser. Several applications and products already leverage WebRTC for video conferencing, gaming, media sharing, and other social applications, so it has benefited from steady growth and support since its introduction at the [2013 Google I/O developers conference](https://www.youtube.com/watch?v=p2HzZkd2A40). Some developers and researchers have also used WebRTC to facilitate IoT applications, serve as the framework for hobbyist projects, and have integrated it into cutting-edge computer science and robotics research.
 
-I started looking at _WebRTC_ APIs in mid-2018 to determine if our lab could use such a technology as the basis for a scientific data collection system. The aim was to develop an image capture framework that could be immediately usable for multiple ongoing research projects without requiring the researchers to possess special hardware or be familiar with the nuances of WebRTC. Our lab also looked at _WebRTC_ as a chance to create a system that could eventually be used by individuals outside of our laboratory environment, such as art curators and conservators, for historical or scientific documentation purposes. The imposing limitation that the end system cannot require users to download a separate application, and instead only use browser-supplied capabilities, does constrain the potential capabilities somewhat, but also allows for a wider audience and subsequently broader use.
+I started looking at WebRTC APIs in mid-2018 to determine if our lab could use such a technology as the basis for a new scientific data collection system. My aim was to develop an image capture framework that could be immediately usable for multiple ongoing research projects. Furthermore, my system needed to work without requiring my colleagues to possess special hardware or be familiar with the nuances of browser APIs or web development. Our lab also looked at this project as a chance to create a system that could eventually be used by individuals outside of our laboratory, namely art curators and conservators, for historical or scientific documentation purposes. The most imposing limitation was that the end system cannot require users to download a separate application, and instead ONLY use what would be available in modern web browsers. This did threaten to constrain the potential capabilities somewhat, but also ensured a broader potential audience and subsequent use.
 
-The design of **`webrtc-perception`** includes a capture website, a dedicated server for processing image data, and a results display website. Since WebRTC is used for capture and transport, users need to rely on other resources to complete their application, such as a dedicated server to handle image and data processing tasks and return useful results. This also confers some advantages, as operators can improve the processing code on the fly, change camera controls and presentation details on the respective websites, and fix issues without users needing to download or install any new files or update applications.
+The design of **webrtc-perception** includes a capture website, a dedicated server for processing image data, and a results display website. Since WebRTC is used for capture and transport, users have to rely on other resources to complete their application, such as a dedicated server to handle image and data processing tasks and return useful results. This also confers some advantages, as operators can improve the processing code on the fly, change camera controls and presentation details on the respective websites, and fix issues without users needing to download or install any new files or update applications. This project also leans on another library named `aiortc` to implement Python-based interaction with connecting clients via WebRTC and perform useful computation on images and other data gathered through  use. Jeremy Lainé has put together a very useful package and I highly recommend [giving it a closer look](https://github.com/aiortc/aiortc).
 
-This project also leans on another library named `aiortc` to implement Python-based interaction with connecting clients via WebRTC and perform useful computation on images and other data gathered through the use of WebRTC. Jeremy Lainé has put together a very useful package and I highly recommend [giving it a closer look](https://github.com/jlaine/aiortc) if you are the least bit interested in this framework!
-
-A barebones illustration of the _webrtc-perception_ framework is shown in the following graphic. This will give you an idea of what an end-to-end system _could_ look like, but without the _rtc-shapeshifter_- or _rtc-deflectometry_-specific details included.
-
-<div class="project-image">
-    <img src="https://raw.githubusercontent.com/spieswl/webrtc-perception/master/docs/webrtc-perception_block_diagram.png" style="width:800px">
-</div>
-
-One more thing: if you are intending to re-implement portions of this project or are otherwise unfamiliar with the implementation details of WebRTC, I encourage you to investigate the videos and guide content over at [https://webrtc.org/start/](https://webrtc.org/start/). There are plenty of resources to get people unfamiliar with WebRTC caught up to speed. Take particular note of `MediaStream` and `RTCDataChannel` details, as our tools make use of those two extensively.
-
-### webrtc-perception
-
-The project "metapackage" is named **webrtc-perception** and is hosted over at GitHub at [https://github.com/spieswl/webrtc-perception](https://github.com/spieswl/webrtc-perception). The application-specific code is contained within the "content" folder, while the metapackage serves as a catch-all issue tracker and documentation holder that we can collectively address.
-
-Speaking more specifically than above, _webrtc-perception_ uses WebRTC to establish a connection between the server and the client device in a seamless manner. `getUserMedia()` and other _MediaStream_ components simplify connecting to a client device, such as an integrated camrea. The client device, thanks to `MediaStream` features, also allows the server to decide which photography settings to use for that particular camera (such as _**exposure time**_, _**ISO**_, _**white balance**_, _**focus distance_**, rear _**torch**_ status, etc.) for a particular application. The client signals to the server when it is ready to begin data capture, and the server responds with a signal to start "measuring" with the device. The server handles gathering data from the client and performing application-specific computation on the gathered data. My server architecture uses Python and `aiortc` to connect with a client via WebRTC without needing to use a web browser. The Python code also converts the results of the computation into a format which can be transmitted to another, separate website designed to display (and make available, if necessary) the results. My system attempts to do this as close to real-time as possible, so that the user in control of the measurement client can evaluate the measurement process in something akin to a feedback loop.
-
-At present, two sub-projects currently make their home in the metapackage: **`rtc-shapeshifter`** and **`rtc-deflectometry`**. Each sub-project is tied to active research in the **Computational Photography Lab**. The next couple sections outline the aspirations of each sub-project and how my colleagues are using **webrtc-perception** to achieve those aims.
-
-#### > rtc-shapeshifter
-
-**`rtc-shapeshifter`** is a _WebRTC_-based tool that expands upon a concept originally presented by one of my colleagues [Chia-Kai Yeh](https://github.com/kaiyeh0913) called "[Shape by Shifting](https://ieeexplore.ieee.org/abstract/document/8109194)". His work originally used DSLR cameras to get early results and switched to using an iPhone (with some special hardware) in its later configuration, which made it a prime candidate for a measurement technique that could be extended by _webrtc-perception_. While this entry will not go into deep technical detail on his work, I have included some slides from a presentation we held for a technical interest group here at Northwestern University on October 19th:
-
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/sfs_slide_1.png">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/sfs_slide_1.png" style="width:600px; padding:0px 0px 0px 0px;">
-    </a>
-    <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/sfs_slide_2.png">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/sfs_slide_2.png" style="width:600px; padding:0px 0px 0px 0px;">
-    </a>
-</div>
-
-In short, Kai is using the _webrtc-perception_ framework to make it easier for him to recover surface normal maps with an off-the-shelf smartphone by way of photometric stereo. He can control various photography settings remotely, trigger image capture from the rear-facing camera (_with the LED light enabled_), clip on his polarizer, and automate processing and results generation...and see his results _while_ capturing data.
-
-<!-- TODO : Results screencap goes here -->
-
-#### > rtc-deflectometry
-
-**`rtc-deflectometry`** is a WebRTC-based tool that implements _**Phase Measuring Deflectometry (PMD)**_ in order to optically measure partially specular surfaces. In particular, Dr. Florian Willomitzer, the leading CPL post-doc, was eager to measure some special glass tiles that we have in the lab. These glass tiles have a particular surface shape that bears some historical relevance, so implementing PMD techniques on consumer devices using WebRTC to try and recover the surface shape is the goal of this sub-project. PMD, for those who are unfamiliar, can be described as using light projected in a periodic pattern along with an observing camera element to perceive how a surface deforms the observation of the pattern.
-
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/pmd_slide_1.png">
-        <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/pmd_slide_1.png" style="width:800px; padding:0px 0px 0px 0px;">
-    </a>
-</div>
-
-Florian's application uses _webrtc-perception_ to access the front-facing camera on a device and allow for his application to change camera settings on the connected client. When paired with JavaScript code I wrote for generating sinusoidal patterns, he can display a periodic image pattern in the device display, use WebRTC to record image captures of the morphed pattern, transmit them to the processing server, and see the phase map results in real-time. The changing of light patterns requires some JavaScript acumen, but the client merely needs to reload the web interface to get updated JavaScript code, and tweaks to server processing code are invisible to the client device.
-
-<!-- TODO : Results screencap goes here -->
-
-More details on the device calibration, our results for both `rtc-shapeshifter` and `rtc-deflectometry`, and ideas for extensions to our work can be found in the paper on **[webrtc-perception]()**, which is coming soon.
+Finally, there are some details below the **webrtc-perception** metapackage description that talks about some specific applications for this technology, both of which have unique implications for scientific study of artistic works.
 
 <hr>
 
-On a closing note, `JavaScript` is not my programming language of choice and I do not usually take on projects with a heavy web development focus. Instead, the opportunity to provide not only just a single computer vision tool, but a complete computer vision toolbox for my fellow researchers was appealing enough that I was eager to contribute to the development of **webrtc-perception**. The fact that this project has immediate application to ongoing research and WebRTC itself provided a straightforward path to creating an end-to-end scientific tool was also a notable bonus. All things considered, I do not see myself moving away from working in `C++` or `Python` anytime soon.
+#### webrtc-perception
 
-Do not miss checking the **[About]({{site.url}}/about)** page for my most recent contact information if you want to talk about this work, or any other content!
+The project "metapackage" is named **webrtc-perception** and is hosted [over on GitHub](https://github.com/spieswl/webrtc-perception). Examples of application-specific code is contained within the "content" folder, while the metapackage itself serves as the issue tracker and documentation holder for all contained content. At present, two applications are featured in the metapackage: `rtc-shapeshifter` and `rtc-deflectometry`. Each application is connected to specific active research projects in the **Computational Photography Lab**.
+
+A barebones illustration of the **webrtc-perception** framework is shown in the following figure. This gives you an idea of what an end-to-end system _could_ look like, but without the _rtc-shapeshifter_- or _rtc-deflectometry_-specific details.
+
+<div class="project-image">
+    <a href="https://raw.githubusercontent.com/spieswl/webrtc-perception/master/docs/webrtc-perception_block_diagram.png">
+        <img src="https://raw.githubusercontent.com/spieswl/webrtc-perception/master/docs/webrtc-perception_block_diagram.png" width="800">
+    </a>
+</div>
+
+**webrtc-perception** uses the WebRTC framework to establish a connection between a server and a client device in a seamless manner. `getUserMedia()` and other _MediaStream_ components simplify connecting to a client device. The client device, thanks to other `MediaStream` features, also permits the server to detect and choose which photography settings are important for that particular camera track (such as **_exposure time_**, **_ISO_**, **_white balance_**, **_focus distance_**, rear **_torch_** status, etc). The client signals to the server when it is ready to begin data capture, and the server responds with a signal to start "measuring" with the device. The server handles gathering data from the client and performs application-specific computation on all the gathered data. The server does all this through the use of Python and `aiortc` to connect with a client via WebRTC without needing to use a web browser itself. The Python code converts the results of the computation into a format which can be transmitted to another, separate website designed to display (_and make available, if necessary_) the results. The featured implementations attempt to do this as close to real-time as possible, so that the user in control of the measurement client can evaluate the measurement process in a sort of feedback loop.
+
+The next sections outline the goals of `rtc-shapeshifter` and `rtc-deflectometry` and how my colleagues are using **webrtc-perception** to achieve those goals.
+
+##### > rtc-shapeshifter
+
+`rtc-shapeshifter` is a WebRTC-based tool that expands upon a concept originally presented by [Chia-Kai Yeh](https://github.com/kaiyeh0913) called _[Shape by Shifting](https://ieeexplore.ieee.org/abstract/document/8109194)_. His work originally used DSLR cameras to get preliminary results and he switched to using an iPhone (_with some special hardware_) in its final form, which made it an interesting candidate for extension through **webrtc-perception**. While I will not go into deep technical detail on his work, I included some slides from a presentation we held for one of the university's scientific interest groups on October 19th, 2018:
+
+<div class="project-image">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_sfs_slide_1.png">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_sfs_slide_1.png" width="600" style="padding:0px 0px 0px 0px;">
+    </a>
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_sfs_slide_2.png">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_sfs_slide_2.png" width="600" style="padding:0px 0px 0px 0px;">
+    </a>
+</div>
+
+In short, Kai has been using the **webrtc-perception** framework to make it easier for him to recover surface normal maps with an off-the-shelf **NVIDIA SHIELD K1** tablet though the use of photometric stereo measurement. He can control various photography settings remotely, trigger image capture from the rear-facing camera (_with the LED light enabled_), clip on his polarizer, and automate processing and results generation...and see his results _while_ capturing data. This system has made it far easier to perform surface measurements of painted works of art for the purposes of preservation and restoration. Our work was presented at 2019's **AAAS** conference and highlighted by AAAS on _Science_ magazine's website, as well as featured on Northwestern University's Engineering News reel.
+
+* [https://www.sciencemag.org/news/2019/02/new-app-reveals-hidden-landscapes-within-georgia-o-keeffe-s-paintings](https://www.sciencemag.org/news/2019/02/new-app-reveals-hidden-landscapes-within-georgia-o-keeffe-s-paintings)
+* [https://www.mccormick.northwestern.edu/news/articles/2019/02/diagnosing-art-acne-in-georgia-okeeffe-paintings.html](https://www.mccormick.northwestern.edu/news/articles/2019/02/diagnosing-art-acne-in-georgia-okeeffe-paintings.html)
+
+##### > rtc-deflectometry
+
+`rtc-deflectometry` is a WebRTC-based tool that implements **_Phase Measuring Deflectometry (PMD)_** in order to optically measure surfaces that exhibit specular reflection. In particular, Dr. Florian Willomitzer, the leading CPL post-doctoral researcher, was eager to measure some special glass tiles that we had in the lab. These glass tiles were part of a sample set from the **[Kokomo Opalescent Glass Works](https://en.wikipedia.org/wiki/Kokomo_Opalescent_Glass_Works)** in Indiana, famous for having supplied glass to Louis Comfort Tiffany. These sample tiles have a particular surface shape that, if accurately captured, can be attributed to Kokomo's specific [roller table process](https://en.wikipedia.org/wiki/Architectural_glass#Rolled_plate_(figured)_glass). Pieces commissioned by Tiffany usually bear artistic and historical relevance, but traditional surface measurement systems can be difficult to situate and leverage if the glass work is installed and immobile. Implementing PMD techniques on consumer devices using _webrtc-perception_ is an alternate way to measure the surface shape by instead "scanning" the glass with the mobile device. PMD, for the unfamiliar, can be described as projecting light in varying structured patterns and using a camera element to perceive how a surface affects the reflection of the pattern.
+
+<div class="project-image">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_pmd_slide_1.png">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_pmd_slide_1.png" width="800" style="padding:0px 0px 0px 0px;">
+    </a>
+</div>
+
+The device used for data capture was again an **NVIDIA SHIELD K1** tablet. Florian's application uses _webrtc-perception_ to access the front-facing camera on a device and change camera settings for the connected client. When paired with some JavaScript I wrote for generating sinusoidal patterns on the K1's display, he can generate any number of periodic image patterns on the display, use WebRTC to record image captures of the morphed pattern, transmit them to the processing server, and see the phase mapping results in real-time. The changing of light patterns requires some JavaScript and trigonometric acumen on the developers' part, but the client merely needs to reload the _webrtc-perception_ interface to get updated JavaScript code, and tweaks to server processing code are invisible to the client device.
+
+`rtc-deflectometry` was demonstrated on the Kokomo sample glass tiles, on decorative pieces we acquired for measurement purposes, and on various other objects (_even those not strictly made of glass_) that exhibit specular reflection. Our results and a description of the work was **[featured in Optics Express Vol. 28, Issue 7](https://www.osapublishing.org/oe/abstract.cfm?uri=oe-28-7-9027)** in March 2020, and there is even a patent pending on this particular combined integration of PMD and mobile devices.
+
+I even got to do a bit of hand modeling for the feature's preview image!
+
+<div class="project-image">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/04_hand_model.png">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/04_hand_model.png" width="480" style="padding:0px 0px 0px 0px;">
+    </a>
+</div>
+
+<hr>
+
+##### Attribution
+
+_Special thanks to the NU Computational Photography Lab for the screenshot of Kai's work currently serving as the project thumbnail._

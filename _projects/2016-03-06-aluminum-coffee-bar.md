@@ -1,36 +1,55 @@
 ---
 layout:             project
-title:              "Extruded Aluminum Coffee Bar"
+title:              "Making a Coffee Bar Out of Extruded Aluminum"
 date:               "2016-03-06"
 
-description:        "Using extruded aluminum profiles to make a custom piece of furniture for the home."
-keywords:           furniture, crafts, carpentry, coffee bar, extrusion, hobby, coffee, aluminum, ideas
-tags:               [Crafting, Extrusion, Hobbyist]
+description:        "This project recap shows how I used extruded aluminum profiles to make a custom coffee bar."
+keywords:           crafts, carpentry, furniture, coffee bar, extrusion
+tags:               [Furniture, DIY]
 
-folders:
-  images:           "coffee-bar"                            # This path is project-dependent; don't forget to change it!
+specifics:
+    featured:       false
+    images:         "coffee-bar"
 
 published:          true
 ---
 
-In the scientific and industrial realms, extruded aluminum “profiles” have made a name as a highly flexible and useful building material. Its unique geometry simultaneously allows for immense strength and great utility. Profiles can serve as structural material, machine guarding, architectural or artistic pieces, and as a platform for mounting devices and fixtures. In my experiences, one can find daily use for such material, both at home and at work.
+One of the benefits of working for an automation supplier is getting to see how things in the industrial realm are built. My experience at **ATS** was that we routinely produced things of great quality across the mechanical, electrical, and software spectrum. While part of that was my job as an electrical and systems engineer, I also got to see first-hand how the tooling, framing, fixtures, and gantries were designed and built. One of the raw materials we used most often is known as extruded aluminum, or extrusion as we liked to call it. Manufactured by companies such as **[80/20 Inc.](https://8020.net/)** and **[Bosch Rexroth](https://www.boschrexroth.com/en/us/products/product-groups/assembly-technology/topics/aluminum-structural-framing/index)**, extrusion often served as structural material, machine guarding, architectural components, or as a platform for mounting devices and fixtures. I often liked to joke that we were the biggest consumer of extruded aluminum in Ohio, and that may not have been too far from the truth in 2015 and 2016. Extruded aluminum gets a lot of use in industrial applications due to its lightweight nature (from the aluminum itself and its unique geometry), high strength-to-weight ratio, and considerable flexibility and utility. While not necessarily the cheapest option for framing out there, the benefits of using extrusion usually outweigh the costs.
+
+I had wanted to use extrusion in custom home furniture for a long time (_I was around the stuff all the time and had access to a huge amount of scrap, why wouldn't I try to use some?_), but the trick was getting my then-girlfriend-and-now-wife to agree to it. The profiles we were using had a clear finish to them (_which is the form most people see when they encounter extruded aluminum_), leaving the silvery color exposed. I agreed with my wife that the standard, silver profiles looked far too industrial to use outside of a workshop or garage, but a breakthrough occurred when I discovered that **80/20** sold a version that comes anodized with a black finish.
 
 <div class="project-image">
-    <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/P001.png" style="width:480px">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_black_anodized.jpg">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_black_anodized.jpg" style="margin:4px 4px 4px 4px">
+    </a>
 </div>
 
-After seeing the usefulness of extruded profiles first-hand, I thought up a way to use aluminum extrusion to fill a recent need for custom furniture here on the homefront. Up until recently, my wife and I were looking at "coffee nook" cabinets and furniture to serve as a home for our coffee beans, grinder, presses, ceramics, and other related prep ware. Pinterest and Instagram offered many ideas for a home-made coffee bar design, but none used extruded aluminum as a base, so I opted to design the piece in the image above.
+I drew up a concept that would use some custom wood pieces and black-anodized extrusion to create a modern-industrial coffee bar. We had recently been looking at "coffee nook" cabinets and furniture to store all our mugs, coffee beans, grinders, presses, and miscellaneous prep ware. Pinterest and Instagram offered many extravagant ideas for a home-made coffee bar design, but instead I designed something a bit more modest:
 
 <div class="project-image">
-    <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/P002.png" style="width:200px; margin:0px 16px 0px 16px; float:right">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_coffee_bar.jpg">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_coffee_bar.jpg" width="480" style="margin:4px 4px 4px 4px">
+    </a>
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_underside.jpg">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_underside.jpg" width="270" style="margin:4px 4px 4px 4px">
+    </a>
 </div>
 
-I designed a table which used 25mm profiles, sourced from **[80/20 Inc.](https://8020.net/)**, that were anodized with a black finish at the factory. In my opinion, the black finish provides better decorative value than other profiles, which normally come with a clear finish, leaving the natural silver color of aluminum exposed. The dimensions of the frame itself, 40″W x 34″H x 18″D, allowed for a standard, birch, ‘butcher block’ tabletop to be mounted on the top of the stand after trimming two of the edges down. In lieu of a stain or urethane coating, the butcher block was treated with a beeswax-infused mineral oil to provide food-safe protection. Two shelves, also made from birch, were trimmed and mounted on the inside of the frame, supported by black aluminum gussets. These shelves allow for significant storage space for ceramics and glassware inside the frame. Leveling feet from **[McMaster-Carr](https://www.mcmaster.com/)** are installed in tapped holes on the bottom of the extrusion, which could be later replaced by casters.
+The frame itself used 25mm profiles that can accomodate M6 button-head screws, both in the T-slot channels and in the ends of each piece (after some tapping). I thought that the black finish would be more modern and aesthetically fitting than any of the other styles; something I confirmed when they were finally in-hand. The dimensions of the frame itself, 40″W x 34″H x 18″D, allowed for a standard, birch, ‘butcher block’ tabletop (_from Menards_) to be mounted on the top of the stand after cutting one of the ends down. In lieu of a stain or urethane coating, I treated the butcher block top with a beeswax-infused mineral oil to provide protection that is also food-safe. Two shelves, also made from birch, were trimmed and mounted on the inside of the frame, supported by black aluminum gussets. These shelves allow for plenty of storage space for ceramics and glassware inside the frame. Leveling feet are installed in tapped holes on the bottom of the extrusion, which can be later replaced by casters, if I ever care to splurge on them.
 
-<div class="project-image">
-    <img src="{{ site.url }}/{{ site.project_assets }}/{{ page.folders.images }}/P003.jpg" style="width:270px; margin:0px 16px 0px 16px; float:left">
+<div class="project-image" style="text-align:center">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/04_work_in_progress.jpg">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/04_work_in_progress.jpg" width="480" style="margin:4px 4px 4px 4px">
+    </a>
+</div>
+<div class="project-image" style="text-align:center">
+    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/05_final_tapping.jpg">
+        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/05_final_tapping.jpg" width="480" style="margin:4px 4px 4px 4px" >
+    </a>
 </div>
 
-The unique structure of aluminum extrusion allows the designer to brace cross-members with gussets, tap the ends to screw other fixtures into place, or bore through the center to secure and suspend materials at a perpendicular angle to the aluminum profile. The downsides to using extrusion, or any other metal framing material, really come from the cost, and the difficulty in which is presented when trying to cut bars to length or bore through the frame. If you have a drill and a saw capable of piercing aluminum, then I highly recommend using extruded aluminum profiles for your next project.
+The unique structure of extruded aluminum extrusion allows me to brace the cross-members with gussets, tap the ends to screw other fixtures into place, or bore through the center to secure and suspend materials at a perpendicular angle to the aluminum profile. The downsides to using extrusion, like most any other metal framing material, come from the cost and from the difficulty in working with the material. That said, if you have a drill and a sawblade capable of cutting through aluminum, then I recommend at least experimenting with extruded aluminum. I think most people would be surprised at how nice the finished product looks for being made entirely from industrial materials.
 
-Specially anodized extrusion commands a higher overall price than using plumbing pipes or other faux-industrial materials, as is common in DIY furniture at the moment, but the ability to radically reconfigure the structure of the coffee bar without any material loss is well worth the higher price. The channeled face allows for attachments to be mounted to the frame without power tools, and accessories like plastic  can be added to smooth out the look and feel of the frame.  Overall, the coffee bar looks quite nice in our home and the design is flexible, simple, and sleek. The wife is also pretty happy with it, so I plan on utilizing extrusion-based designs, or making further modifications to this one, in future furniture projects!
+The ability to completely disassemble and rebuild our new coffee bar without having to undo wood screws or loosen other fasteners should also prove valuable. The channeled faces allows for attachments to be mounted to the frame without power tools, and accessories like plastic "channel fill" can be inserted to smooth out the look and feel of the frame. If we ever move, I should be able to break the bar into enough pieces that is can be handled similarly to flat-pack. Overall, the coffee bar looks fantastic in our home and the design is flexible, simple, and sleek. The wife is really happy with it, so she gave me the green light to come up with more extrusion-based designs in future furniture projects.
+
+**UPDATE (3/4/2020):** We have moved the coffee bar three times now (_Chicago, back to Columbus, and now to Denver_), and its actually the only piece of furniture we kept from our longer stay in Columbus. This thing is still a fantastic piece of furniture, even four years after I originally built it!

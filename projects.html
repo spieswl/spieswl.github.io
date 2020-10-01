@@ -3,20 +3,48 @@ layout:             page
 title:              Projects
 ---
 
+<div class="page-meta">
+    <h3 class="page-title">Featured Projects</h3>
+</div>
+
 <div class="projects">
     <div class="project-list">
-
         {% assign listing = site.projects | sort:"date" | reverse %}
 
         {% for project in listing %}
-            <div class="project-thumb" style="background-image: url({{ site.url }}/assets/images/projects/{{ project.folders.images }}/thumb.png)">
-                <a href="{{ project.url }}">
-                    <div class="project-thumb-overlay">
-                        <strong>{{ project.title }}</strong>
-                    </div>
-                </a>
-            </div>
+            {% if project.specifics.featured %}
+                <div class="project-thumb" style="background-image: url({{ site.url }}/{{ site.assets.projects }}/{{ project.specifics.images }}/thumb.png)">
+                    <a href="{{ project.url }}">
+                        <div class="project-thumb-overlay">
+                            <strong>{{ project.title }}</strong>
+                        </div>
+                    </a>
+                </div>
+            {% else %}
+            {% endif %}
         {% endfor %}
+    </div>
+</div>
 
+<br><br>
+
+<div class="page-meta">
+    <h3>Other Work</h3>
+</div>
+
+<div class="projects">
+    <div class="project-list">
+        {% for project in listing %}
+            {% unless project.specifics.featured %}
+                <div class="project-thumb" style="background-image: url({{ site.url }}/{{ site.assets.projects }}/{{ project.specifics.images }}/thumb.png)">
+                    <a href="{{ project.url }}">
+                        <div class="project-thumb-overlay">
+                            <strong>{{ project.title }}</strong>
+                        </div>
+                    </a>
+                </div>
+            {% else %}
+            {% endunless %}
+        {% endfor %}
     </div>
 </div>

@@ -1,0 +1,222 @@
+/*! ---------- Page-specific Layout Styles ---------- */
+.page {
+    margin-bottom: 4rem;
+}
+
+.page-meta {
+    margin-bottom: 0rem;
+}
+
+.page-title {
+    margin-top: 0;
+}
+
+/*! ---------- Post-specific Layout Styles ---------- */
+
+.post {
+    margin-bottom: 4rem;
+
+    .tagged {
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+    .tagged a {
+        padding: 2px 5px;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        outline: 0;
+        background: transparent;
+        color: #777777;
+        display: inline-block;
+        font-size: 0.8em;
+        text-decoration: none;
+        user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+    }
+    .tagged a:hover {
+        border: 1px solid #dddddd;
+        background: #006699;
+        color: #ffffff;
+    }
+    a {
+        border-bottom: 1px solid #006699;
+    }
+    a:hover {
+        border: 0;
+    }
+}
+
+.post-meta {
+    margin-bottom: 1rem;
+}
+
+.post-date {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.post-list {
+    margin: 0px auto 16px;
+    font-size: 1.1em;
+}
+
+.post-list-date {
+    margin: 0 0 0 20px;
+    float: right;
+
+    small {
+        color: #777777;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+
+.post-list-desc {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-right: 110px;
+    color: #777777;
+    font-size: 0.8em;
+}
+
+.post-list-tags {
+    margin-bottom: 16px;
+
+    a.tag-anchor {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 4px;
+        margin-right: 4px;
+        margin-bottom: 4px;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        background: #f0f0f0;
+        color: #444444;
+        display: inline-block;
+        font-size: 0.7em;
+        white-space: nowrap;
+    }
+
+    a.tag-anchor:active,
+    a.tag-anchor:focus,
+    a.tag-anchor:hover {
+        background: #006699;
+        color: #ffffff;
+    }
+}
+
+.post-image {
+    width: 100%;
+    display: block;
+    text-align: center;
+
+    a {
+        border: 0;
+    }
+    a:hover {
+        background-color: transparent;
+    }
+}
+
+
+/*! ---------- Project-specific Layout Styles ---------- */
+.project {
+    margin-bottom: 4rem;
+    overflow: hidden;
+
+    a {
+        border-bottom: 1px solid #006699;
+    }
+    a:hover {
+        border: 0;
+    }
+}
+
+.project-meta {
+    margin-bottom: 1rem;
+}
+
+.project-date {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.project-list {
+    margin: 0px auto 0px;
+    text-align: center;
+}
+
+.project-thumb {
+    position: relative;
+    margin: 7px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 0 3px 6px #00000080, 0 3px 6px #00000080;
+}
+
+.project-thumb-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #000000e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    -ms-transition: opacity 100ms ease-in-out;
+    -moz-transition: opacity 100ms ease-in-out;
+    -o-transition: opacity 100ms ease-in-out;
+    -webkit-transition: opacity 100ms ease-in-out;
+    transition: opacity 100ms ease-in-out;
+
+    strong {
+        padding: 20px;
+        color: #ffffff;
+        display: block;
+        line-height: 1.5;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.project-image {
+    width: 100%;
+    display: block;
+    text-align: center;
+
+    a {
+        border: 0;
+    }
+    a:hover {
+        background-color: transparent;
+    }
+}
+
+.project-video {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    padding-bottom: 56.25%;     /* 16:9 */
+    padding-top: 25px;
+}
+
+.project-video iframe {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
