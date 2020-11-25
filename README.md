@@ -4,9 +4,9 @@
 
 This website is intended to be hosted on GitHub Pages, which uses [Jekyll](http://jekyllrb.com/docs/home/) to regenerate the website after changes occur in this repository. As such, you can use Jekyll on a local clone of this repository to modify and preview changes before pushing them to a hosting provider.
 
-### Local Preview
+### Local Previewing
 
-#### Debian-based Distributions
+#### Debian-based Linux Distributions
 
 First, you must have Ruby and Jekyll installed...
 
@@ -26,7 +26,25 @@ In another terminal, start a local server (this must also be run in site's root 
 jekyll serve
 ```
 
-Finally, view the site in your browser at `localhost:4000`. Changes you make to template files will be reflected in changes to the static site (after a short delay).
+Finally, view the site in your browser at `localhost:4000`. Changes you make to template files will be reflected in changes to the static site _(after a short delay)_.
+
+#### Windows-based Operating Systems
+
+I recommend following the first set of instructions on Jekyll's website for [installing Ruby and Jekyll](https://jekyllrb.com/docs/installation/windows/)...
+
+Once you can query Jekyll versions from a vanilla command or PowerShell prompt, you should locally clone this repository and navigate to the site's root level. Then build the static site using __Jekyll__...
+
+```bash
+jekyll build --watch
+```
+
+In another command prompt, start a local server (_this must also be run in site's root directory_)...
+
+```bash
+jekyll serve
+```
+
+Finally, view the site in your browser at `localhost:4000`. Changes you make to template files will be reflected in changes to the static site _(after a short delay)_.
 
 ## License
 
