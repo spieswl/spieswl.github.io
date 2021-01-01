@@ -7,7 +7,7 @@ keywords:           git, synology, git server, NAS, homelab
 tags:               [Git, Homelab]
 
 specifics:
-    images:         "synology-git-server"
+    images:         "2018/synology-git-server"
 
 published:          true
 ---

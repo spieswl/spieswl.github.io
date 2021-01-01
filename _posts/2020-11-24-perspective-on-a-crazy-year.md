@@ -1,0 +1,29 @@
+---
+layout:             post
+title:              "A Perspective on a Crazy Year"
+
+description:        "Just a little ranting about calendar year 2020. With just a month left to go, I am taking stock of the successes and failures of the year. I had some proud moments this year, for a variety of reasons I'll talk about. On the other hand, I did not accomplish all of the things I had hoped to, for some of the same reasons. All-in-all, it seems to have been a mixed blessing, with plenty of room for improvement."
+keywords:           personal
+tags:               [Personal]
+
+specifics:
+    images:         "2020/perspective-on-a-crazy-year"
+
+published:          true
+---
+
+Here in the USA, Thanksgiving is in just two days.
+
+There are a lot of things I am thankful for this year. My work continues to be interesting and challenging. My wife, Linsi, continues to wisely invest in herself. Our new dog Luna (_whom Linsi and I [rescued](https://foothillsanimalshelter.org/) in April at the beginning of the COVID-19 pandemic_) is always adding excitement to our lives, whether through mischief or just by being adorable. While neither Linsi nor I achieved all of our personal goals for the year, my take is that **_some_** leeway needs to be given for the fact that life was turned upside-down fairly early on in 2020. As for the details...
+
+I am particularly happy with the extra emphasis I put on reading more books. Linsi helped a friend of ours start a book club in late June, and she was hoping I would be part of it so as to build up the club roster. One thing led to another and now I'm finishing up a Python script to visualize my reading pace, I have a catalog of everything I have read since the beginning of the year, and I am planning on doing a "year end" retrospective on the books I completed. I had felt that my creative juices were drying up over the course of the past few years _(graduate school and startup time commitments being the primary culprits)_ without being adequately refreshed, so I felt that pouring my time and attention into reading and reflection was the right thing for my mental well-being, and as a result of my motivation I should be able to get some cool tools out of this project. An unexpected success!
+
+My website finally got the makeover it has needed since this iteration was first revealed back in late 2017. I have some ideas floating in my head for other additions and modifications I would love to make in the near future (_a dashboard for content I generate in OnShape, for example_), but the site is finally looking and feeling like I always wanted it to. Producing content for it continues to be tough...I routinely wave off my own ideas for a new blog post if I feel that it will not **"add anything of value."** Unfortunately, I also recognize that I would be better at generating valuable content if I merely _practiced_ the act of writing more. Perhaps this post is sowing the latter to reap more of the former? I should make a note to do more casual writing into 2021 and beyond, regardless if its for this blog or not.
+
+One of the things that made me deeply unhappy this year was the **"fear of missing out"** I got from looking at other things people did with their own pandemic-complimentary free time. While I think that primal fear is particularly present in the modern human psyche, the extra time I spent this year (_and I suspect other people also spent_) living vicariously through others caused that anxiety to erupt to the surface. Without much else to do during downtime, looking through the metaphorical "store windows" at yet-another-cool-thing-I-really-should-have-gotten-around-to-doing felt far more depressive than it usually does. The most insidious part is this seemed to be more of a _steady_ and _erosive_ process instead of an _impulsive_ and _catastrophic_ one, so by the time I knew what I was doing to myself, the mental damage had already been done.
+
+A notable exception to that is the case made by one of my closest friends, [Paul Musgrave](https://www.psmusgrave.com/). I **_absolutely_** feel like he has done more interesting things in software and hardware throughout this past year, and yet all I feel is pride when I look through his work. I suspect the social connection I have with him morphed my anxiety that I _missed an opportunity to do something_ into _excitement for the opportunity to collaborate on something even more compelling._ I should make a note to reach out to some other people and collaborate on more technical, creative, or other endeavors, and invite others to participate in more projects that are meaningful to me. I am not naturally keen at that kind of social connecting (_my dad is an engineer AND ALSO a natural connector, so I know what that SHOULD look like_), but it seems to be an area where I could stand to put in a bit more effort from here on out.
+
+I think I need to be less risk-averse. I _know_ that I have a pretty good sense of what is risky and what is not, but I ALWAYS seem to err on the side of caution, even if the potential downsides are minimal or nonexistent. Good example? Not spending time fleshing out my ideas for an automation-focused startup company focused on a particular market, as I can easily justify not spending any effort on it as "being prudent with my time." Ugh. What's the quote? **_"You miss 100% of the shots you don't take?"_** [The Great One](https://en.wikipedia.org/wiki/Wayne_Gretzky) may know a thing or two about success. I am not sure I even particuarly care about that startup idea; it is the broader implication that I will miss something that an otherwise bright and competent person would be able to take advantage of.
+
+There's certainly more I want to reflect on, but my thoughts on those topics are not in what could be called a stable orbit. Hopefully the next time I do one of these perspective posts, I can talk at length about some other things which are on my mind.
