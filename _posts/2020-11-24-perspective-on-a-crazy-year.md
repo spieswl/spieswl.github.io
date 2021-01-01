@@ -7,7 +7,7 @@ keywords:           personal
 tags:               [Personal]
 
 specifics:
-    images:         "2020/perspective-on-a-crazy-year"      # This path is post-dependent; don't forget to change it!
+    images:         "2020/perspective-on-a-crazy-year"
 
 published:          true
 ---
