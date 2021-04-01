@@ -6,39 +6,27 @@ This website is intended to be hosted on GitHub Pages, which uses [Jekyll](http:
 
 ### Local Previewing
 
-#### Debian-based Linux Distributions
-
 First, you must have Ruby and Jekyll installed...
+
+#### Debian-based Linux
+
+From a command prompt...
 
 ```bash
 sudo apt install ruby ruby-dev jekyll
 ```
 
-After installation is complete, locally clone this repository and navigate to the site's root level. Then build the static site using __Jekyll__...
-
-```bash
-jekyll build --watch
-```
-
-In another terminal, start a local server (this must also be run in site's root directory)...
-
-```bash
-jekyll serve
-```
-
-Finally, view the site in your browser at `localhost:4000`. Changes you make to template files will be reflected in changes to the static site _(after a short delay)_.
-
 #### Windows-based Operating Systems
 
-I recommend following the first set of instructions on Jekyll's website for [installing Ruby and Jekyll](https://jekyllrb.com/docs/installation/windows/)...
+I recommend following the first set of instructions on Jekyll's website for [installing Ruby and Jekyll](https://jekyllrb.com/docs/installation/windows/). Once you can query Jekyll versions from a vanilla command or PowerShell prompt, you should be good to continue
 
-Once you can query Jekyll versions from a vanilla command or PowerShell prompt, you should locally clone this repository and navigate to the site's root level. Then build the static site using __Jekyll__...
+After installation is complete, locally clone this repository and navigate to the site's root level. Then build the static site using __Jekyll__ from a terminal or PowerShell session...
 
 ```bash
 jekyll build --watch
 ```
 
-In another command prompt, start a local server (_this must also be run in site's root directory_)...
+In a different terminal, start a local server (this must also be run in site's root directory)...
 
 ```bash
 jekyll serve
