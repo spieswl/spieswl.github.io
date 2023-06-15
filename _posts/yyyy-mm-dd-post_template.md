@@ -7,6 +7,7 @@ keywords:           testing, testing 123, test
 tags:               [Testing, Testing123]
 
 specifics:
+    featured:       false
     images:         "specific-folder-path"                  # This path is post-dependent; don't forget to change it!
 
 published:          false

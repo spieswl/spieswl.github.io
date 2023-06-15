@@ -7,6 +7,7 @@ keywords:           personal, reading
 tags:               [Personal, TYIR]
 
 specifics:
+    featured:       true
     images:         "2020/the-year-in-readings"
 
 published:          true
