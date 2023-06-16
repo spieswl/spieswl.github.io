@@ -73,7 +73,6 @@
     }
 
     .project-list {
-        max-width: 80vw;
         margin: 0px;
     }
 
@@ -101,15 +100,19 @@
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {    
+    body {
+        font-size: 0.9rem;
+    }
+    
     .masthead-title {
         text-align: center;
     }
 
-    body {
-        font-size: 0.9rem;
+    .site-title {
+        text-align: center;
     }
-
+    
     .site-nav {
         font-size: 0.7rem;
         line-height: 2.4;

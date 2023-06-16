@@ -1,9 +1,9 @@
 ---
 layout:             project
-title:              "Driving a Kuka youBot in Simulation with Python"
+title:              "Driving a Kuka YouBot in Simulation with Python"
 date:               "2017-12-13"
 
-description:        "I wrote a controller in Python to direct a research-grade mobile robot to follow a defined trajectory in a simulated environment."
+description:        "I wrote a controller in Python to direct a mobile robot manipulator to follow a defined trajectory in a simulated environment."
 keywords:           software, simulation, python, robotics, controls
 tags:               [Python, Simulation, Robotics]
 
@@ -14,9 +14,11 @@ specifics:
 published:          true
 ---
 
-Northwestern University's robotics programs generally include significant exposure to robotic manipulation, otherwise understood as implementing kinematic and dynamic control of robotic systems. By having access to exceptional faculty and serious facilities for manipulation research and development, aspiring roboticists are routinely given opportunities to tackle problems in robotic manipulation, motion planning, and controls. One such example is the project featured here, part of [Dr. Kevin Lynch](http://www.mccormick.northwestern.edu/research-faculty/directory/profiles/lynch-kevin.html)'s graduate-level Robotic Manipulation course. Students were challenged to analyse the kinematics of a mobile robotic vehicle (a **Kuka youBot**, or 5-axis manipulator mounted on a chassis with 4 mechanum wheels) and have it follow a pre-defined trajectory in a simulated environment. The broader aims of the project involved demonstrating how we could apply our studies and skills to meeting a requirement that could very well be encountered in a real robotic application.
+Northwestern University's robotics programs generally include significant exposure to robotic manipulation, otherwise understood as implementing kinematic and dynamic control of robotic systems. By having access to exceptional faculty and serious facilities for manipulation research and development, aspiring roboticists are routinely given opportunities to tackle problems in robotic manipulation, motion planning, and controls.
 
-First, some details on the challenge are in order. The simulated problem was built with the help of Coppelia Robotics' **[VREP](http://www.coppeliarobotics.com/)** software. A scenario containing a [Kuka YouBot](https://softroboticstoolkit.com/synergistic-design/testing/kuka) was constructed, and we were given a few different sets of initial conditions for the simulated mobile robot (position, orientation, and arm joint angles). The goal was to use forward and inverse kinematics, motion planning, Python libraries for robotic manipulation, and an interface in the simulator to get the **youBot** to follow a pre-defined end-effector trajectory over a five second timespan. In order to successfully meet the requirements for this challenge, we needed to have implemented kinematic control of the 5-DOF robotic arm, use odometry to gauge and control the position and orientation of the mechanum-wheeled chassis, coordinate the motion of the arm and chassis to follow the desired trajectory, and use PI control to correct for any deviation from the path.
+One such example is the project featured here, part of [Dr. Kevin Lynch](http://www.mccormick.northwestern.edu/research-faculty/directory/profiles/lynch-kevin.html)'s graduate-level Robotic Manipulation course. Students were challenged to analyse the kinematics of a mobile robotic vehicle (a **Kuka YouBot**, a 5-axis manipulator mounted on a chassis with 4 mechanum wheels) and have it follow a pre-defined trajectory in a simulated environment. The broader aims of the project involved demonstrating how we could apply this classwork to meeting a requirement that could very likely be encountered in a real robotic application.
+
+First, some details on the challenge: The simulated problem was built with the help of Coppelia Robotics' **[VREP](http://www.coppeliarobotics.com/)** software. A scenario containing a [Kuka YouBot](https://softroboticstoolkit.com/synergistic-design/testing/kuka) was constructed, and we were given a few different sets of initial conditions for the simulated mobile robot (position, orientation, and arm joint angles). The goal was to use forward and inverse kinematics, motion planning, Python libraries for robotic manipulation, and an interface in the simulator to get the **youBot** to follow a pre-defined end-effector trajectory over a five second timespan. In order to successfully meet the requirements for this challenge, we needed to have implemented kinematic control of the 5-DOF robotic arm, use odometry to gauge and control the position and orientation of the mechanum-wheeled chassis, coordinate the motion of the arm and chassis to follow the desired trajectory, and use PI control to correct for any deviation from the calculated path.
 
 <div class="project-image">
     <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_youbot_home.png">
@@ -32,7 +34,7 @@ The controller was written in Python, and uses the _**[numpy](http://www.numpy.o
     </a>
 </div>
 
-Results for the error feedback components are also included for both the "P-" and "PI"-controller configurations. Note that the plots of position error shown below were taken from a scenario where the **youBot**'s initial conditions start the robot away from the desired path.
+Results for the error feedback components are also included for both the "P-" and "PI"-controller configurations. Note that the plots of position error shown below were taken from a scenario where the **YouBot**'s initial conditions start the robot away from the desired path.
 
 <div class="project-image">
     <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_P_ctrl_results.png">
@@ -43,4 +45,4 @@ Results for the error feedback components are also included for both the "P-" an
     </a>
 </div>
 
-The end result is Python code that, when run, generates a motion plan that satisfies the challenge requirements. With additional work, the code could also be ported to interact with a real **youBot** controller and execute more sophisticated motion on a real system!
+The end result is Python code that, when run, generates a motion plan that satisfies the challenge requirements. With additional work, the code could also be ported to interact with a real **YouBot** controller and execute more sophisticated motion on a real system.
