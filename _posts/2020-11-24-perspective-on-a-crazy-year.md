@@ -10,7 +10,7 @@ specifics:
     featured:       false
     images:         "2020/perspective-on-a-crazy-year"
 
-published:          true
+published:          false
 ---
 
 Here in the USA, Thanksgiving is in just two days.
