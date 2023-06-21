@@ -31,7 +31,7 @@ Teal corresponds to non-fiction writings, orange is fiction, and purple is a tec
 
 <hr>
 
-#### A Gentleman in Moscow
+#### A Gentleman in Moscow (by Amor Towles)
 
 My first experience with famed author Amor Towles is _A Gentleman in Moscow_.
 This book is an exceptional read.
@@ -42,7 +42,7 @@ This book starts out a little slow, but builds to a gripping premise and a satis
 Well worth the time spent reading, and even rereading, should you be so inclined.
 My favorite book of 2021.
 
-#### The Last Wish
+#### The Last Wish (by Andrzej Sapkowski)
 
 The introduction of _Geralt of Rivia_ and the world of the aforementioned _Witcher_, comes in a unique fashion: as a set of short stories that are loosely connected in time and space.
 Set in the Northern Kingdoms of Geralt's unnamed world, this book is a uniquely structured introduction to a vibrant cast of characters that feature throughout the book series.
@@ -52,7 +52,7 @@ They, and their associates, are witty, interesting, and engaging: Geralt for the
 The contituent stories within boast well-realized political and social themes, heavy action and intrigue, and involve the mysterious destiny of the young girl, Cirilla, which serves as the main focus of the series, although she is not introduced in this book.
 As someone who loves character-driven stories most of all, I thorougly enjoyed _The Last Wish_ and I immediately moved onto the next book, _Sword of Destiny_.
 
-#### Sword of Destiny
+#### Sword of Destiny (by Andrzej Sapkowski)
 
 Sword of Destiny is the second novella in the _Witcher_ saga that follows the characters of Geralt, Yennefer, and Ciri.
 Although published before _The Last Wish_ and recommended to be read after, this book is another collection of loosely-linked short stories that serve as introductory material.
@@ -65,7 +65,7 @@ The smaller length and loosely-connected nature of both this and _The Last Wish_
 All-in-all, both are entertaining reads with great characters and do not _require_ readers to move onto the later novels.
 If you prefer witty writing and interesting interpersonal dynamics, these books come as recommended reads.
 
-#### Blood of Elves
+#### Blood of Elves (by Andrzej Sapkowski)
 
 _Blood of Elves_ is the first traditionally-structured book in the _Witcher_ series by Andrzej Sapkowski.
 Following the aftermath of the Kingdom of Cintra's demise, Geralt, Yennefer, and Ciri are thrust headlong into conflicts between the Northern Kingdoms and the surrounding regions, between the divided races and social classes of the world, and with those who seek to control the powerful legacy that Ciri inherits.
@@ -76,7 +76,7 @@ That said, it is still true that the best element to Sapkowski's writing is how 
 _Blood of Elves_ continues this trend and uses those characters to further explore a richly envisioned world.
 I enjoyed _Blood of Elves_, perhaps slightly less than _The Last Wish_ and _Sword of Destiny_, but it feels like the character and worldbuilding investment made here cannot help but eventually pay off.
 
-#### The Things They Carried
+#### The Things They Carried (by Tim O'Brien)
 
 On total accident, after reading two fictional short story compendiums, I read through _The Things They Carried_ which is another set of short stories that detail the experiences of draftees and officers of the U.S. Army during the Vietnam War.
 Perhaps important to note, the author, Tim O'Brien, is cagey about which of the stories truly happened, which ones were spun from whole cloth, and which fall somewhere in the middle.
@@ -93,4 +93,4 @@ Undoubtedly less grim than 2020, but no less serious in terms of subject matter.
 The heavy focus on strong character writing was a welcome change.
 It is lovely to see people discovering and fostering new interest in older, cult-classic reads, such as what has happened with the **_Game of Thrones_** series and now with **_The Witcher_** series.
 
-Here's to more consistent reading in 2022! 🎉
+Here's to more reading in 2022! 🎉

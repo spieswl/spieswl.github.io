@@ -110,4 +110,4 @@ Overall, I enjoyed *The Lovely Bones*, but if you have more sensitive or discern
 
 <hr>
 
-Here's to more consistent reading in 2021! 🎉
+Here's to more reading in 2021! 🎉
