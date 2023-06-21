@@ -1,6 +1,6 @@
 ---
 layout:             post
-title:              "Difficulties Using MediaStreams and WebRTC"
+title:              "Realities of Using MediaStreams and WebRTC"
 
 description:        "My recent experiences with using WebRTC in a mobile application gave me a chance to get familiar with its capabilities and limitations, namely being reliant on other protocols to acquire media data. While basic MediaStream functions work as advertised, advanced uses are far tougher to get working consistently. In many cases, features are not supported by particular browsers, implementations are inconsistent across devices, or controls simply have not yet been implemented."
 keywords:           webrtc, mediastream, computer vision, safari, firefox, chrome, android, iOS, mobile devices
