@@ -13,6 +13,7 @@ specifics:
     images:         "adding-car-smarts"
 
 published:          true
+deadhead:           false
 ---
 
 One of my pet peeves is when I have some electronic device eventually loses purpose as the battery dies or the product support ends.

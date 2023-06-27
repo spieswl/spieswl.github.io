@@ -13,6 +13,7 @@ specifics:
     images:         "webrtc-perception"
 
 published:          true
+deadhead:           false
 ---
 
 During my time spent in Northwestern University's **[Computational Photography Lab](http://compphotolab.northwestern.edu/)**, I divided my attention between a handheld 3D scanner project and another project oriented around **[WebRTC](https://webrtc.org/)**.

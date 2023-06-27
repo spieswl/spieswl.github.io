@@ -1,7 +1,7 @@
 ---
 layout:             feature
 title:              "Template Title"
-date:               "2000-01-01"                            # Used for sorting features by date
+date:               "2000-01-01"
 
 description:        "Template description"
 keywords:           testing, testing 123, test
@@ -15,6 +15,8 @@ specifics:
     images:         "specific-folder-path"
 
 published:          false
+# Use in special cases only
+deadhead:           false
 ---
 
 Lorem ipsum

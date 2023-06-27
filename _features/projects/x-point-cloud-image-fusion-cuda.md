@@ -13,6 +13,7 @@ specifics:
     images:         "CUDA-2d-depth-fusion"
 
 published:          false
+deadhead:           false
 ---
 
 <div class="feature-image">

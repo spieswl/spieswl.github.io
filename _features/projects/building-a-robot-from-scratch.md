@@ -13,6 +13,7 @@ specifics:
     images:         "cotton-candy-kart"
 
 published:          true
+deadhead:           false
 ---
 
 During my time in Northwestern University's **MSR** program, I took a series of Mechatronics courses that covered several aspects of robot design.

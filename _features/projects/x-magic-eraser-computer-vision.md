@@ -13,6 +13,7 @@ specifics:
     images:         "magic-eraser-cv"
 
 published:          false
+deadhead:           false
 ---
 
 As part of our first Computer Vision course at Northwestern, a [fellow colleague, Lauren Hutson](https://github.com/laurenhut/) and I teamed up to create a "Smart" eraser program using **[Python](https://www.python.org/)** and Python bindings in **[OpenCV](https://opencv.org/)**.

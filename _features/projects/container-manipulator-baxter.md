@@ -13,6 +13,7 @@ specifics:
     images:         "baxter-container"
 
 published:          true
+deadhead:           false
 ---
 
 The robotics labs at Northwestern possess a few research platforms that the students occasionally work with.

@@ -1,6 +1,6 @@
 ---
 layout:             feature
-title:              "My Time at Viam"
+title:              "Viam"
 date:               "2023-05-24"
 
 description:        "A brief writeup of working at Viam."
@@ -13,6 +13,7 @@ specifics:
     images:         "viam"
 
 published:          false
+deadhead:           true
 ---
 
 Lorem ipsum

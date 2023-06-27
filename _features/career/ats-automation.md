@@ -13,6 +13,7 @@ specifics:
     images:         "ats-automation"
 
 published:          false
+deadhead:           false
 ---
 
 Lorem ipsum

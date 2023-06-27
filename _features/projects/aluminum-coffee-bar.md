@@ -13,6 +13,7 @@ specifics:
     images:         "coffee-bar"
 
 published:          true
+deadhead:           false
 ---
 
 One of the benefits of working for a high-tech automation supplier is getting to see how big, sturdy, and complex things in the industrial realm are built.

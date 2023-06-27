@@ -13,6 +13,7 @@ specifics:
     images:         "horn-bridge-sim"
 
 published:          true
+deadhead:           false
 ---
 
 This is a cool example of the comparisons that can be made between real and simulated projects.

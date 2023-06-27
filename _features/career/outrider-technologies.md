@@ -13,6 +13,7 @@ specifics:
     images:         "outrider"
 
 published:          false
+deadhead:           false
 ---
 
 Lorem ipsum

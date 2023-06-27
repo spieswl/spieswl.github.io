@@ -13,6 +13,7 @@ specifics:
     images:         "mobile-robot-follower"
 
 published:          true
+deadhead:           false
 ---
 
 Northwestern University's robotics programs generally include significant exposure to robotic manipulation, otherwise understood as implementing kinematic and dynamic control of robotic systems.
