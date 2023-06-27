@@ -1,5 +1,5 @@
 ---
-layout:             project
+layout:             feature
 title:              "Building a Differential Drive Robot from Scratch"
 date:               "2018-06-14"
 
@@ -8,7 +8,8 @@ keywords:           robotics, design, mechanical engineering, electrical enginee
 tags:               [Design, Mobile Robots, Robotics]
 
 specifics:
-    featured:       true
+    career:         false
+    project:        true
     images:         "cotton-candy-kart"
 
 published:          true
@@ -30,21 +31,21 @@ With the stage set, the rest of this project write-up just goes through the spec
 The [project repository is over on GitHub](https://github.com/spieswl/robotic-kart-v1) which holds the mechanical designs, electrical schematics, and the microcontroller and Android application source code.
 _**[MPLAB IDE](http://www.microchip.com/mplab/mplab-x-ide)**_ and _**[Android Studio](https://developer.android.com/studio/)**_ were used for emdedded device programming, and _**[Autodesk EAGLE](https://www.autodesk.com/products/eagle/overview)**_ was used for the electrical schematics and PCB layout.
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/thumb.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/thumb.png" width="400" style="padding:0px 0px 0px 0px;">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/thumb.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/thumb.png" width="400" style="padding:0px 0px 0px 0px;">
     </a>
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_finished_front.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_finished_front.png" width="533" style="padding:0px 0px 0px 0px;">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_finished_front.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_finished_front.png" width="533" style="padding:0px 0px 0px 0px;">
     </a>
 </div>
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_finished_side.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_finished_side.png" width="533" style="padding:0px 0px 0px 0px;">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/02_finished_side.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/02_finished_side.png" width="533" style="padding:0px 0px 0px 0px;">
     </a>
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_finished_top.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_finished_top.png" width="400" style="padding:0px 0px 0px 0px;">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/03_finished_top.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/03_finished_top.png" width="400" style="padding:0px 0px 0px 0px;">
     </a>
 </div>
 
@@ -61,12 +62,12 @@ All of the mechanical chassis pieces were designed by myself and either 3D print
 The mechanical design of the vehicle was where I got most creative.
 All mechanical design was done in **OnShape**, and you can click on the preview images below to inspect the final detail drawings.
 
-<div class="project-image">
+<div class="feature-image">
     <a href="https://github.com/spieswl/robotic-kart-v1/blob/master/mech/CCK-WH01-01_DD.pdf">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/m1_wheel_design.png" width="500" style="padding:0px 6px 0px 6px;">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/m1_wheel_design.png" width="500" style="padding:0px 6px 0px 6px;">
     </a>
     <a href="https://github.com/spieswl/robotic-kart-v1/blob/master/mech/CCK-CHAS01-01_DD.pdf">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/m2_chassis_design.png" width="500" style="padding:0px 6px 0px 6px;">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/m2_chassis_design.png" width="500" style="padding:0px 6px 0px 6px;">
     </a>
 </div>
 
@@ -95,15 +96,15 @@ As mentioned earlier, core processing was handled with a 32-bit **PIC32MX250F128
 Most components were sourced from either **DigiKey** or **Sparkfun**.
 The left two images show the final, populated control board, before I mounted it to the chassis.
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/05_elecPCB_top.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/05_elecPCB_top.png" width="350" style="padding:0px 0px 0px 0px;">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/05_elecPCB_top.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/05_elecPCB_top.png" width="350" style="padding:0px 0px 0px 0px;">
     </a>
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/06_elecPCB_bottom.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/06_elecPCB_bottom.png" width="350" style="padding:0px 0px 0px 0px;">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/06_elecPCB_bottom.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/06_elecPCB_bottom.png" width="350" style="padding:0px 0px 0px 0px;">
     </a>
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/07_motorPCB_top.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/07_motorPCB_top.png" width="350" style="padding:0px 0px 0px 0px;">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/07_motorPCB_top.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/07_motorPCB_top.png" width="350" style="padding:0px 0px 0px 0px;">
     </a>
 </div>
 
@@ -114,12 +115,12 @@ Spacing for the 8-pin header interface provided the only position constraint for
 The system design includes the microcontroller, two status LEDs (_one power, one user-configurable_), the power supply, two pushbuttons (_one master reset, one user-configurable_), the programming port, the USB Mini port, and the headers for the motor controller board.
 Schematic and layout were both done with Eagle, and are shown below.
 
-<div class="project-image">
+<div class="feature-image">
     <a href="https://github.com/spieswl/robotic-kart-v1/blob/master/elec/controller_schematic.pdf">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/e1_controller_schematic.png" width="637" style="padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/e1_controller_schematic.png" width="637" style="padding:0px 0px 0px 0px;">
     </a>
     <a href="https://github.com/spieswl/robotic-kart-v1/blob/master/elec/controller_layout.pdf">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/e2_controller_layout.png" width="450" style="padding:0px 0px 0px 0px;">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/e2_controller_layout.png" width="450" style="padding:0px 0px 0px 0px;">
     </a>
 </div>
 
@@ -136,9 +137,9 @@ The software design was split into two distinct parts:
 1. **The main microcontroller program,** and
 2. **The line-finding Android application.**
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/08_techcuptrack.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/08_techcuptrack.png" width="400" style="margin:24px; float:right">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/08_techcuptrack.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/08_techcuptrack.png" width="400" style="margin:24px; float:right">
     </a>
 </div>
 

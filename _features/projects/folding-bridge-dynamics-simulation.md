@@ -1,5 +1,5 @@
 ---
-layout:             project
+layout:             feature
 title:              "Simulation of the Dynamics of a Folding Bridge"
 date:               "2017-12-12"
 
@@ -8,7 +8,8 @@ keywords:           dynamics, software, mathematica, simulation, mathematica
 tags:               [Dynamics, Simulation]
 
 specifics:
-    featured:       true
+    career:         false
+    project:        true
     images:         "horn-bridge-sim"
 
 published:          true
@@ -23,9 +24,9 @@ Thanks to its prestige as a unique example of bridge engineering, there was a hi
 In turn, this gave me some much-needed insight into the physics of the bridge and how it unfolds.
 From there, it was all about coding and execution in Mathematica.
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_deploy.jpg">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_deploy.jpg" width="800" style="margin:4px 4px 4px 4px">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_deploy.jpg">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_deploy.jpg" width="800" style="margin:4px 4px 4px 4px">
     </a>
 </div>
 
@@ -39,9 +40,9 @@ The final form of the project is an animation of the bridge unfolding under the 
 I implemented some basic controls, mostly so that the framework would exist should I get the chance to return later and implement some form of active control sufficient to safely deploy the bridge.
 At the time the project was submitted, it could only delay (or accelerate) the opening of the bridge under gravity, which then results in a pretty forceful collision on the furthest pylon.
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_results.jpg">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_results.jpg" width="940" style="margin:4px 4px 4px 4px">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/02_results.jpg">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/02_results.jpg" width="940" style="margin:4px 4px 4px 4px">
     </a>
 </div>
 
@@ -53,8 +54,8 @@ For those who would be interested in referencing on the dynamic simulation alrea
 
 **BONUS:** Here's a GIF of the bridge deploying out of an initially-folded configuration.
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_animation.gif">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_animation.gif" width="480">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/03_animation.gif">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/03_animation.gif" width="480">
     </a>
 </div>

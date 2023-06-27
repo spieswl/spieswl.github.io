@@ -1,5 +1,5 @@
 ---
-layout:             project
+layout:             feature
 title:              "Making a Coffee Bar Out of Extruded Aluminum"
 date:               "2016-03-06"
 
@@ -8,10 +8,11 @@ keywords:           crafts, carpentry, furniture, coffee bar, extrusion
 tags:               [DIY, Furniture]
 
 specifics:
-    featured:       false
+    career:         false
+    project:        false
     images:         "coffee-bar"
 
-published:         true
+published:          true
 ---
 
 One of the benefits of working for a high-tech automation supplier is getting to see how big, sturdy, and complex things in the industrial realm are built.
@@ -30,9 +31,9 @@ The profiles we used at ATS had a clear finish to them, which is the form of ext
 The clear finish leaves the silvery color of the underlying aluminum exposed, which was not the most appealing for a home project.
 I agreed with my wife that the standard, silver profiles looked far too industrial to use outside of a workshop or garage, but when I discovered that **80/20** sold a version that comes anodized with a black coating in some smaller cross-sections, I finally got the OK to design and build some furniture.
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_black_anodized.jpg">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_black_anodized.jpg" style="margin:4px 4px 4px 4px">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_black_anodized.jpg">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_black_anodized.jpg" style="margin:4px 4px 4px 4px">
     </a>
 </div>
 
@@ -40,12 +41,12 @@ I drew up a concept that would use some custom wood pieces and black-anodized ex
 We had recently been perusing over "coffee nook" cabinets and furniture to store all our mugs, coffee beans, grinders, presses, and other prep ware.
 Pinterest and Instagram offered many extravagant ideas for a home-made coffee bar design, but instead I designed something a bit more modest:
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_coffee_bar.jpg">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_coffee_bar.jpg" width="480" style="margin:4px 4px 4px 4px">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/02_coffee_bar.jpg">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/02_coffee_bar.jpg" width="480" style="margin:4px 4px 4px 4px">
     </a>
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_underside.jpg">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_underside.jpg" width="270" style="margin:4px 4px 4px 4px">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/03_underside.jpg">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/03_underside.jpg" width="270" style="margin:4px 4px 4px 4px">
     </a>
 </div>
 
@@ -58,14 +59,14 @@ Two shelves, also made from birch pywood, were cut-to-shape and mounted on the i
 These shelves allowed for plenty of storage space for ceramics and glassware inside the frame.
 Leveling feet were installed in tapped holes on the bottom of the extrusion, which could be later replaced by casters, if I ever cared to splurge on them.
 
-<div class="project-image" style="text-align:center">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/04_work_in_progress.jpg">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/04_work_in_progress.jpg" width="480" style="margin:4px 4px 4px 4px">
+<div class="feature-image" style="text-align:center">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/04_work_in_progress.jpg">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/04_work_in_progress.jpg" width="480" style="margin:4px 4px 4px 4px">
     </a>
 </div>
-<div class="project-image" style="text-align:center">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/05_final_tapping.jpg">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/05_final_tapping.jpg" width="480" style="margin:4px 4px 4px 4px" >
+<div class="feature-image" style="text-align:center">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/05_final_tapping.jpg">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/05_final_tapping.jpg" width="480" style="margin:4px 4px 4px 4px" >
     </a>
 </div>
 

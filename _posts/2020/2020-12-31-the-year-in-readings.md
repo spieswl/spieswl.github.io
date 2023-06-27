@@ -7,7 +7,7 @@ keywords:           personal, reading, quantified self
 tags:               [Personal, The Year in Readings]
 
 specifics:
-    featured:       true
+    noteworthy:     true
     images:         "2020/the-year-in-readings"
 
 published:          true

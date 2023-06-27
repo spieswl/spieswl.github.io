@@ -2,13 +2,15 @@
 layout:             post
 title:              "Template"
 
-description:        "Template post description"
+description:        "Template description"
 keywords:           testing, testing 123, test
 tags:               [Testing, Testing123]
 
+# Change the following variables to affect where the post appears in the tile layout, and where images are pulled from.
+# These MUST be changed before publishing!
 specifics:
-    featured:       false                                   # Change this variable to affect where the post appears in the front page layout
-    images:         "specific-folder-path"                  # This path is post-dependent; don't forget to change it!
+    noteworthy:     false
+    images:         "specific-folder-path"
 
 published:          false
 ---

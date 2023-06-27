@@ -4,7 +4,7 @@ title:              Home
 ---
 
 <div class="posts">
-    <h3>Featured Posts</h3>
+    <h3>Noteworthy Posts</h3>
     {% assign rawtags = "" %}
     {% for post in site.posts %}
         {% assign ttags = post.tags | join:'|' | append:'|' %}
@@ -25,7 +25,7 @@ title:              Home
     {% endfor %}
 
     {% for post in site.posts limit:6 %}
-        {% if post.specifics.featured %}
+        {% if post.specifics.noteworthy %}
             {% unless post.next %}
                 <h4>{{ post.date | date: '%Y' }}</h4>
             {% else %}
@@ -53,18 +53,18 @@ title:              Home
 
 <hr>
 
-<div class="projects">
-    <h3>Featured Projects</h3>
-    <div class="project-list">
-        {% assign index_grid_limit = 8 %}
-        {% assign listing = site.projects | sort:"date" | reverse %}
+<div class="features">
+    <h3>Projects and Memoirs</h3>
+    <div class="feature-list">
+        {% assign index_grid_limit = 10 %}
+        {% assign listing = site.features | sort:"date" | reverse %}
 
-        {% for project in listing limit:index_grid_limit %}
-            {% if project.specifics.featured %}
-                <div class="project-thumb" style="background-image: url({{ site.url }}/{{ site.assets.projects }}/{{ project.specifics.images }}/thumb.png)">
-                    <a href="{{ project.url }}">
-                        <div class="project-thumb-overlay">
-                            <strong>{{ project.title }}</strong>
+        {% for feature in listing limit:index_grid_limit %}
+            {% if feature.specifics.career or feature.specifics.project %}
+                <div class="feature-thumb" style="background-image: url({{ site.url }}/{{ site.assets.features }}/{{ feature.specifics.images }}/thumb.png)">
+                    <a href="{{ feature.url }}">
+                        <div class="feature-thumb-overlay">
+                            <strong>{{ feature.title }}</strong>
                         </div>
                     </a>
                 </div>

@@ -7,7 +7,7 @@ keywords:           personal
 tags:               [Personal]
 
 specifics:
-    featured:       false
+    noteworthy:     false
     images:         "2020/musings-on-a-year-in-chaos"
 
 published:          true

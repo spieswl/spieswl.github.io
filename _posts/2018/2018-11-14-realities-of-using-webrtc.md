@@ -7,7 +7,7 @@ keywords:           webrtc, mediastream, computer vision, safari, firefox, chrom
 tags:               [Retrospectives, WebRTC, Computer Vision]
 
 specifics:
-    featured:       false
+    noteworthy:     false
     images:         "2018/webrtc-realities"
 
 published:          true

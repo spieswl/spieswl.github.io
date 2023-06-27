@@ -1,5 +1,5 @@
 ---
-layout:             project
+layout:             feature
 title:              "Driving a Kuka YouBot in simulation with Python"
 date:               "2017-12-13"
 
@@ -8,7 +8,8 @@ keywords:           software, simulation, python, robotics, controls
 tags:               [Python, Simulation, Robotics]
 
 specifics:
-    featured:       true
+    career:         false
+    project:        true
     images:         "mobile-robot-follower"
 
 published:          true
@@ -26,9 +27,9 @@ A scenario containing a [Kuka YouBot](https://softroboticstoolkit.com/synergisti
 The goal was to use forward and inverse kinematics, motion planning, Python libraries for robotic manipulation, and an interface in the simulator to get the YouBot to follow a pre-defined end-effector trajectory over a five second timespan.
 In order to successfully meet the requirements for this challenge, we needed to have implemented kinematic control of the 5-DOF robotic arm, use odometry to gauge and control the position and orientation of the mechanum-wheeled chassis, coordinate the motion of the arm and chassis to follow the desired trajectory simultaneously, and use PI control to correct for any deviation from the calculated path.
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_youbot_home.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_youbot_home.png" width="480">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_youbot_home.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_youbot_home.png" width="480">
     </a>
 </div>
 
@@ -38,21 +39,21 @@ For example, functions are available which can take a particular robot's screw a
 The controller can take the kinematic analysis results and perform calculations that will generate joint coordinates, chassis coordinates, and wheel coordinates that will put the robot on the path.
 VREP would then parse a CSV-formatted list of time-varying joint angles and play back the resultant motion of the robot; an example of which is seen below.
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_on-path_follower.gif">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_on-path_follower.gif" width="800">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/02_on-path_follower.gif">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/02_on-path_follower.gif" width="800">
     </a>
 </div>
 
 Results for the error feedback components are also included for both the "P-" and "PI"-controller configurations.
 Note that the plots of position error shown below were taken from a scenario where the YouBot's initial conditions start the robot away from the desired path.
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_P_ctrl_results.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_P_ctrl_results.png" width="540">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/03_P_ctrl_results.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/03_P_ctrl_results.png" width="540">
     </a>
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/04_PI_ctrl_results.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/04_PI_ctrl_results.png" width="540">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/04_PI_ctrl_results.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/04_PI_ctrl_results.png" width="540">
     </a>
 </div>
 

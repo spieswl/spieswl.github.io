@@ -1,5 +1,5 @@
 ---
-layout:             project
+layout:             feature
 title:              "Adding a Tablet Dashboard to My Mazda3"
 date:               "2014-01-08"
 
@@ -8,10 +8,11 @@ keywords:           automotive, tablet, mobile devices, OBD2, DIY
 tags:               [DIY, Automotive, Mobile Devices]
 
 specifics:
-    featured:       true
+    career:         false
+    project:        true
     images:         "adding-car-smarts"
 
-published:         true
+published:          true
 ---
 
 One of my pet peeves is when I have some electronic device eventually loses purpose as the battery dies or the product support ends.
@@ -36,21 +37,21 @@ I just needed to find a decent OBD2 Bluetooth adapter (_I ended up buying a vers
 
 After some mechanical modifications to my Mazda's dash, hooking up the ELM327 adapter, and setting up Torque Pro with a nice looking gauge layout, I was now in business.
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_driver_view.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_driver_view.png" width="480" style="margin:4px 4px 4px 4px">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_driver_view.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_driver_view.png" width="480" style="margin:4px 4px 4px 4px">
     </a>
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_dash_view.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_dash_view.png" width="270" style="margin:4px 4px 4px 4px">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/02_dash_view.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/02_dash_view.png" width="270" style="margin:4px 4px 4px 4px">
     </a>
 </div>
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_gauge_display.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_gauge_display.png" width="480" style="margin:16px 4px 16px 4px">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/03_gauge_display.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/03_gauge_display.png" width="480" style="margin:16px 4px 16px 4px">
     </a>
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/04_map_display.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/04_map_display.png" width="480" style="margin:16px 4px 16px 4px">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/04_map_display.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/04_map_display.png" width="480" style="margin:16px 4px 16px 4px">
     </a>
 </div>
 
@@ -62,9 +63,9 @@ The fact that my **TF101** also had a GPS reciever allowed Torque to access Goog
 I was also able to get turn-by-turn navigation through Google Maps, either through offline saved maps or by tethering the tablet to my smartphone.
 I could also load podcasts and music onto my new infotainment tablet; although that capability I only sometimes used thanks to the weird placement of the **_Line In_** jack inside the center console.
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/05_mounting.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/05_mounting.png" width="480" style="margin:16px 4px 16px 4px">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/05_mounting.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/05_mounting.png" width="480" style="margin:16px 4px 16px 4px">
     </a>
 </div>
 

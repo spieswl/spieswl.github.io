@@ -7,7 +7,7 @@ keywords:           git, synology, git server, NAS, self-hosting
 tags:               [Self-Hosting, Git]
 
 specifics:
-    featured:       false
+    noteworthy:     false
     images:         "2018/synology-git-server"
 
 published:          true

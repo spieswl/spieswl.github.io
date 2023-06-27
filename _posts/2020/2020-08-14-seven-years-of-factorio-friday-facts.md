@@ -7,7 +7,7 @@ keywords:           retrospectives, factorio
 tags:               [Retrospectives, Factorio]
 
 specifics:
-    featured:       true
+    noteworthy:     true
     images:         "2020/factorio-friday-facts"
 
 published:          true

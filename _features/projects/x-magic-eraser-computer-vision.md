@@ -1,5 +1,5 @@
 ---
-layout:             project
+layout:             feature
 title:              "Simple Texture Synthesis and Replacement with OpenCV"
 date:               "2017-12-16"
 
@@ -8,7 +8,8 @@ keywords:           python, computer vision, opencv, image processing, texture s
 tags:               [Python, OpenCV, Computer Vision]
 
 specifics:
-    featured:       false
+    career:         false
+    project:        true
     images:         "magic-eraser-cv"
 
 published:          false
@@ -138,9 +139,9 @@ Some challenges we identified along the way:
 The easiest way to show how our solution progressed is to pull up the input, intermediate results, and final output for an example frame of the video.
 White regions in the frame represent 'erased' text that needs to be filled in, while blue regions represent areas where we prevented the script from pulling samples from.
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_results.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_results.png" width="1000">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_results.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_results.png" width="1000">
     </a>
 </div>
 

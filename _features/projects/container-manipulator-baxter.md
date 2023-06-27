@@ -1,5 +1,5 @@
 ---
-layout:             project
+layout:             feature
 title:              "Using a Baxter Robot to Open Containers with Lids"
 date:               "2017-12-17"
 
@@ -8,7 +8,8 @@ keywords:           ros, python, baxter, object manipulation, rethink robotics, 
 tags:               [ROS, Python, Robotics]
 
 specifics:
-    featured:       true
+    career:         false
+    project:        true
     images:         "baxter-container"
 
 published:          true
@@ -37,9 +38,9 @@ Otherwise, all code was written by our team over the course of a two-week period
 
 ##### Results
 
-<div class="project-image">
-    <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_opening_lid.gif" width="308">
-    <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_move_bottle.gif" width="382.013">
+<div class="feature-image">
+    <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_opening_lid.gif" width="308">
+    <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/02_move_bottle.gif" width="382.013">
 </div>
 
 The video below does a nice job of demonstrating Baxter's latent capabilities as a laundry assistant.
@@ -47,7 +48,7 @@ We cleverly used the additional joint range of Baxter's wrists (_versus that of 
 Keep an eye out for the small reverse turn you see right before the tightening step; that was a tweak we added to try seating the threads correctly when Baxter brings the lid down.
 That motion works in the same way a person might backthread a lid before tightening it down.
 
-<div class="project-video">
+<div class="feature-video">
     <iframe src="https://player.vimeo.com/video/246549829" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
 </div>
 

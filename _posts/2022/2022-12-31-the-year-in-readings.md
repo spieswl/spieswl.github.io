@@ -7,7 +7,7 @@ keywords:           personal, reading, quantified self
 tags:               [Personal, The Year in Readings]
 
 specifics:
-    featured:       true
+    noteworthy:     true
     images:         "2022/the-year-in-readings"
 
 published:          true
@@ -16,7 +16,7 @@ published:          true
 2022 was a difficult year in a lot of ways.
 I started drifting away from many things that brought me joy, and reading was one of them.
 As for why this happened, stress of changing jobs, stress of trying to sort out home renovation projects, being social and doing a fair bit of traveling, and picking up some other hobbies all contributed.
-I will address those shortcomings next year, but for now, the recap. 
+I will address those shortcomings next year, but for now, the recap.
 
 <div class="post-image">
     <a href="{{ site.url }}/{{ site.assets.posts }}/{{ page.specifics.images }}/01_reading-log-2022.png">

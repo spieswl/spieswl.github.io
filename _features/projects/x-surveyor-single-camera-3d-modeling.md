@@ -1,5 +1,5 @@
 ---
-layout:             project
+layout:             feature
 title:              "Surveyor: Single Camera 3D Modeling in ROS"
 date:               "2018-03-23"
 
@@ -8,7 +8,8 @@ keywords:           ros, computer vision, slam, structure from motion, cameras, 
 tags:               [ROS, C++, Python, OpenCV, 3D Modeling, Computer Vision, Structure from Motion]
 
 specifics:
-    featured:       true
+    career:         false
+    project:        true
     images:         "surveyor"
 
 published:          false
@@ -20,7 +21,7 @@ Before I get much further, check out the **Surveyor** repository [over at GitHub
 
 ### Surveyor
 
-<div class="project-video">
+<div class="feature-video">
     <iframe src="https://drive.google.com/file/d/1PNMfx6Irwad7ekdQdnSYdrvyljGEk8MV/preview" allowFullscreen></iframe>
 </div>
 
@@ -42,7 +43,7 @@ Below are a select few videos of importance, minus the one I made in a professio
 
 - This video is pretty close to **Surveyor** working exactly as desired. This video shows the results of around 370 still images _(I refer to them as snaps to disambiguate from video-derived frames)_, with 900x600 resolution. These images were down-sampled from 6000x4000 resolution captures on the Fujifilm X-T2. Note that the point cloud model starts out in pretty good shape, but right around 0:33 on the timer, significant noise gets introduced into the result. 
 
-<div class="project-video">
+<div class="feature-video">
     <iframe src="https://drive.google.com/file/d/1i3VFRosg8Wgpp74V4YPQ8L_vGL_gnX_z/preview" allowFullScreen></iframe>
 </div>
 
@@ -50,7 +51,7 @@ Below are a select few videos of importance, minus the one I made in a professio
 
 - This next video is of a clear failure. This video shows the results of **Surveyor** processing a roughly 4000 frame video (AVI format) taken at 1280x720 resolution at 60 frames/sec. I visually inspected the video, and I thought it was smooth as silk. I could not clearly pick out ANY distortion, tearing, blurring, or anything else that might cause a problem. Sure enough...watch what happens to the dense point cloud throughout the video.
 
-<div class="project-video">
+<div class="feature-video">
     <iframe src="https://drive.google.com/file/d/1vPdYIB3mlwVFP6zwow8iLrNSvJpmTIaW/preview" allowFullScreen></iframe>
 </div>
 
@@ -58,7 +59,7 @@ Below are a select few videos of importance, minus the one I made in a professio
 
 - Here is a quick video showing some of the intermediate results from using DSO. This is also running on the 370 snaps down-sampled to 900x600 from the X-T2.
 
-<div class="project-video">
+<div class="feature-video">
     <iframe src="https://drive.google.com/file/d/1UcqqPfop-trrudnOrNwVeff2xeKAHdZ_/preview" allowFullScreen></iframe>
 </div>
 
@@ -66,7 +67,7 @@ Below are a select few videos of importance, minus the one I made in a professio
 
 - This video is also of the intermediate results from using DSO. This video was taken in the middle of a run using the roughly 4000 frame video feed at 60 frames/sec. The errors here are far more subdued than what can be seen in the REMODE video, though towards the end you can see duplication and skewing in the sparse point cloud.
 
-<div class="project-video">
+<div class="feature-video">
     <iframe src="https://drive.google.com/file/d/1U-MNpBcBBD8gcgmZU77JqgXbr0TwR1yn/preview" allowFullScreen></iframe>
 </div>
 

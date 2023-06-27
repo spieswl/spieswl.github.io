@@ -1,5 +1,5 @@
 ---
-layout:             project
+layout:             feature
 title:              "webrtc-perception : Using WebRTC for Computational Photography"
 date:               "2018-11-14"
 
@@ -8,7 +8,8 @@ keywords:           webrtc, javascript, computer vision, computational photograp
 tags:               [WebRTC, Deflectometry, Python, Computer Vision]
 
 specifics:
-    featured:       true
+    career:         false
+    project:        true
     images:         "webrtc-perception"
 
 published:          true
@@ -46,7 +47,7 @@ Each application is connected to specific active research projects in the **Comp
 A barebones illustration of the **webrtc-perception** framework is shown in the following figure.
 This gives you an idea of what an end-to-end system _could_ look like, but without the _rtc-shapeshifter_- or _rtc-deflectometry_-specific details.
 
-<div class="project-image">
+<div class="feature-image">
     <a href="https://raw.githubusercontent.com/spieswl/webrtc-perception/master/docs/webrtc-perception_block_diagram.png">
         <img src="https://raw.githubusercontent.com/spieswl/webrtc-perception/master/docs/webrtc-perception_block_diagram.png" width="800">
     </a>
@@ -69,12 +70,12 @@ The next sections outline the goals of `rtc-shapeshifter` and `rtc-deflectometry
 His work originally used DSLR cameras to get preliminary results and he switched to using an iPhone (_with some special hardware_) in its final form, which made it an interesting candidate for extension through **webrtc-perception**.
 While I will not go into deep technical detail on his work, I included some slides from a presentation we held for one of the university's scientific interest groups on October 19th, 2018:
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_sfs_slide_1.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_sfs_slide_1.png" width="600" style="padding:0px 0px 0px 0px;">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_sfs_slide_1.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_sfs_slide_1.png" width="600" style="padding:0px 0px 0px 0px;">
     </a>
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_sfs_slide_2.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/02_sfs_slide_2.png" width="600" style="padding:0px 0px 0px 0px;">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/02_sfs_slide_2.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/02_sfs_slide_2.png" width="600" style="padding:0px 0px 0px 0px;">
     </a>
 </div>
 
@@ -97,9 +98,9 @@ These sample tiles have a particular surface shape that can be traced to Kokomo'
 Pieces commissioned by Tiffany usually bear artistic and historical relevance, but tracing their origins using traditional surface measurement systems can be difficult if the artistic work is installed and immobile.
 Implementing PMD techniques on consumer devices using **webrtc-perception** is an alternative way to measure the surface patterns by instead "scanning" the glass with the mobile device.
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_pmd_slide_1.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/03_pmd_slide_1.png" width="800" style="padding:0px 0px 0px 0px;">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/03_pmd_slide_1.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/03_pmd_slide_1.png" width="800" style="padding:0px 0px 0px 0px;">
     </a>
 </div>
 
@@ -113,9 +114,9 @@ Our results and a description of the work was **[featured in Optics Express Vol.
 
 I even got to do a bit of hand modeling for the feature's preview image!
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/04_hand_model.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/04_hand_model.png" width="480" style="padding:0px 0px 0px 0px;">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/04_hand_model.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/04_hand_model.png" width="480" style="padding:0px 0px 0px 0px;">
     </a>
 </div>
 
