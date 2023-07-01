@@ -1,5 +1,5 @@
 ---
-layout:             project
+layout:             feature
 title:              "Simple Texture Synthesis and Replacement with OpenCV"
 date:               "2017-12-16"
 
@@ -8,13 +8,17 @@ keywords:           python, computer vision, opencv, image processing, texture s
 tags:               [Python, OpenCV, Computer Vision]
 
 specifics:
-    featured:       false
+    career:         false
+    project:        true
     images:         "magic-eraser-cv"
 
-published:          true
+published:          false
+deadhead:           false
 ---
 
-As part of our first Computer Vision course at Northwestern, a [fellow colleague, Lauren Hutson](https://github.com/laurenhut/) and I teamed up to create a "Smart" eraser program using **[Python](https://www.python.org/)** and Python bindings in **[OpenCV](https://opencv.org/)**. Our program works by using some simple image processing techniques on each frame of a sampled video feed. For each frame, we identified red foreground handwriting against a background texture of printed words, erase the foreground handwriting based on the position of an 'eraser' cursor (_in this case, a marker held near the top of the frame_), and synthesize a new texture for the erased regions that blends in with the background paper.
+As part of our first Computer Vision course at Northwestern, a [fellow colleague, Lauren Hutson](https://github.com/laurenhut/) and I teamed up to create a "Smart" eraser program using **[Python](https://www.python.org/)** and Python bindings in **[OpenCV](https://opencv.org/)**.
+Our program works by using some simple image processing techniques on each frame of a sampled video feed.
+For each frame, we identified red foreground handwriting against a background texture of printed words, erase the foreground handwriting based on the position of an 'eraser' cursor (_in this case, a marker held near the top of the frame_), and synthesize a new texture for the erased regions that blends in with the background paper.
 
 The "Smart" eraser program we developed operates on an AVI-format video file, using `OpenCV` video file parsing functionality as seen here:
 
@@ -69,7 +73,9 @@ We made some assumptions at the start of development that greatly simplified our
 2. **_The text being erased does not move throughout the video, so the original mask is valid for the duration of the video._**
 3. **_Erasing as little of the background texture as possible, while potentially making our texture synthesis more difficult, is preferable to preserve the integrity of the rest of the video._**
 
-Our solution was split into two components: one component (`magicEraser.py`) handled by myself and one component (`imageTiling.py`) handled by Lauren. My component handled the parsing of the video feed, identifying and masking the foreground text, and passing the "masked" image to Lauren's portion of the project. The following text is one part of the few functions required to identify, mask, and pass on the processed image from any arbitrary frame of the video:
+Our solution was split into two components: one component (`magicEraser.py`) handled by myself and one component (`imageTiling.py`) handled by Lauren.
+My component handled the parsing of the video feed, identifying and masking the foreground text, and passing the "masked" image to Lauren's portion of the project.
+The following text is one part of the few functions required to identify, mask, and pass on the processed image from any arbitrary frame of the video:
 
 ```python
 ...
@@ -131,12 +137,15 @@ Some challenges we identified along the way:
 2. **_The video feed we were given was very noisy. Morphological operations on the image were required to trim out noise and restore key areas for the masking and cursor-search operations._**
 3. **_Our initial design only included functionality to develop one synthesized 'tile' that ends up going everywhere. You can clearly see texture similarities in the final product._**
 
-The easiest way to show how our solution progressed is to pull up the input, intermediate results, and final output for an example frame of the video. White regions in the frame represent 'erased' text that needs to be filled in, while blue regions represent areas where we prevented the script from pulling samples from.
+The easiest way to show how our solution progressed is to pull up the input, intermediate results, and final output for an example frame of the video.
+White regions in the frame represent 'erased' text that needs to be filled in, while blue regions represent areas where we prevented the script from pulling samples from.
 
-<div class="project-image">
-    <a href="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_results.png">
-        <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_results.png" width="1000">
+<div class="feature-image">
+    <a href="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_results.png">
+        <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_results.png" width="1000">
     </a>
 </div>
 
-We ended up with a fairly clean solution, though unsuitable for anything other than this toy problem (_which is fine for the requirements of this project_). Of course, the utility of a program that can do simplistic texture replacement on one single video source is extremely low, but we learned a good deal about video and image processing, using `OpenCV`, and ended up getting some practice in working collaboratively under a time crunch. The project code is [available on GitHub](https://github.com/spieswl/magic-eraser), as well as the documentation and images supporting our result, but beyond some post-presentation clean-up, we probably will not be coming back to work on this toy solution.
+We ended up with a fairly clean solution, though unsuitable for anything other than this challenge.
+Of course, the utility of a program that can do simplistic texture replacement on one single video source is marginal, but we learned a good deal about video and image processing, got a chance to use `OpenCV`, and ended up getting some practice in working collaboratively under a time crunch.
+The project code is [available on GitHub](https://github.com/spieswl/magic-eraser), as well as the documentation and images supporting our results, but beyond some post-presentation clean-up, we probably will not be coming back to work on this code.

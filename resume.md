@@ -2,11 +2,11 @@
 layout:             page
 title:              Resumes
 
-pdf_resume_text:    "Resume_spieswl_20220315.pdf"
-pdf_resume:         "assets/docs/Resume_spieswl_20220315.pdf"
+pdf_resume_text:    "Resume_spieswl_20230615.pdf"
+pdf_resume:         "assets/docs/Resume_spieswl_20230615.pdf"
 pdf_image:          "assets/images/pdf_icon.png"
-html_resume_text:   "Resume_spieswl_20220315.html"
-html_resume:        "assets/docs/Resume_spieswl_20220315.html"
+html_resume_text:   "Resume_spieswl_20230615.html"
+html_resume:        "assets/docs/Resume_spieswl_20230615.html"
 html_image:         "assets/images/html_icon.png"
 ---
 
@@ -14,14 +14,14 @@ html_image:         "assets/images/html_icon.png"
     <h3 class="page-title">{{ page.title }}</h3>
 </div>
 
-If you have professional inquiries, grab a copy of one of these resume formats and reach out at **resume[at]spieswl.com**.
+If you have professional inquiries, grab a copy of my resume in the desired format and reach out at **resume[at]spieswl.com**.
 
-##### PDF Format
+##### PDF
 
 <img src="{{ site.url }}/{{ page.pdf_image }}" style="float: left; padding: 2px 2px 2px 2px; margin: -4px 10px 4px 4px">
 [{{ page.pdf_resume_text }}]({{ site.url }}/{{ page.pdf_resume }})
 
-##### HTML Format
+##### HTML
 
 <img src="{{ site.url }}/{{ page.html_image }}" style="float: left; padding: 2px 2px 2px 2px; margin: -4px 10px 4px 4px">
 [{{ page.html_resume_text }}]({{ site.url }}/{{ page.html_resume }})

@@ -1,8 +1,8 @@
 # Basic site info
 title:                  "William Spies"
-tagline:                "My Personal & Technical Blog"
+tagline:                "Building Things, Going Exploring"
 description:            "Personal & Technical Blog of William Spies"
-keywords:               "William Spies, blog, electronics, engineering, robotics"
+keywords:               "William Spies, blog, electronics, engineering, robotics, automation, industry"
 og_locale:              "en_US"
 
 # Site author info
@@ -17,14 +17,14 @@ baseurl:                null # for master branch
 enforce_ssl:            spieswl.com
 
 assets:
-    projects:           assets/images/projects
+    features:           assets/images/features
     posts:              assets/images/posts
 
-# Projects info
+# Collections info
 collections:
-    projects:
+    features:
         output:         true
-        permalink:      /projects/:year/:title
+        permalink:      /features/:title
 
 # Posts info
 permalink:              /blog/:year/:title
@@ -35,7 +35,7 @@ destination:            ./_site
 markdown:               kramdown
 highlighter:            rouge
 timezone:               America/Denver
-exclude:                ["README.md", "LICENSE.md"]
+exclude:                ["README.md", "LICENSE"]
 
 # Site configurations
 compress_html:

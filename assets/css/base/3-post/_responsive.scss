@@ -9,7 +9,7 @@
         max-width: 48rem;
     }
 
-    .project-thumb {
+    .feature-thumb {
         height: 240px;
         width: 320px;
     }
@@ -20,7 +20,7 @@
         max-width: 60rem;
     }
 
-    .project-thumb {
+    .feature-thumb {
         height: 280px;
         width: 420px;
     }
@@ -31,7 +31,7 @@
         max-width: 60rem;
     }
 
-    .project-thumb {
+    .feature-thumb {
         height: 280px;
         width: 420px;
     }
@@ -42,7 +42,7 @@
         max-width: 72rem;
     }
 
-    .project-thumb {
+    .feature-thumb {
         height: 280px;
         width: 420px;
     }
@@ -72,12 +72,11 @@
         padding-right: 0;
     }
 
-    .project-list {
-        max-width: 80vw;
+    .feature-list {
         margin: 0px;
     }
 
-    .project-thumb {
+    .feature-thumb {
         height: 40vw;
         width: 60vw;
     }
@@ -101,15 +100,19 @@
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {    
+    body {
+        font-size: 0.9rem;
+    }
+    
     .masthead-title {
         text-align: center;
     }
 
-    body {
-        font-size: 0.9rem;
+    .site-title {
+        text-align: center;
     }
-
+    
     .site-nav {
         font-size: 0.7rem;
         line-height: 2.4;

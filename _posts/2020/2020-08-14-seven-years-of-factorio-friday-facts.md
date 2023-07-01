@@ -3,22 +3,36 @@ layout:             post
 title:              "Seven Years of Factorio Friday Facts"
 
 description:        "This entry focuses on Wube Software's long-running Factorio Friday Facts; a seven-year labor of love documenting the creation of the titular video game."
-keywords:           factorio, retrospective
-tags:               [Factorio, Retrospectives]
+keywords:           retrospectives, factorio 
+tags:               [Retrospectives, Factorio]
 
 specifics:
+    noteworthy:     true
     images:         "2020/factorio-friday-facts"
 
 published:          true
 ---
 
-Few things are more enjoyable to me than reading about the experiences of a professional. There is just something special about getting a peek behind the veil of any serious endeavor, especially when the author's passion for the craft and for sharing that passion with others shines through. The field of science has many instances of this: the outreach work of figures like Carl Sagan and legendary talks like [Randy Pausch's last lecture](https://youtu.be/ji5_MqicxSo) are but a few examples of that elusive connection between science and engineering, and humanity. It is rare to find people that can take a technical subject, distill it into an easily digestible form, and then make the reader feel good in consuming that content. It is truly special to do all that and, at the same time, create a bond with fellow people.
+Few things are more enjoyable to me than reading about the experiences of a professional working on a project they care deeply about.
+There is just something special about getting a peek behind the veil of any serious endeavor, especially when the author's passion for the craft and for sharing that passion with others shines through.
+The field of science has many instances of this: the outreach work of figures like Carl Sagan and legendary talks like [Randy Pausch's last lecture](https://youtu.be/ji5_MqicxSo) are but a few examples of that wondeful connection between science and engineering, and humanity.
+It is rare to find people that can take a complex technical subject, distill it into an easily digestible form, and then make the reader feel smarter for consuming that content.
+It is truly special to do all that and then, at the same time, share all their life experiences.
 
-**Factorio Friday Facts** (FFF) is a blog series started in 2013 by a duo of Czech software engineers. They initially intended to document their experiences while developing the computer game ***[Factorio](https://factorio.com/)*** as a way to keep in touch with their supporting community. While it started as the modest musings of two young professionals, over time their team [grew](https://factorio.com/game/about) and their game [became popular](https://steamdb.info/stats/gameratings/) (*ranked #2 in the world among **ALL** Steam games in user feedback, with over 2 million copies sold*). The simple end-of-week tradition where they talk about what's happening in their office turned into one of the best technical blogs around. The subjects of this series range from designing systems around user experience, graphics and GUI development, AI, network troubleshooting, memory access optimizations, a whole host of computer science topics, the process of creating art and sounds, the process of growing a team, the process of working through adversity, and the long, risky journey of building something truly new.
+**Factorio Friday Facts** (FFF) is a blog series started in 2013 by a duo of Czech software engineers.
+They initially intended to document their experiences while developing the computer game ***[Factorio](https://factorio.com/)*** as a way to keep in touch with their supporting community.
+While it started as the modest musings of two young professionals, over time their team [grew](https://factorio.com/game/about) and their game [became popular](https://steamdb.info/stats/gameratings/) (*ranked #2 in the world among **ALL** Steam games in user feedback, with over 2 million copies sold*).
+The simple end-of-week tradition where they talk about what was happening in their office turned into one of the best technical blogs around.
+The subjects of this series range from designing systems oriented around the broader user experience, graphics and GUI development, AI, network troubleshooting, memory access optimizations, a whole host of computer science topics, the process of creating art and music, the process of growing a team, the process of working through adversity, and the long, risky journey of building something truly new.
 
-My wife knows well of my occasional addictions to ***Factorio***; it is one of the purest problem-solving, creation-oriented, whole-brain-tapping passtimes I can think of. Naturally, I lose myself in a world where I can freely create, refactor, optimize, explore, and experiment...and I am far from the only person who has done so. The developers behind this game are, in my opinion, some of the best in the business. Not only for making such a wonderful thing, but the dedication, effort, and thoughtfulness they display _even when engaging in the most menial of maintenance tasks_ is the stuff of legend. They have been wildly successful, maybe in spite of ***Factorio*** not being alluring to all, and in doing so have something remarkable into our world.
+My wife knows well of my occasional addictions to **_Factorio_**; it is one of the purest problem-solving, creation-oriented, whole-brain-tapping passtimes I can think of.
+Naturally, I lose myself in this world where I can freely create, refactor, optimize, explore, and experiment--and I am far from the only person who has done so.
+The developers behind this game are, in my opinion, some of the best in the business.
+Not only for making such a wonderful thing, but the dedication, effort, and thoughtfulness they display _even when engaging in the most menial of maintenance tasks_ is the stuff of legend.
+They have been wildly successful, maybe in spite of ***Factorio*** not being alluring to all, and in doing so have something remarkable into our world.
 
-Today is the day they officially released their product to everyone. As a way to celebrate their incredible journey, I wanted to share some of my favorite entries from the last seven years of **Factorio Friday Facts**:
+Today is the day they officially released their product to everyone.
+As a way to celebrate their incredible journey, I wanted to share some of my favorite entries from the last seven years of **Factorio Friday Facts**:
 
 ##### Getting Started
 * **[FFF #1](https://factorio.com/blog/post/fff-1)**
@@ -29,7 +43,7 @@ Today is the day they officially released their product to everyone. As a way to
 
 ##### Graphics and GUI Design
 * **[FFF #179 - New resource graphics & concrete](https://factorio.com/blog/post/fff-179)** : Cool description of using Python scripting to procedurally randomize resource tiles.
-* **[FFF #191 - Gui improvements](https://factorio.com/blog/post/fff-191)**
+* **[FFF #191 - GUI improvements](https://factorio.com/blog/post/fff-191)**
 * **[FFF #194 - Automated combinator pipeline](https://factorio.com/blog/post/fff-194)** : A fantastic look at a highly automated graphics generation pipeline.
 * **[FFF #212 - The GUI update (Part 1)](https://factorio.com/blog/post/fff-212)** : Some of my favorite FFF entries are when they talk about GUI design and trying to understand the complex interactions of ***Factorio***.
 * **[FFF #216 - Paving a path for the GUI update](https://factorio.com/blog/post/fff-216)** : A journey through their interface design over the years.
@@ -52,16 +66,16 @@ Today is the day they officially released their product to everyone. As a way to
 * **[FFF #204 - Another day, another optimisation](https://factorio.com/blog/post/fff-204)** : Solid technical writeup on how a prefetching optimization patch works across a number of resource-heavy factory builds. A **MUST READ**.
 * **[FFF #206 - Workflow optimisation](https://factorio.com/blog/post/fff-206)** : Speeding up the change / compile / test loop.
 * **[FFF #209 - Optimisation is a way of life](https://factorio.com/blog/post/fff-209)**
-* **[FFF #260 - New fluid system](https://factorio.com/blog/post/fff-260)** : Modeling fluids is hard, extremely hard.
+* **[FFF #260 - New fluid system](https://factorio.com/blog/post/fff-260)** : Modeling fluids is hard; extremely hard.
 * **[FFF #264 - Texture streaming](https://factorio.com/blog/post/fff-264)**
 * **[FFF #271 - Fluid optimisations & GUI Style inspector](https://factorio.com/blog/post/fff-271)** : Another day, another fluid system optimization.
 * **[FFF #317 - New pathfinding algorithm](https://factorio.com/blog/post/fff-317)** : A FFF relevant to robotics! Pathfinding at an insane scale using A* and clever chunk reduction to facilitate pathfinding.
 * **[FFF #331 - 0.18.0 release & Train pathfinder changes](https://factorio.com/blog/post/fff-331)** : Continuing optimizations involving train pathfinding.
 <hr>
 
-##### Crazy Times in Troubleshooting Networking
+##### Crazy Times in Networking Troubleshooting
 * **[FFF #136 - Map Transfers](https://factorio.com/blog/post/fff-136)** : As multiplayer functionality was added, more FFF segments start focusing on networking...
-* **[FFF #143 - Matching server and UDP NAT punching](https://factorio.com/blog/post/fff-143)** : Interesting to see `STUN` and `ICE` mentioned here in 2016; I will later spend time studying the same things when working on `webrtc-perception`.
+* **[FFF #143 - Matching server and UDP NAT punching](https://factorio.com/blog/post/fff-143)** : Interesting to see `STUN` and `ICE` mentioned here in 2016; I would later spend time studying the same things when working on `webrtc-perception`.
 * **[FFF #196 - Back on track](https://factorio.com/blog/post/fff-196)** : They create their own Wireshark plugin in order to do deep packet introspection.
 * **[FFF #302 - The multiplayer megapacket](https://factorio.com/blog/post/fff-302)** : Experiments with hundreds of connected players in a multiplayer session leads to a discovery that a connection recovery mechanism is not behaving as expected.
 <hr>
@@ -74,15 +88,15 @@ Today is the day they officially released their product to everyone. As a way to
 * **[FFF #215 - Multithreading issues](https://factorio.com/blog/post/fff-215)** : Troubleshooting a multithreading issue...
 * **[FFF #265 - Nomenclature & Steam networking](https://factorio.com/blog/post/fff-265)** : Nomenclature is important. Uncertainty in what something means or how something is referenced can lead to other problems in development.
 * **[FFF #274 - New fluid system 2](https://factorio.com/blog/post/fff-274)** : Not often do you get the help of a physicist from your community to implement a fluid simulation model.
-* **[FFF #296 - All kinds of bugs](https://factorio.com/blog/post/fff-296)** : The snippet at the bottom is a perfect encapsulation of their attitude towards problem solving. It's such a simple concept, just going a little farther, that can take tremendous discipline and focus. A **MUST READ**.
-* **[FFF #312 - Fluid mixing saga & Landfill terrain](https://factorio.com/blog/post/fff-312)** : Before reading this, go check out how much work has been put into fluid simulation...then read this one about breaking it.
+* **[FFF #296 - All kinds of bugs](https://factorio.com/blog/post/fff-296)** : The snippet at the bottom is a perfect encapsulation of their attitude towards problem solving. It's such a simple concept, just going a little farther, that takes tremendous discipline and focus. A **MUST READ**.
+* **[FFF #312 - Fluid mixing saga & Landfill terrain](https://factorio.com/blog/post/fff-312)** : Before reading this, go check out how much work has been put into their fluid simulation...then read this one about breaking it.
 * **[FFF #349 - The 1.0 plan](https://factorio.com/blog/post/fff-349)** : The release date moves closer. They show off more debug and introspection capabilities, including a fascinating prototype inspection system.
 <hr>
 
-##### The Journey
+##### On The Journey
 * **[FFF #34 - Sales, Support, Stress and Steam](https://factorio.com/blog/post/fff-34)**
-* **[FFF #81 - Chain signals](https://factorio.com/blog/post/fff-81)** : Some incredible effort / results comparisons at the beginning of this article. We will come back to these statistics later...
-* **[FFF #102 - Getting close](https://factorio.com/blog/post/fff-102)** : A few anecdotes about database management give way to observations on success after seeing how it affected one of their most well-known contemporaries.
+* **[FFF #81 - Chain signals](https://factorio.com/blog/post/fff-81)** : Some incredible effort and results comparisons at the beginning of this article. We will come back to these statistics later...
+* **[FFF #102 - Getting close](https://factorio.com/blog/post/fff-102)** : A few anecdotes about database management give way to observations on success after seeing how this impacted one of their most well-known contemporaries.
 * **[FFF #135 - Getting Organized](https://factorio.com/blog/post/fff-135)** : Growth leading to higher organization and complexity. A peek at how this starts to affect Wube Software.
 * **[FFF #184 - Five years of Factorio](https://factorio.com/blog/post/fff-184)** : Oh yeah, they also talk about optimizations here too. These people are relentless.
 * **[FFF #192 - One million](https://factorio.com/blog/post/fff-192)** : Five years after the first commit, they reach one million sold copies.
@@ -107,6 +121,19 @@ Today is the day they officially released their product to everyone. As a way to
 
 <hr>
 
-It is hard to think of the right things to say at the end of all this. I believe there are many endeavors that can reveal the nature of the universe IF you have the will to see it; inspiration can come from anywhere. When I consider that belief, it makes me proud to share the work of these humble video game creators. For the past several years, I have been reading their posts, playing their game, and following their journey. I consider myself incredibly lucky to have been watching them navigate the trials and tribulations of creating something new and unique, but a profound sense of sadness accompanies the feelings of joy. Attending the release of the final *Lord of the Rings* movie, watching the last launch of the Space Shuttle, moving away from my hometown to chase new opportunities, losing track of old friends; all of these have the same bittersweet taste as reading the ***Factorio*** team's final post. The connections I have with all of those things are specific and personal, of course, but I hope to be able to relay just a fraction of what this content means to me as an engineer, as a creator, as a person. If they do not pique your interest, that is okay too. Instead consider that the world has many great and inspirational things to offer, many of which you may have overlooked or could be hidden in plain sight. Look harder for those things and you will be better off as as person.
+It is hard to draw a conclusion after reading through all of these posts.
+Inspiration can come from anywhere, and I believe that even blogging about game development can reveal the nature of the universe.
+When I consider that belief, I am happy to share the work of these humble creators.
+For the past several years, it has been a great honor to read their musings, play their game, and follow their journey.
+I hope that by watching the team at **Wube** navigate the trials and tribulations of _Factorio_'s development, I will hold on to some insight that will help me later in my own career.
 
-And yet, even if you never read any of the above, we can still to sit down and build something in ***Factorio*** together ... and that is a wonderful thing.
+I also feel a profound sense of sadness alongside the feelings of celebration for their successful release.
+It feels similar to watching the final *Lord of the Rings* movie in theatres, watching the last launch of the Space Shuttle, moving away from one's hometown to chase new opportunities, losing track of old friends.
+All of these have the same bittersweet taste as reading the ***Factorio*** team's final post.
+Those experiences are specific and personal, of course, but I think most can relate to the feeling that something has forever changed in life.
+I am not sure I will ever be able to fully relate what their writings mean to me as an engineer, a creator, and a person.
+I hope that by sharing this, you readers may find your own insights and meaning, and if they do not pique your interest, that is okay too.
+Instead consider that the world has many great and inspirational things to offer, many of which could be hidden in plain sight, like a blog about making a video game. 
+Look harder for those things and you will be better off as as person.
+
+Even if you never read any of the above, we can still to sit down and build something in ***Factorio*** together ... and that is a wonderful thing.

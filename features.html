@@ -1,0 +1,63 @@
+---
+layout:             page
+title:              Featured Content
+---
+
+{% assign listing = site.features | sort:"date" | reverse %}
+
+<div class="features">
+    <!--
+    <h3>Career Retrospectives</h3>
+    <div class="feature-list">
+        {% for feature in listing %}
+            {% if feature.specifics.career %}
+                <div class="feature-thumb" style="background-image: url({{ site.url }}/{{ site.assets.features }}/{{ feature.specifics.images }}/thumb.png)">
+                    <a href="{{ feature.url }}">
+                        <div class="feature-thumb-overlay">
+                            <strong>{{ feature.title }}</strong>
+                        </div>
+                    </a>
+                </div>
+            {% else %}
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <br><br>
+    -->
+
+    <h3>Featured Projects</h3>
+    <div class="feature-list">
+        {% for feature in listing %}
+            {% if feature.specifics.project %}
+                <div class="feature-thumb" style="background-image: url({{ site.url }}/{{ site.assets.features }}/{{ feature.specifics.images }}/thumb.png)">
+                    <a href="{{ feature.url }}">
+                        <div class="feature-thumb-overlay">
+                            <strong>{{ feature.title }}</strong>
+                        </div>
+                    </a>
+                </div>
+            {% else %}
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <br><br>
+
+    <h3>Other Work</h3>
+
+    <div class="feature-list">
+        {% for feature in listing %}
+            {% unless feature.specifics.career or feature.specifics.project %}
+                <div class="feature-thumb" style="background-image: url({{ site.url }}/{{ site.assets.features }}/{{ feature.specifics.images }}/thumb.png)">
+                    <a href="{{ feature.url }}">
+                        <div class="feature-thumb-overlay">
+                            <strong>{{ feature.title }}</strong>
+                        </div>
+                    </a>
+                </div>
+            {% else %}
+            {% endunless %}
+        {% endfor %}
+    </div>
+</div>

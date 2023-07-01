@@ -1,5 +1,5 @@
 ---
-layout:             project
+layout:             feature
 title:              "Orthrus: High-Resolution 3D Reconstruction from a Single Shot"
 date:               "2018-06-19"
 
@@ -8,10 +8,12 @@ keywords:           structured light, 3d scanning, depth sensing, computer visio
 tags:               [C++, OpenCV, Computer Vision, Stereo Vision, 3D Modeling, Rendering, Point Clouds, Under Development]
 
 specifics:
-    featured:       true
+    career:         false
+    project:        true
     images:         "orthrus"
 
 published:          false
+deadhead:           false
 ---
 
 Over the summer months, I am participating in a research and development project that represents a particular fusion of stereo computer vision and 3D model reconstruction methods. As the lead software engineer, I will have the honor of being embedded in Northwestern University's **[Computational Photography Lab](http://compphotolab.northwestern.edu/)** for the duration of the project. While part of the lab, I will be working with Dr. Oliver Cossairt and Dr. Florian Willomitzer on software implementing a novel application of structured light projection and subsequent measurement based on the captured image data. I will be going light on the details of the project in this write-up, but the **Related Work** section will direct you to an article written by Dr. Willomitzer on the subject, and I will talk about the project goals in abstract and highlight skills I will be honing over the course of the next few months.
@@ -41,8 +43,8 @@ The idea is to make a system that can capture, generate, and render a high-resol
 
 Although this may not represent every library or package used, at a minimum I will be using features from the latest C++ standard (`C++17`), [OpenCV](https://opencv.org/), [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page), [PCL](http://www.pointclouds.org/), an as-yet-unidentified rendering pipeline, and an as-yet-unidentified GUI framework to accomplish these tasks.
 
-<div class="project-image">
-    <img src="{{ site.url }}/{{ site.assets.projects }}/{{ page.specifics.images }}/01_technologies.png" style="width:800px">
+<div class="feature-image">
+    <img src="{{ site.url }}/{{ site.assets.features }}/{{ page.specifics.images }}/01_technologies.png" style="width:800px">
 </div>
 
 We have also talked at length about potential feature expansions, which could add mesh generation, Python bindings, or other quality-of-life improvements.
